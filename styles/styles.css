@@ -16,3 +16,8 @@ description: index.html, jobs.html, apply.html, about.html
     border: 1px solid  black;
     padding:0.2em 0.6em;
 }
+
+#Jobs_Table{
+    width: 50%;
+    display: table-cell;
+}
