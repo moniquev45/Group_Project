@@ -15,18 +15,18 @@ description: index.html, jobs.html, apply.html, about.html
 #Job_Border{
     border: 1px solid  black;
     padding:0.2em 0.6em;
-    height: 400px;
+    height: 435px;
 }
 
 #Jobs_Table{
     width: 75%;
-    height: 400px;
+    height: 435px;
     display: table-cell;
 }
 
 #Jobs_Skills{
     width: 25%;
-    height: 400px;
+    height: 435px;
     display: table-cell;
     padding:0.2em 0.6em;
     border: 1px solid  black;;
