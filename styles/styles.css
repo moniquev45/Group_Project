@@ -28,4 +28,22 @@ description: index.html, jobs.html, apply.html, about.html
     width: 25%;
     height: 400px;
     display: table-cell;
+    padding:0.2em 0.6em;
+    border: 1px solid  black;;
+}
+
+#Pear_Logo_Image{
+    border-radius: 100%;
+    height: 40px;
+}
+
+#Job_Position_And_Logo{
+    /* Makes things aligned horizontaly. */
+    display: flex;
+    /* If things don't fit on one light it make sure it wraps underneath. */
+    flex-wrap: wrap;
+}
+
+#Job_Title{
+    flex: 1;
 }
