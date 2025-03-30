@@ -1,0 +1,18 @@
+/*
+filename: style.css
+
+author: Monique Vilardo, Riley Tuckett, Stacey Millers, Victoria Rogers
+
+created: 30/04/2025
+
+last modified: 30/04/2025
+
+description: index.html, jobs.html, apply.html, about.html
+*/
+
+* { font-family: Georgia, 'Times New Roman', Times, serif}
+
+#Job_Border{
+    border: 1px solid  black;
+    padding:0.2em 0.6em;
+}
