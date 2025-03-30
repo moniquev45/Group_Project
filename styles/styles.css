@@ -45,5 +45,6 @@ description: index.html, jobs.html, apply.html, about.html
 }
 
 #Job_Title{
+    /* Allows the job title to take as much space as possible on the line while still allowing the logo to share the area. */
     flex: 1;
 }
