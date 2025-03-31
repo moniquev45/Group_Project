@@ -48,3 +48,38 @@ description: index.html, jobs.html, apply.html, about.html
     /* Allows the job title to take as much space as possible on the line while still allowing the logo to share the area. */
     flex: 1;
 }
+
+#Number_Of_Job_Listings:hover{
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+nav li {
+    float: left;
+  }
+
+nav a {
+    text-decoration: none;
+    padding: 15px 15px;
+    border: 4px solid lightgray;
+    color: black;
+    padding: 8px;
+    text-align: center;
+}
+
+nav a:hover {
+    color: lightgray;
+    background-color: black;
+}
+
+#Company_Logo {
+    border-radius: 100%;
+    height: 60px;
+}
