@@ -160,3 +160,10 @@ footer a:hover {
     display: none;
 }
 
+#Necessary_Job_Requirements{
+    color: rgb(91, 13, 117);
+}
+
+#Non_Necessary_Job_Requirements{
+    color: rgb(35, 56, 102);
+}
