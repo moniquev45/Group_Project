@@ -12,24 +12,26 @@ description: index.html, jobs.html, apply.html, about.html
 
 * { font-family: Georgia, 'Times New Roman', Times, serif}
 
-#Job_Border{
-    border: 1px solid  black;
-    padding:0.2em 0.6em;
-    height: 435px;
-}
-
 #Jobs_Table{
     width: 75%;
-    height: 435px;
     display: table-cell;
+    border: 1px solid  black;
+    padding:0.2em 0.6em;
 }
 
-#Jobs_Skills{
-    width: 25%;
-    height: 435px;
-    display: table-cell;
-    padding:0.2em 0.6em;
-    border: 1px solid  black;;
+#Apply_Here{
+    text-decoration: none;
+    padding: 15px 15px;
+    border: 4px solid lightgray;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    float: center;
+}
+
+#Apply_Here:hover{
+    color: lightgray;
+    background-color: black;
 }
 
 #Pear_Logo_Image{
@@ -58,7 +60,7 @@ nav ul {
     margin: 0;
     padding: 8px;
     overflow: hidden;
-    background-color: lightgray;
+    background-color: rgb(255, 94, 193);
 }
 
 nav li {
@@ -68,15 +70,15 @@ nav li {
 nav a {
     text-decoration: none;
     padding: 15px 15px;
-    border: 4px solid lightgray;
-    color: black;
+    border: 4px solid rgb(255, 94, 193);
+    color: rgb(250, 222, 244);
     padding: 8px;
     text-align: center;
 }
 
 nav a:hover {
-    color: lightgray;
-    background-color: black;
+    color: rgb(255, 94, 193);
+    background-color: rgb(250, 222, 244);
 }
 
 #Company_Logo {
