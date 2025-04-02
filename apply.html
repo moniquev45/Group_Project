@@ -42,20 +42,31 @@
             <!--Introduction Paragraph Content-->
             <p> The Pear Company welcomes all job applications. Please fill out the form below to apply.</p>
 
+            <!--Form Section. Requirements for all: 1. Inputs need labels 2. All form values (excepting'other skills' text area) are required or default value)-->
             <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
                 <!--Fieldset 1: Job Reference Number - Drop Down-->
                 <fieldset> 
-                    <legend>Job Reference Number</legend><br>
+                    <legend>Application</legend><br>
                     <!-- Drop Down Boxes-->
-
+                    <p><label for="job_reference">Job Reference Number</label>
+                        <select name="job_reference" id="job_reference">
+                        <option value="job_reference1" selected="selected">#00001</option>
+                        <option value="job_reference2">#00002</option>
+                        <option value="job_reference3">#00003</option>
+                        <option value="job_reference4">#00004</option>
+                        <option value="job_reference5">#00005</option>
+                        </select>
+                    </p>
                 </fieldset> 
-                <!--Fieldset 2: Personal Details - Input Text-->
+                
+                <!--Fieldset 2: Personal Details-->
                 <fieldset> 
                     <legend>Personal Details:</legend><br>
-                    <!-- Input Name ; Max 20 Alpha Characters-->
+                    <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
                         <label for="first_name">First Name <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label>
                         <label for="family_name">Family Name <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" title="Letters Only"></label> 
-                        
+                    <!-- Date of Birth - Calendar? ; Format: dd/mm/yyyy-->
+                    <!-- Gender - Radio Input ; Format: Max 20 Alpha Characters-->
                 </fieldset> 
 
 
