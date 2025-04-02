@@ -194,14 +194,26 @@ fieldset{
     padding: 8px;
 }
 /* Element: Legend Postitioning*/
-legend{
-    text-align: center;
-}
+legend{text-align: center;}
+
 /* Class: personal_details - Removing Borders from Sub Fieldsets*/
 .personal_details{border: none}
 
+/* ID Selector: Application Fieldset, Text in Center*/
+#fieldset_reference {text-align: center;}
+
+/* ID Selector: Personal Details Fieldset to the Left */
+#fieldset_personal {float: left;}
+/* Class: Personal Details in a Column */
+.personal_details {flex-direction: column;}
+
+/* ID Selector: Skills Fieldset to the Right */
+#fieldset_skills {float: right;}
+border: none;
+
 /* ID Selector: Removing Border from button */
 #fieldset_buttons{
+    clear:both;
     border: none;
     background-color:#cffdd1;
 }
