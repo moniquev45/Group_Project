@@ -40,7 +40,7 @@
             <h1><strong>Job Application</strong></h1>
 
             <!--Introduction Paragraph Content-->
-            <p> The Pear Company welcomes all applicants. Please fill out the form below to apply.</p>
+            <p> The Pear Company, home to the Best Big Brain Group, welcomes all applicants. Please fill out the form below to apply.</p>
 
             <!--Form Section. Requirements for all: 1. Inputs need labels 2. All form values (excepting'other skills' text area) are required or default value)-->
             <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
@@ -64,6 +64,7 @@
                 <!--Fieldset 2: Personal Details-->
                 <fieldset> 
                     <legend>Personal Details:</legend><br>
+                    <fieldset> <!-- Name : sub fieldset 1--> 
                     <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
                         <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label>
                         <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" required="required"></label> 
@@ -71,17 +72,18 @@
                     <!-- Date of Birth - Change to a Calendar? ; Format: dd/mm/yyyy-->
                         <p><label for="dob">Date of Birth<input type="text" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
 
-                    <!-- Gender - Radio Input ; Needs own Fieldset & Legend-->
-                    <fieldset>
-                        <legend>Gender</legend>
-                        <!--ONE RADIO BUTTON REQUIRED-->
-                            <label for="gender1"><input type="radio" id="gender1" name="gender" value="female">Female</label> 
-                            <label for="gender2"><input type="radio" id="gender2" name="gender" value="male">Male</label>
-                            <label for="gender3"><input type="radio" id="gender3" name="gender" value="other">Other</label>
-                            <label for="gender4"><input type="radio" id="gender4" name="gender" value="none" selected="selected">Prefer not to say</label> 
-                        </p> 
+                        <fieldset> <!-- Gender : sub fieldset within Name--> 
+                            <legend>Gender</legend>
+                            <!-- Gender - Radio Input ; Needs own Fieldset & Legend-->
+                                <label for="gender1"><input type="radio" id="gender1" name="gender" value="female">Female</label> 
+                                <label for="gender2"><input type="radio" id="gender2" name="gender" value="male">Male</label>
+                                <label for="gender3"><input type="radio" id="gender3" name="gender" value="other">Other</label>
+                                <label for="gender4"><input type="radio" id="gender4" name="gender" value="none" selected="selected">Prefer not to say</label> 
+                            </p> 
+                        </fieldset>
                     </fieldset>
 
+                    <fieldset>
                     <!-- Address -->
                     <!-- Street Address- Input Text; Format: Max 20 Alpha Characters-->
                     <label for="street_address">Street Address: <input type="text" id="street_address" name="street_address" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label>
@@ -102,7 +104,13 @@
                         </select>
                     </p>
                     <!-- Postcode - Text Input: Four Digits Only-->
-                    <label for="postcode">Student ID <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="Four Digits" required="required"></label> 
+                    <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="Four Digits" required="required"></label>
+                    </fieldset>
+                    <fieldset></fieldset>
+                    <!-- Contact Details-->
+                    <!-- Postcode - Text Input: Four Digits Only-->
+                    <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="Four Digits" required="required"></label> 
+                    </fieldset>
                 </fieldset> 
 
 
