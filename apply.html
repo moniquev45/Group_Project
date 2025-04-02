@@ -83,8 +83,7 @@
                         </fieldset>
                     </fieldset>
 
-                    <fieldset>
-                    <!-- Address -->
+                    <fieldset> <!-- Address : sub fieldset 2 -->
                     <!-- Street Address- Input Text; Format: Max 20 Alpha Characters-->
                     <label for="street_address">Street Address: <input type="text" id="street_address" name="street_address" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label>
                     <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
@@ -104,12 +103,14 @@
                         </select>
                     </p>
                     <!-- Postcode - Text Input: Four Digits Only-->
-                    <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="Four Digits" required="required"></label>
+                    <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="4 Digits Only" required="required"></label>
                     </fieldset>
-                    <fieldset></fieldset>
-                    <!-- Contact Details-->
-                    <!-- Postcode - Text Input: Four Digits Only-->
-                    <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="Four Digits" required="required"></label> 
+
+                    <fieldset> <!-- Contact Details : sub fieldset 3 -->
+                    <!-- Email Address - Input Text: includes regular expression and patterns-->
+                    <label for="email_apply">Postcode: <input type="text" id="email_apply" name="email_apply" pattern="" title="example@emailaddress.com.au" required="required"></label> 
+                    <!-- Phone Numbers - Input Text: 8-12 digits or spaces -->
+                    <label for="mobile">Postcode: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9]+" SPACES???? title="8-12 Digits Only" required="required"></label>
                     </fieldset>
                 </fieldset> 
 
