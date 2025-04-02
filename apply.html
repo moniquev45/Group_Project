@@ -24,6 +24,7 @@
                 </figure>
                 <h1>The Best Big Brain Group </h1>
             </div>
+            <!--NAVIGATION - Same for all pages -->
             <nav>
                 <ul>
                     <li><a href="index.html">  Home  </a></li>
@@ -35,10 +36,29 @@
             <hr>
         </header>
         <main>
+            <!--PAGE TITLE-->
+            <h1><strong>Job Application</strong></h1>
+
+            <!--Introduction Paragraph Content-->
+            <p> The Pear Company welcomes all job applications. Please fill out the form below to apply.</p>
+
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
+                <!--Fieldset 1: Job Reference Number - Drop Down-->
+                <fieldset> 
+                    <legend>Job Reference Number</legend><br>
+                    <!-- Drop Down Boxes-->
+
+                </fieldset> 
+                <!--Fieldset 2: Personal Details - Input Text-->
+                <fieldset> 
+                    <legend>Personal Details:</legend><br>
+                    <!-- Input Name ; Max 20 Alpha Characters-->
+                        <label for="first_name">First Name <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label>
+                        <label for="family_name">Family Name <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" title="Letters Only"></label> 
+                        
+                </fieldset> 
 
 
-
-            
         </main>
         <footer>
             <!--Horizontal Line that separtes the information above with the information below.-->
