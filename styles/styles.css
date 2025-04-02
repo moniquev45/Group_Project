@@ -212,8 +212,8 @@ legend{text-align: center;}
 border: none;
 
 /* ID Selector: Removing Border from button */
-#fieldset_buttons{
-    clear:both;
+#buttons{
+    clear: both;
     border: none;
     background-color:#cffdd1;
 }
