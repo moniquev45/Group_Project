@@ -10,7 +10,7 @@
         <!--Author Information-->
         <meta name="author" content="Stacey Millers" >
 
-        <title></title>
+        <title>Job Applications</title>
 
         <link rel="stylesheet" href="styles/styles.css">
         
@@ -40,17 +40,19 @@
             <h1><strong>Job Application</strong></h1>
 
             <!--Introduction Paragraph Content-->
-            <p> The Pear Company welcomes all job applications. Please fill out the form below to apply.</p>
+            <p> The Pear Company welcomes all applicants. Please fill out the form below to apply.</p>
 
             <!--Form Section. Requirements for all: 1. Inputs need labels 2. All form values (excepting'other skills' text area) are required or default value)-->
             <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
+
                 <!--Fieldset 1: Job Reference Number - Drop Down-->
                 <fieldset> 
                     <legend>Application</legend><br>
                     <!-- Drop Down Boxes-->
                     <p><label for="job_reference">Job Reference Number</label>
                         <select name="job_reference" id="job_reference">
-                        <option value="job_reference1" selected="selected">#00001</option>
+                        <option value="pre_fill" selected="selected">Please Select</option>
+                        <option value="job_reference1">#00001</option>
                         <option value="job_reference2">#00002</option>
                         <option value="job_reference3">#00003</option>
                         <option value="job_reference4">#00004</option>
@@ -58,15 +60,27 @@
                         </select>
                     </p>
                 </fieldset> 
-                
+
                 <!--Fieldset 2: Personal Details-->
                 <fieldset> 
                     <legend>Personal Details:</legend><br>
                     <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
                         <label for="first_name">First Name <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label>
-                        <label for="family_name">Family Name <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" title="Letters Only"></label> 
-                    <!-- Date of Birth - Calendar? ; Format: dd/mm/yyyy-->
-                    <!-- Gender - Radio Input ; Format: Max 20 Alpha Characters-->
+                        <label for="family_name">Family Name <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" title="maximum 20 characters" required="required"></label> 
+
+                    <!-- Date of Birth - Change to a Calendar? ; Format: dd/mm/yyyy-->
+                        <p><label for="dob">Date of Birth<input type="text" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
+
+                    <!-- Gender - Radio Input ; Needs own Fieldset & Legend-->
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <!--ONE RADIO BUTTON REQUIRED-->
+                            <label for="gender1"><input type="radio" id="gender1" name="gender" value="female">Female</label> 
+                            <label for="gender2"><input type="radio" id="gender2" name="gender" value="male">Male</label>
+                            <label for="gender3"><input type="radio" id="gender3" name="gender" value="other">Other</label>
+                            <label for="gender3"><input type="radio" id="gender3" name="gender" value="none">Prefer not to say</label> 
+                        </p> 
+                    </fieldset>
                 </fieldset> 
 
 
