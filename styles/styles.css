@@ -192,8 +192,3 @@ fieldset{
     color: #066026;
     padding: 8px;
 }
-/* Pseudo: Fieldset Styling*/
-fieldset:hover {
-    background-color: #066026;
-    color: #cffdd1;
-}
