@@ -65,8 +65,8 @@
                 <fieldset> 
                     <legend>Personal Details:</legend><br>
                     <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
-                        <label for="first_name">First Name <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label>
-                        <label for="family_name">Family Name <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" title="maximum 20 characters" required="required"></label> 
+                        <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label>
+                        <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" required="required"></label> 
 
                     <!-- Date of Birth - Change to a Calendar? ; Format: dd/mm/yyyy-->
                         <p><label for="dob">Date of Birth<input type="text" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
@@ -78,9 +78,31 @@
                             <label for="gender1"><input type="radio" id="gender1" name="gender" value="female">Female</label> 
                             <label for="gender2"><input type="radio" id="gender2" name="gender" value="male">Male</label>
                             <label for="gender3"><input type="radio" id="gender3" name="gender" value="other">Other</label>
-                            <label for="gender3"><input type="radio" id="gender3" name="gender" value="none">Prefer not to say</label> 
+                            <label for="gender4"><input type="radio" id="gender4" name="gender" value="none" selected="selected">Prefer not to say</label> 
                         </p> 
                     </fieldset>
+
+                    <!-- Address -->
+                    <!-- Street Address- Input Text; Format: Max 20 Alpha Characters-->
+                    <label for="street_address">Street Address: <input type="text" id="street_address" name="street_address" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label>
+                    <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
+                    <label for="suburb">Suburb/Town: <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label> 
+                    <!-- State - Drop Down Boxes-->
+                    <p><label for="state">State</label>
+                        <select name="state" id="state">
+                        <option value="pre_fill" selected="selected">Please Select</option>
+                        <option value="state_VIC">VIC</option>
+                        <option value="state_NSW">NSW</option>
+                        <option value="state_QLD">QLD</option>
+                        <option value="state_NT">NT</option>
+                        <option value="state_WA">WA</option>
+                        <option value="state_SA">SA</option>
+                        <option value="state_TAS">TAS</option>
+                        <option value="state_ACT">ACT</option>
+                        </select>
+                    </p>
+                    <!-- Postcode - Text Input: Four Digits Only-->
+                    <label for="postcode">Student ID <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="Four Digits" required="required"></label> 
                 </fieldset> 
 
 
