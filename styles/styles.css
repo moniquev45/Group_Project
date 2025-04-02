@@ -18,7 +18,7 @@ nav ul{
     padding: 8px;
     overflow: hidden;
     border-radius: 8px;
-    background-color: rgb(236, 86, 148);
+    background-color: #066026;
     display: flex;
     /* Evenly Space Everything Out */
     justify-content: space-around;
@@ -32,7 +32,7 @@ nav li{
 nav a {
     text-decoration: none;
     padding: 15px 15px;
-    color: rgb(250, 222, 239);
+    color: #e0ffee;
     padding: 8px;
     text-align: center;
 }
