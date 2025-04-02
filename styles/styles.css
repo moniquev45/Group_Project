@@ -183,11 +183,13 @@ footer a:hover {
 }
 
 /* APPLY PAGE STYLING*/
+/* Element: Making Flex Grid for Body*/
+apply_body {display: flex;}
 /* Element: Fieldset Padding, Colour & Border*/
 fieldset{
     text-decoration: none;
     padding: 15px 15px;
-    border: 4px solid #065321;
+    border: 1px double #065321;
     border-radius: 8px;
     color: #066026;
     background-color: #f2fff2;
@@ -202,18 +204,31 @@ legend{text-align: center;}
 /* ID Selector: Application Fieldset, Text in Center*/
 #fieldset_reference {text-align: center;}
 
-/* ID Selector: Personal Details Fieldset to the Left */
-#fieldset_personal {float: left;}
-/* Class: Personal Details in a Column */
-.personal_details {flex-direction: column;}
+/* ID Selector: Personal Details Fieldset Position*/
+#fieldset_personal {justify-content: space-evenly}
 
-/* ID Selector: Skills Fieldset to the Right */
-#fieldset_skills {float: right;}
-border: none;
+/* ID Selector: Skills Fieldset Position */
+#fieldset_skills {justify-content: space-evenly}
+
+/* ID Selector: Gender Fieldset to the Right */
+#gender {
+    width: 15%;
+    justify-content: flex-end;
+}
+
+/* ID Selector: Names to the Left; Address & Contact Right*/
+#fieldset_name {
+    text-align: left;
+}
+#fieldset_address #fieldset_contact {
+    text-align: right;
+}
 
 /* ID Selector: Removing Border from button */
-#buttons{
+#buttons {
     clear: both;
     border: none;
     background-color:#cffdd1;
+    flex-wrap: nowrap;
+    text-align: center;
 }
