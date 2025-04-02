@@ -49,7 +49,7 @@
                 <fieldset> 
                     <legend>Application</legend><br>
                     <!-- Drop Down Boxes-->
-                    <p><label for="job_reference">Job Reference Number</label>
+                    <p><label for="job_reference">Job Reference Number: </label>
                         <select name="job_reference" id="job_reference">
                         <option value="pre_fill" selected="selected">Please Select</option>
                         <option value="job_reference1">#00001</option>
@@ -70,7 +70,7 @@
                         <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" required="required"></label> 
 
                     <!-- Date of Birth - Change to a Calendar? ; Format: dd/mm/yyyy-->
-                        <p><label for="dob">Date of Birth<input type="text" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
+                        <p><label for="dob">Date of Birth: <input type="text" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
 
                         <fieldset> <!-- Gender : sub fieldset within Name--> 
                             <legend>Gender</legend>
@@ -89,7 +89,7 @@
                     <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
                     <label for="suburb">Suburb/Town: <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label> 
                     <!-- State - Drop Down Boxes-->
-                    <p><label for="state">State</label>
+                    <p><label for="state">State: </label>
                         <select name="state" id="state">
                         <option value="pre_fill" selected="selected">Please Select</option>
                         <option value="state_VIC">VIC</option>
@@ -116,6 +116,30 @@
 
                 <!--Fieldset 3: Job Requirements-->
                 <fieldset>
+                    <legend>Skills Field</legend>
+                    <!--Required Technical List - Checkbox Inputs -->
+                    <p>
+                        <label for="skills_other" > Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
+                    </p> 
+                    <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <!--DEFAULT TICK ON FIRST-->
+                    <label for="telekinesis><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis">Telekinesis</label>
+                    <label for="gravitas"><input type="checkbox" id="gravitas" name="gravitas[]" value="gravitas">Gravitas</label>
+                    <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label>
+                    <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label>
+
+                    <!--Recommended Skills List - Checkbox Inputs -->
+                    <p>
+                        <label for="skills_other" > Recommended Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
+                    </p> 
+                    <label  for="dragon"><input type="checkbox" id="dragon" name="dragon[]" value="dragon" checked="checked">Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
+
+                    <!--Other Skills - Textbox-->
+                    <p>
+                        <label for="skills_other" >Description of Issue<br> 
+                        <!--PLACEHOLDER ATTRIBUTE-->
+                        <textarea id="skills_other" name="skills_other" rows="4" cols="20" placeholder="Please provide any other further skills here..."></textarea>
+                        </label>
+                    </p> 
 
                 </fieldset>
 
@@ -123,7 +147,7 @@
                 <fieldset>
                 <!--Buttons: Input 'Apply' & 'Reset Form'-->
                 <p>
-                    <input type="apply" value="Book">
+                    <input type="submit" value="Apply">
                     <input type="reset" value="Reset form">
                 </p> 
                 </fieldset>
