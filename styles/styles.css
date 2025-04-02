@@ -3,9 +3,9 @@ filename: style.css
 
 author: Monique Vilardo, Riley Tuckett, Stacey Millers, Victoria Rogers
 
-created: 30/04/2025
+created: 30/03/2025
 
-last modified: 30/04/2025
+last modified: 02/04/2025
 
 description: index.html, jobs.html, apply.html, about.html
 */
@@ -180,4 +180,20 @@ footer a:hover {
 
 #See_More{
     color:  #011508;
+}
+
+/* APPLY PAGE STYLING*/
+/* Element: Fieldset Styling*/
+fieldset{
+    text-decoration: none;
+    padding: 15px 15px;
+    border: 4px solid #065321;
+    border-radius: 8px;
+    color: #066026;
+    padding: 8px;
+}
+/* Pseudo: Fieldset Styling*/
+fieldset:hover {
+    background-color: #066026;
+    color: #cffdd1;
 }

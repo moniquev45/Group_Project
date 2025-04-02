@@ -35,9 +35,9 @@
             </nav>
             <hr>
         </header>
-        <main>
+        <main id="apply_body">
             <!--PAGE TITLE-->
-            <h1><strong>Job Application</strong></h1>
+            <h1 id="heading_application"><strong>Job Application</strong></h1>
 
             <!--Introduction Paragraph Content-->
             <p> The Pear Company, home to the Best Big Brain Group, welcomes all applicants. Please fill out the form below to apply.</p>
@@ -46,7 +46,7 @@
             <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
 
                 <!--Fieldset 1: Job Reference Number - Drop Down-->
-                <fieldset> 
+                <fieldset id="fieldset_reference"> 
                     <legend>Application</legend><br>
                     <!-- Drop Down Boxes-->
                     <p><label for="job_reference">Job Reference Number: </label>
@@ -62,9 +62,9 @@
                 </fieldset> 
 
                 <!--Fieldset 2: Personal Details-->
-                <fieldset> 
+                <fieldset id="fieldset_personal" class="personal_details"> 
                     <legend>Personal Details:</legend><br>
-                    <fieldset> <!-- Name : sub fieldset 1--> 
+                    <fieldset id="fieldset_name" class="personal_details"> <!-- Name : sub fieldset 1--> 
                     <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
                         <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label>
                         <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" required="required"></label> 
@@ -72,7 +72,7 @@
                     <!-- Date of Birth - Change to a Calendar? ; Format: dd/mm/yyyy-->
                         <p><label for="dob">Date of Birth: <input type="text" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
 
-                        <fieldset> <!-- Gender : sub fieldset within Name--> 
+                        <fieldset id="sub_fieldset_gender"> <!-- Gender : sub fieldset within Name--> 
                             <legend>Gender</legend>
                             <!-- Gender - Radio Input ; Needs own Fieldset & Legend-->
                                 <label for="gender1"><input type="radio" id="gender1" name="gender" value="female">Female</label> 
@@ -82,7 +82,7 @@
                         </fieldset>
                     </fieldset>
 
-                    <fieldset> <!-- Address : sub fieldset 2 -->
+                    <fieldset id="fieldset_address" class="personal_details"> <!-- Address : sub fieldset 2 -->
                         <!-- Street Address- Input Text; Format: Max 20 Alpha Characters-->
                         <label for="street_address">Street Address: <input type="text" id="street_address" name="street_address" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label>
                         <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
@@ -105,7 +105,7 @@
                         <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="4 Digits Only" required="required"></label>
                     </fieldset>
 
-                    <fieldset> <!-- Contact Details : sub fieldset 3 -->
+                    <fieldset id="fieldset_contact" class="personal_details"> <!-- Contact Details : sub fieldset 3 -->
                         <text id="contact" name="contact">
                             <!-- Email Address - Input Text: includes regular expression and patterns-->
                             <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="" title="example@emailaddress.com.au" required="required"></label> 
@@ -116,7 +116,7 @@
                 </fieldset> 
 
                 <!--Fieldset 3: Job Requirements-->
-                <fieldset>
+                <fieldset id="fieldset_skills" class="job_skills">
                     <legend>Skills Field</legend>
                     <!--Required Technical List - Checkbox Inputs -->
                     <p>
@@ -147,7 +147,7 @@
                 </fieldset>
 
                 <!--Fieldset 5: Buttons-->
-                <fieldset>
+                <fieldset id="fieldset_buttons">
                 <!--Buttons: Input 'Apply' & 'Reset Form'-->
                 <p>
                     <input type="submit" value="Apply">
