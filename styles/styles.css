@@ -186,7 +186,8 @@ footer a:hover {
 /* Element: Making Flex Grid for Form*/
 form {
     display: flex;
-    justify-content: space-between; /* Making the Fieldsets not touch each other*/
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -202,29 +203,31 @@ fieldset {
 /* Elements: Legend & Heading Postitioning*/
 legend, h1, h2, h3, h4 {text-align: center;}
 
-/* Elements: Form Headings Sizing*/
+/* Elements: Form Headings Font Sizing*/
 h2, h3, h4 {font-size: 20px;}
 
-/* Class: personal_details - Removing Borders from Sub Fieldsets*/
-.personal_details {border: none}
+/* Class: personal_details - Removing Borders from Sub Fieldsets in Personal Details*/
+.personal_details {
+    border: none;
+}
+
+/* Class: Personal Details & Skills Field to the Right*/
+.right_fieldset {    
+    display: flex;                /* Align second and third fieldsets horizontally */
+    gap: 20px;                    /* Space between the two fieldsets */
+    flex-grow: 1; 
+}
+
+/* Class: Application Field and Buttons to the Left*/
+.left_fieldset {    
+    width: 30%;
+    padding: 20px;
+}
 
 /* ID Selector: Application Fieldset*/
 #fieldset_reference {
-    text-align: center;     /* ID Text in Centre*/
+    text-align: center;
     margin-top: auto;
-    clear:
-}
-
-/* ID Selector: Personal Details Fieldset Position*/
-#fieldset_personal {
-    justify-content: space-between;
-    padding: 15px 30px;
-}
-
-/* ID Selector: Skills Fieldset Position */
-#fieldset_skills {
-    justify-content: space-between;
-    padding: 15px 30px; 
 }
 
 /* ID Selector: Gender Fieldset to the Right */
@@ -233,14 +236,12 @@ h2, h3, h4 {font-size: 20px;}
     justify-content: flex-end;
 }
 
-/* ID Selector: Names to the Left; Address & Contact Right*/
+/* ID Selector: TEXT POSITIONING: Names to the Left; Address & Contact Right*/
 #fieldset_name {text-align: left;}
-
 #fieldset_address #fieldset_contact {text-align: right;}
 
 /* ID Selector: Button Adjustments*/
 #buttons {
-    clear: both;
     border: none;
     background-color:#cffdd1;
     text-align: center;
@@ -249,4 +250,5 @@ h2, h3, h4 {font-size: 20px;}
     cursor: pointer;    /* Change cursor to pointer */
     border-radius: 5px; /* Rounded corners */
     padding: 15px 30px; /* More padding for a larger button */
+    margin-top: 20px;
 }
