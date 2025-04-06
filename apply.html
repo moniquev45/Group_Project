@@ -47,7 +47,7 @@
 
                 <!--Fieldset 1: Job Reference Number - Drop Down-->
                 <fieldset id="fieldset_reference"> 
-                    <legend><strong><em>Application</em></strong></legend><br>
+                    <h2><strong>Application</strong></h2><br>
                     <!-- Drop Down Boxes-->
                     <p><label for="job_reference">Job Reference Number: </label>
                         <select name="job_reference" id="job_reference">
@@ -63,7 +63,7 @@
 
                 <!--Fieldset 2: Personal Details-->
                 <fieldset id="fieldset_personal"> 
-                    <legend><strong><em>Personal Details:</em></strong></legend><br>
+                    <h3><strong>Personal Details:</strong></h3><br>
                     <fieldset id="fieldset_name" class="personal_details"> <!-- Name : sub fieldset 1--> 
                     <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
                         <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label>
@@ -108,19 +108,19 @@
                     <fieldset id="fieldset_contact" class="personal_details"> <!-- Contact Details : sub fieldset 3 -->
                         <text id="contact" name="contact">
                             <!-- Email Address - Input Text: includes regular expression and patterns-->
-                            <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="" title="example@emailaddress.com.au" required="required"></label> 
+                            <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="example@emailaddress.com.au" required="required"></label> 
                             <!-- Phone Numbers - Input Text: 8-12 digits or spaces -->
-                            <label for="mobile">Phone Number: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9]+" title="8-12 Digits Only" required="required"></label> <!-- ADD SPACES PATTERN ???-->
+                            <label for="mobile">Phone Number: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 Digits Only" required="required"></label> <!-- ADD SPACES PATTERN ???-->
                         </text>
                     </fieldset>
                 </fieldset> 
 
                 <!--Fieldset 3: Job Requirements-->
-                <fieldset id="fieldset_skills" class="job_skills">
-                    <legend><strong><em>Skills Field</em></strong></legend>
+                <fieldset id="fieldset_skills">
+                    <h4><strong>Skills Field</strong></h4>
                     <!--Required Technical List - Checkbox Inputs -->
                     <p>
-                        <label for="skills" > Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
+                        <label for="skills"> Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
                     </p> 
                     <checkbox id="skills" name="skills" multiple>
                         <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <!--DEFAULT TICK ON FIRST-->
@@ -138,9 +138,9 @@
 
                     <!--Other Skills - Textbox-->
                     <p>
-                        <label for="skills_other">Description of Issue<br> 
+                        <label for="skills_other_textbox">Other Skills<br> 
                         <!--PLACEHOLDER ATTRIBUTE-->
-                        <textarea id="skills_other" name="skills_other" rows="4" cols="20" placeholder="Please provide any other further skills here..."></textarea>
+                        <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="20" placeholder="Please provide any other further skills here..."></textarea>
                         </label>
                     </p> 
                 </fieldset>

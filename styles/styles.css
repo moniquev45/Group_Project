@@ -183,11 +183,15 @@ footer a:hover {
 }
 
 /* APPLY PAGE STYLING*/
-/* Element: Making Flex Grid for Body*/
-apply_body {display: flex;}
+/* Element: Making Flex Grid for Form*/
+form {
+    display: flex;
+    justify-content: space-between; /* Making the Fieldsets not touch each other*/
+    gap: 10px;
+}
+
 /* Element: Fieldset Padding, Colour & Border*/
-fieldset{
-    text-decoration: none;
+fieldset {
     padding: 15px 15px;
     border: 1px double #065321;
     border-radius: 8px;
@@ -195,20 +199,33 @@ fieldset{
     background-color: #f2fff2;
     padding: 8px;
 }
-/* Element: Legend Postitioning*/
-legend{text-align: center;}
+/* Elements: Legend & Heading Postitioning*/
+legend, h1, h2, h3, h4 {text-align: center;}
+
+/* Elements: Form Headings Sizing*/
+h2, h3, h4 {font-size: 20px;}
 
 /* Class: personal_details - Removing Borders from Sub Fieldsets*/
-.personal_details{border: none}
+.personal_details {border: none}
 
-/* ID Selector: Application Fieldset, Text in Center*/
-#fieldset_reference {text-align: center;}
+/* ID Selector: Application Fieldset*/
+#fieldset_reference {
+    text-align: center;     /* ID Text in Centre*/
+    margin-top: auto;
+    clear:
+}
 
 /* ID Selector: Personal Details Fieldset Position*/
-#fieldset_personal {justify-content: space-evenly}
+#fieldset_personal {
+    justify-content: space-between;
+    padding: 15px 30px;
+}
 
 /* ID Selector: Skills Fieldset Position */
-#fieldset_skills {justify-content: space-evenly}
+#fieldset_skills {
+    justify-content: space-between;
+    padding: 15px 30px; 
+}
 
 /* ID Selector: Gender Fieldset to the Right */
 #gender {
@@ -217,18 +234,19 @@ legend{text-align: center;}
 }
 
 /* ID Selector: Names to the Left; Address & Contact Right*/
-#fieldset_name {
-    text-align: left;
-}
-#fieldset_address #fieldset_contact {
-    text-align: right;
-}
+#fieldset_name {text-align: left;}
 
-/* ID Selector: Removing Border from button */
+#fieldset_address #fieldset_contact {text-align: right;}
+
+/* ID Selector: Button Adjustments*/
 #buttons {
     clear: both;
     border: none;
     background-color:#cffdd1;
-    flex-wrap: nowrap;
     text-align: center;
+    font-size: 25px;    /* Larger text */
+    width: 200px;       /* Set width if needed */
+    cursor: pointer;    /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 30px; /* More padding for a larger button */
 }
