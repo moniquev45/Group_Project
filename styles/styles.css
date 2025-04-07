@@ -151,7 +151,6 @@ footer a:hover {
 #Job_Position_And_Logo{
     /* Makes things aligned horizontaly. */
     display: flex;
-    /* If things don't fit on one light it make sure it wraps underneath. */
     flex-wrap: wrap;
 }
 
