@@ -3,9 +3,9 @@ filename: style.css
 
 author: Monique Vilardo, Riley Tuckett, Stacey Millers, Victoria Rogers
 
-created: 30/04/2025
+created: 30/03/2025
 
-last modified: 30/04/2025
+last modified: 02/04/2025
 
 description: index.html, jobs.html, apply.html, about.html
 */
@@ -58,6 +58,7 @@ header{
     padding: 20px 20px;
     background-color:  #3b925a;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #f2fff2;
 }
 
 main{
@@ -180,4 +181,75 @@ footer a:hover {
 
 #See_More{
     color:  #011508;
+}
+
+/* APPLY PAGE STYLING*/
+/* Element: Making Flex Grid for Form*/
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Element: Fieldset Padding, Colour & Border*/
+fieldset {
+    padding: 15px 15px;
+    border: 1px double #065321;
+    border-radius: 8px;
+    color: #066026;
+    background-color: #f2fff2;
+    padding: 8px;
+}
+/* Elements: Legend & Heading Postitioning*/
+legend, h1, h2, h3, h4 {text-align: center;}
+
+/* Elements: Form Headings Font Sizing*/
+h2, h3, h4 {font-size: 20px;}
+
+/* Class: personal_details - Removing Borders from Sub Fieldsets in Personal Details*/
+.personal_details {
+    border: none;
+}
+
+/* Class: Personal Details & Skills Field to the Right*/
+.right_fieldset {    
+    display: flex;                /* Align second and third fieldsets horizontally */
+    gap: 20px;                    /* Space between the two fieldsets */
+    flex-grow: 1; 
+}
+
+/* Class: Application Field and Buttons to the Left*/
+.left_fieldset {    
+    width: 30%;
+    padding: 20px;
+}
+
+/* ID Selector: Application Fieldset*/
+#fieldset_reference {
+    text-align: center;
+    margin-top: auto;
+}
+
+/* ID Selector: Gender Fieldset to the Right */
+#gender {
+    width: 15%;
+    justify-content: flex-end;
+}
+
+/* ID Selector: TEXT POSITIONING: Names to the Left; Address & Contact Right*/
+#fieldset_name {text-align: left;}
+#fieldset_address #fieldset_contact {text-align: right;}
+
+/* ID Selector: Button Adjustments*/
+#buttons {
+    border: none;
+    background-color:#cffdd1;
+    text-align: center;
+    font-size: 25px;    /* Larger text */
+    width: 200px;       /* Set width if needed */
+    cursor: pointer;    /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 30px; /* More padding for a larger button */
+    margin-top: 20px;
 }
