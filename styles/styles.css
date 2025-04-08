@@ -110,6 +110,11 @@ footer a:hover {
     transition: 0.5s;
 }
 
+#Copyright_in_footer{
+    text-align: center;
+}
+
+
 /* Job Listing Page Styling */
 
 #Jobs_Table_Data{
