@@ -43,7 +43,7 @@ nav a {
 
 nav a:hover {
     color: #065321;
-    background-color:#cffdd1;
+    background-color: #cffdd1;
     /* When you hover it transitions the page hyperlinks from the original navigation state to the hover state. */
     transition: 0.5s;
 }
