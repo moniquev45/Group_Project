@@ -191,6 +191,12 @@ footer a:hover {
     color:  #011508;
 }
 
+#Job_Discription_Landscape_Image {
+    display: flex;
+
+}
+
+
 /* End of Job Listing Page Styling */
 
 /* APPLY PAGE STYLING*/
