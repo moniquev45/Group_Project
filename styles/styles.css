@@ -12,6 +12,10 @@ description: index.html, jobs.html, apply.html, about.html
 
 * { font-family: Georgia, 'Times New Roman', Times, serif}
 
+p {
+    color: #011e0a;
+}
+
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -173,14 +177,6 @@ footer a:hover {
     /* Allows the job title to take as much space as possible on the line while still allowing the logo to share the area. */
     flex: 1;
     text-align: left;
-}
-
-#Necessary_Job_Requirements{
-    color: rgb(91, 13, 117);
-}
-
-#Non_Necessary_Job_Requirements{
-    color: rgb(35, 56, 102);
 }
 
 .Footer_Links{
