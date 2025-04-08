@@ -40,6 +40,8 @@ nav a {
 nav a:hover {
     color: #065321;
     background-color:#cffdd1;
+    /* When you hover it transitions the page hyperlinks from the original navigation state to the hover state. */
+    transition: 0.5s;
 }
 
 #Company_Logo{
@@ -104,6 +106,8 @@ footer li a {
 footer a:hover {
     color: #065321;
     background-color: #b0ffb4;
+    /* When you hover it transitions the page hyperlinks from the original navigation state to the hover state. */
+    transition: 0.5s;
 }
 
 #Jobs_Table_Data{
@@ -122,6 +126,7 @@ footer a:hover {
 
 #Jobs_Table_Row:hover{
     background-color: #a6eac6;
+    transition: 0.5s;
 }
 
 #Apply_Here{
