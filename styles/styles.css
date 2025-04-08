@@ -143,10 +143,13 @@ footer a:hover {
     float: center;
 }
 
+#Apply_Here{
+    
+}
+
 #Apply_Here:hover{
     color: #066026;
     background-color: #cffdd1;
-    transition: 0.5s;
 }
 
 #Companies_Logo_Image{
@@ -170,7 +173,9 @@ footer a:hover {
 
 #Number_Of_Job_Listings:hover{
     display: none;
+    transition-behavior: ;
 }
+
 
 #Necessary_Job_Requirements{
     color: rgb(91, 13, 117);
