@@ -10,107 +10,153 @@ last modified: 02/04/2025
 description: index.html, jobs.html, apply.html, about.html
 */
 
+/* This forces all the text on the website to be part of the same font family/font style. */
 * { font-family: Georgia, 'Times New Roman', Times, serif}
 
+/* This forces all paragraphs to have a simular colour, to make the website continuous. */
+p {
+    color: #011e0a;
+}
+
+/* NAVIGATION BAR/HEADER STYLING */
+
+/* The Unordered list in the navigation bar (the whole group hyper links that take you to different pages) styling. */
 nav ul{
+    /* This removes the list dot point from the unordered list. */
     list-style-type: none;
+    /* It removes space around the elements outside the borders. */
     margin: 0;
+    /* Creates space between the text/elements inside and the border. */
     padding: 8px;
+    /* This hides elements if content overflows out of the box. */
     overflow: hidden;
+    /* This rounds the edges of the border. */
     border-radius: 8px;
     background-color: #065321;
+    /* Forces the page to a change where all the elements are displayed in a line so that they can adapt while the screen changes sizes. */
     display: flex;
-    /* Evenly Space Everything Out */
+    /* Evenly Space Everything Out. */
     justify-content: space-around;
+    /* Creates a slight shadow for the outside  */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav li{
-    float: left;
-  }
-
+/* The hyper links to other pages in the navigation bar styling.*/
 nav a {
+    /* There is no underline that is usually seen on hyperlinks. */
     text-decoration: none;
-    padding: 15px 15px;
+    padding: 15px;
     color: #cffdd1;
     padding: 8px;
     text-align: center;
 }
 
+/* What happens when you hover over each hyperlinks, styling. */
 nav a:hover {
     color: #065321;
-    background-color:#cffdd1;
+    background-color: #cffdd1;
+    /* When you hover it transitions the page hyperlinks from the original navigation state to the hover state. */
+    transition: 0.5s;
 }
 
+/* Company logo styling */
 #Company_Logo{
     border-radius: 100%;
     height: 60px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Company name styling */
 #Company_Name{
     color: #011e0a;
     text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
 }
 
+/* The header styling. */
 header{
     border-radius: 8px;
-    padding: 20px 20px;
-    background-color:  #3b925a;
+    padding: 20px;
+    background-color:  #4EB774;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     color: #f2fff2;
 }
 
+
+
+/* The main conents of the page styling. */
 main{
     border-radius: 8px;
-    padding: 20px 20px;
+    padding: 20px;
     background-color: #cffdd1;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
+
+
+/* FOOTER STYLING */
+
+/* Footer background styling.*/
 footer{
     border-radius: 8px;
-    padding: 20px 20px;
-    background-color: #3b925a;
+    padding: 20px;
+    background-color: #4EB774;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* The Unordered list in the navigation bar in the footer (the whole group hyper links that take you to different pages) styling. */
 footer ul{
+    /* This removes the list dot point from the unordered list. */
     list-style-type: none;
+    /* It removes space around the elements outside the borders. */
     margin: 0;
-    padding: 1px;
+    /* Creates space between the text/elements inside and the border. */
+    padding: 8px;
+    /* This hides elements if content overflows out of the box. */
     overflow: hidden;
+    /* This rounds the edges of the border. */
     border-radius: 8px;
     background-color: #065321;
+    /* Forces the page to a change where all the elements are displayed in a line so that they can adapt while the screen changes sizes. */
     display: flex;
-    /* Evenly Space Everything Out */
+    /* Evenly Space Everything Out. */
     justify-content: space-around;
+    /* Creates a slight shadow for the outside  */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-footer li{
-    float: left;
-  }
-
+/* The hyper links to other pages in the navigation bar styling.*/
 footer li a {
+    /* There is no underline that is usually seen on hyperlinks. */
     text-decoration: none;
-    padding: 15px 15px;
+    padding: 15px;
     color: #cffdd1;
     padding: 8px;
     text-align: center;
 }
 
+/* What happens when you hover over each hyperlinks, styling. */
 footer a:hover {
     color: #065321;
     background-color: #b0ffb4;
+    /* When you hover it transitions the page hyperlinks from the original navigation state to the hover state. */
+    transition: 0.5s;
 }
+
+/* Company copy right styling. */
+#Copyright_in_footer{
+    text-align: center;
+    color: #011e0a;
+}
+
+
+/* JOB LISTING PAGE STYLING */
 
 #Jobs_Table_Data{
     width: 75%;
     display: table-cell;
     border: 1px solid #065321;
-    padding:0.2em 0.6em;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     color: #011e0a;
@@ -122,6 +168,7 @@ footer a:hover {
 
 #Jobs_Table_Row:hover{
     background-color: #a6eac6;
+    transition: 0.5s;
 }
 
 #Apply_Here{
@@ -136,9 +183,12 @@ footer a:hover {
     float: center;
 }
 
+
 #Apply_Here:hover{
     color: #066026;
     background-color: #cffdd1;
+    /* When you hover it transitions from the original state to the hover state. */
+    transition: 0.5s;
 }
 
 #Companies_Logo_Image{
@@ -151,6 +201,7 @@ footer a:hover {
 #Job_Position_And_Logo{
     /* Makes things aligned horizontaly. */
     display: flex;
+    /**/
     flex-wrap: wrap;
 }
 
@@ -158,18 +209,6 @@ footer a:hover {
     /* Allows the job title to take as much space as possible on the line while still allowing the logo to share the area. */
     flex: 1;
     text-align: left;
-}
-
-#Number_Of_Job_Listings:hover{
-    display: none;
-}
-
-#Necessary_Job_Requirements{
-    color: rgb(91, 13, 117);
-}
-
-#Non_Necessary_Job_Requirements{
-    color: rgb(35, 56, 102);
 }
 
 .Footer_Links{
@@ -183,6 +222,16 @@ footer a:hover {
 #See_More{
     color:  #011508;
 }
+
+#Job_Discription_Landscape_Image {
+    /* Makes things aligned horizontaly. */
+    display: flex;
+
+}
+
+
+/* End of Job Listing Page Styling */
+
 
 /* APPLY PAGE STYLING*/
 /* Element: Making Flex Grid for Form*/
