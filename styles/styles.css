@@ -235,9 +235,7 @@ footer a:hover {
 
 /* APPLY PAGE STYLING*/
  /* Responsive Design */
-@media (max-width: 768px) {
-    #apply_body{padding: 10px;}
-        }
+@media (max-width: 768px) {#apply_body{padding: 10px;}}
 
 /* Element: Making spaces*/
 inputs, textarea, text {
@@ -251,14 +249,20 @@ label {color: #066026;}
 
 /* Class: Making all headings in Apply Page consistent in size and formatting */
 .form_headings {
-    font-size: 1.5em;           /* UNDECIDED ON SIZE, COMPARE TO OTHERS*/
+    font-size: 1.5px;           /* UNDECIDED ON SIZE, COMPARE TO OTHERS*/
     text-transform: uppercase; /* Makes the label all caps */
     border-bottom: 2px solid #000; /* Adds a subtle underline */
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 100%; 
+    overflow-wrap: break-word;
+    font-size: 2vw; /* Font size will adjust based on viewport width */
+    
   }
 
 /* Element: Fieldset Padding, Colour & Border*/
 fieldset {
-    padding: 15px 15px;
     border: 1px double #065321;
     border-radius: 8px;
     color: #066026;
@@ -277,7 +281,7 @@ fieldset {
 #apply_form {
     display: grid;
     grid-template-columns: repeat(12, 12.5%);
-    grid-template-rows: repeat(8, 12.5%);
+    grid-template-rows: repeat(10, 10%);
     gap: 0; /* You can adjust this if you want some space between the items */
     position: relative; /* This allows positioning of the pseudo-element */
   }
@@ -293,7 +297,7 @@ fieldset {
     background-image: 
       linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px), /* Vertical lines */
       linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px); /* Horizontal lines */
-    background-size: 8.33% 12.5%; /* 12 columns: 100%/12 = 8.33%, 8 rows: 100%/8 = 12.5% */
+    background-size: 8.33% 12.5%; /* 12 columns: 100%/12 = 8.33%, 10 rows: 100%/10 = 10% */
     pointer-events: none; /* Prevent interaction with grid lines */
   }
 
@@ -307,26 +311,31 @@ fieldset {
 #fieldset_reference {
     text-align: center;
     grid-column: 4 / 6 ; /* grid column positioning & spanning */
-    grid-row: 1; /* grid row positioning & spanning */
+    grid-row: 1 / 3; /* grid row positioning & spanning */
 }
 
 /* ID Selector: Personal Details Fieldset; Grid Positioning*/
 #fieldset_personal {
     grid-column: 1 / 5; /* grid column positioning & spanning */
-    grid-row: 2 / 9; /* grid row positioning & spanning */
+    grid-row: 3 / 8; /* grid row positioning & spanning */
+}
+
+/* ID Selector: Job Expectations; Grid Positioning*/
+#job_expectations {
+    grid-column: 1 / 5; /* grid column positioning & spanning */
+    grid-row: 8 / 11; /* grid row positioning & spanning */
 }
 
 /* ID Selector: Job Skills Fieldset; Grid Positioning*/
 #fieldset_skills {
     text-align: center;
     grid-column: 5 / 9 ; /* grid column positioning & spanning */
-    grid-row: 2 / 9; /* grid row positioning & spanning */
+    grid-row: 3 / 11 ; /* grid row positioning & spanning */
 }
+
 
 /* ID Selector: Gender Fieldset to the Right */
 #gender { 
-    grid-column: 6 / 7; /* Gender field goes in the 2nd column in the middle */
-    grid-row: 1 / 4; /* Spans vertically from row 1 to 4 */
     display: flex;
     justify-content: center;
     align-items: center; /* To vertically and horizontally center the gender options */
@@ -334,21 +343,19 @@ fieldset {
 
 /* ID Selector: TEXT POSITIONING via Grid*/
 #fieldset_name {    
-    grid-column: 1 / 2; /* Place name fields in the first column */
-    grid-row: 1 / 4; /* Spans vertically for the name fields */
+    display: flex;
+    flex-direction: column;
+    float: left;
 }
+
 #fieldset_address {
-    grid-column: 1 / 6; /* Make address span from column 1 to column 6 */
-    grid-row: 4 / 6; /* Place address fields below name and gender */
-    display: grid; /* Use grid layout for address fields */
-    gap: 15px; /* Space between address fields */
+    display: flex;
+    flex-direction: column;
 }
 
 #fieldset_contact {
-    grid-column: 1 / 6; /* Same as address, spans across columns */
-    grid-row: 6 / 8; /* Place contact info below address */
-    display: grid; /* Enable grid layout for contact fields */
-    gap: 15px; /* Add space between contact inputs */
+    display: flex;
+    flex-direction: column;
 }
 
 /* ID Selector: Button Adjustments*/
@@ -364,7 +371,7 @@ fieldset {
     margin-top: 20px;
     max-height: 50px;     /* button height */
     grid-column: 6 ; /* button grid column positioning */
-    grid-row: 1; /* button grid row positioning */
+    grid-row: 1 / 3; /* button grid row positioning */
     overflow: hidden;
 }   
 

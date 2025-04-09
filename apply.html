@@ -73,7 +73,7 @@
                         <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" placeholder="Please enter Family Name (40 characters max)" required="required"></label> 
 
                     <!-- Date of Birth - Change to a Calendar? ; Format: dd/mm/yyyy-->
-                        <p><label for="dob">Date of Birth: </label><br> <input type="date" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
+                        <p><label for="dob"> Date of Birth: </label><br> <input type="date" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
 
                         <fieldset id="gender"> <!-- Gender : sub fieldset within Name--> 
                             <legend>Gender</legend>
@@ -111,7 +111,7 @@
                     <fieldset id="fieldset_contact" class="personal_details"> <!-- Contact Details : sub fieldset 3 -->
                         <text id="contact" name="contact">
                             <!-- Email Address - Input Text: includes regular expression and patterns-->
-                            <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label> <br>
+                            <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label>
                             <!-- Phone Numbers - Input Text: 8-12 digits or spaces -->
                             <label for="mobile">Phone Number: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 Digits & Spaces Only" required="required"></label> <!-- ADD SPACES PATTERN ???-->
                         </text>
@@ -122,28 +122,40 @@
                 <fieldset id="fieldset_skills">
                     <h4 class="form_headings"><strong> Skills Field</strong></h4>
                     <!--Required Technical List - Checkbox Inputs -->
-                    <p>
-                        <label for="skills"> Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
-                    </p> 
-                    <checkbox id="skills" name="skills" multiple>
-                        <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
-                        <label for="telekinesis"><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis">Telekinesis</label> <br>
-                        <label for="gravitas"><input type="checkbox" id="gravitas" name="gravitas[]" value="gravitas">Gravitas</label> <br>
-                        <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label> <br>
-                        <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label> <br>
-                    </checkbox>
+                    <div id="required_skills" class="skills_req_rec_other">
+                        <p>
+                            <label for="skills"> Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
+                        </p> 
+                        <checkbox id="skills" name="skills" multiple>
+                            <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
+                            <label for="telekinesis"><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis">Telekinesis</label> <br>
+                            <label for="gravitas"><input type="checkbox" id="gravitas" name="gravitas[]" value="gravitas">Gravitas</label> <br>
+                            <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label> <br>
+                            <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label> <br>
+                        </checkbox>
+                    </div>
 
                     <!--Recommended Skills List - Checkbox Inputs -->
-                    <label  for="dragon"> Recommended Technical Skills <br>
-                    <input type="checkbox" id="dragon" name="dragon[]" value="dragon" checked="checked"> Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
-                    <!--Other Skills - Textbox-->
-                    <p>
-                        <label for="skills_other_textbox">Other Skills<br> 
-                        <!--PLACEHOLDER ATTRIBUTE-->
-                        <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="50" placeholder="Please provide any other further skills here..."></textarea>
-                        </label>
-                    </p> 
+                    <div id="recommended_skills" class="skills_req_rec_other">
+                        <label  for="rec_skills"> Recommended Technical Skills <br>
+                        <input type="checkbox" id="rec_skills" name="rec_skills1[]" value="rec_skills1" checked="checked"> Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
+                    </div>
 
+                        <!--Other Skills - Textbox-->
+                        <p id="skills_other" class="skills_req_rec_other">
+                            <label for="skills_other_textbox">Other Skills<br> 
+                            <!--PLACEHOLDER ATTRIBUTE-->
+                            <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="50" placeholder="Please provide any other further skills here..."></textarea>
+                            </label>
+                        </p> 
+
+                    <!--Other Job Requirements: Comments (Textarea)-->
+                    <label for="requirements">Any Additional Requirements?</label><br>
+                    <textarea id="requirements" name="requirements" rows="4" cols="50" placeholder="Please share any additional requirements or information here." required></textarea><br><br>
+
+                </fieldset>
+                <fieldset id="job_expectations">
+                    <h5 class="form_headings"><strong> Job Expectations</strong></h5>
                     <!--Job Expectations -->
                     <!--Salary (Sliding Scale Range)-->
                     <label for="salary_scale"> What are your Salary Expectations? (Per Year):</label><br>
@@ -156,13 +168,7 @@
 
                     <label for="hours_end"> End time: </label>
                     <input type="time" id="hours_end" name="hours_end"><br><br>
-
-                    <!--Other Job Requirements: Comments (Textarea)-->
-                    <label for="requirements">Any Additional Requirements?</label><br>
-                    <textarea id="requirements" name="requirements" rows="4" cols="50" placeholder="Please share any additional requirements or information here." required></textarea><br><br>
-
                 </fieldset>
-
                 <!--Buttons: Input 'Apply' & 'Reset Form'-->
                 <p id="buttons">
                     <input type="submit" value="Apply">
