@@ -303,17 +303,29 @@ fieldset {
 }
 
 /* About Page Styling */
-
-#Team_Information
-{
-    justify-content: right;
+/*Blocking*/
+.Content_Grid {
+    display: grid;
+    grid-template-areas:
+    "About_Col1"
+    "About_Col2";
+    grid-template-columns: 3fr, 1fr;
+    gap: 4px;
+    background-color: #065321;
+    padding: 5px;
 }
 
-#Team_Photo
-{
-    justify-content: left;
+.Individual_Grid {
+    display: grid;
+    grid-template-columns:
+    "Individual_Photo"
+    "Member_Info"
+    "Info_Expanded";
 }
 
-#Profile_Boxes {
-    background-color:#066026 
+
+/*Image Restructuring*/
+img.Individual_Photo {
+    height: 15%;
+    width: 15%;
 }
