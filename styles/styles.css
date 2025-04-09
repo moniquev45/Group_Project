@@ -266,3 +266,19 @@ fieldset {
     padding: 15px 30px; /* More padding for a larger button */
     margin-top: 20px;
 }
+
+/* About Page Styling */
+
+#Team_Information
+{
+    justify-content: right;
+}
+
+#Team_Photo
+{
+    justify-content: left;
+}
+
+#Profile_Boxes {
+    background-color:#066026 
+}
