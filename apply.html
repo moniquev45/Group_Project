@@ -38,17 +38,19 @@
         </header>
         <main id="apply_body">
             <!--PAGE TITLE-->
-            <h1 id="heading_application" class="application_start"><strong>Apply Now</strong></h1>
+            <div id="application_start">
+                <h1 id="heading_application" class="form_headings"><strong>Apply Now</strong></h1>
 
-            <!--Introduction Paragraph Content-->
-            <p class="application_start"> The Pear Company, home to the Best Big Brain Group, welcomes all applicants. <br> Please fill out the form below to apply.</p>
+                <!--Introduction Paragraph Content-->
+                <p> The Pear Company, home to the Best Big Brain Group, welcomes all applicants. <br> Please fill out the form below to apply.</p>
+            </div>
 
             <!--Form Section. Requirements for all: 1. Inputs need labels 2. All form values (excepting'other skills' text area) are required or default value)-->
             <form id="apply_form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
 
                 <!--Fieldset 1: Job Reference Number - Drop Down-->
                 <fieldset id="fieldset_reference"> 
-                    <h2><strong>Application</strong></h2><br>
+                    <h2 class="form_headings"><strong>Application</strong></h2><br>
                     <!-- Drop Down Boxes-->
                     <p><label for="job_reference">Job Reference Number: </label><br>
                         <select name="job_reference" id="job_reference" required="required">
@@ -64,7 +66,7 @@
 
                 <!--Fieldset 2: Personal Details-->
                 <fieldset id="fieldset_personal"> 
-                    <h3><strong>Personal Details:</strong></h3><br>
+                    <h3 class="form_headings"><strong>Personal Details</strong></h3><br>
                     <fieldset id="fieldset_name" class="personal_details"> <!-- Name : sub fieldset 1--> 
                     <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
                         <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" placeholder="Please enter First Name (40 characters max)" required="required"></label><br>
@@ -118,29 +120,27 @@
 
                 <!--Fieldset 3: Job Requirements-->
                 <fieldset id="fieldset_skills">
-                    <h4><strong>Skills Field</strong></h4>
+                    <h4 class="form_headings"><strong> Skills Field</strong></h4>
                     <!--Required Technical List - Checkbox Inputs -->
                     <p>
                         <label for="skills"> Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
                     </p> 
                     <checkbox id="skills" name="skills" multiple>
-                        <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <!--DEFAULT TICK ON FIRST-->
-                        <label for="telekinesis"><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis" checked="checked">Telekinesis</label>
-                        <label for="gravitas"><input type="checkbox" id="gravitas" name="gravitas[]" value="gravitas">Gravitas</label>
-                        <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label>
-                        <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label>
+                        <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
+                        <label for="telekinesis"><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis">Telekinesis</label> <br>
+                        <label for="gravitas"><input type="checkbox" id="gravitas" name="gravitas[]" value="gravitas">Gravitas</label> <br>
+                        <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label> <br>
+                        <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label> <br>
                     </checkbox>
 
                     <!--Recommended Skills List - Checkbox Inputs -->
-                    <p>
-                        <h5> Recommended Technical Skills </h5> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
-                    </p> 
-                    <label  for="dragon"><input type="checkbox" id="dragon" name="dragon[]" value="dragon" checked="checked">Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
+                    <label  for="dragon"> Recommended Technical Skills <br>
+                    <input type="checkbox" id="dragon" name="dragon[]" value="dragon" checked="checked"> Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
                     <!--Other Skills - Textbox-->
                     <p>
                         <label for="skills_other_textbox">Other Skills<br> 
                         <!--PLACEHOLDER ATTRIBUTE-->
-                        <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="20" placeholder="Please provide any other further skills here..."></textarea>
+                        <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="50" placeholder="Please provide any other further skills here..."></textarea>
                         </label>
                     </p> 
 
@@ -160,7 +160,7 @@
                     <!--Other Job Requirements: Comments (Textarea)-->
                     <label for="requirements">Any Additional Requirements?</label><br>
                     <textarea id="requirements" name="requirements" rows="4" cols="50" placeholder="Please share any additional requirements or information here." required></textarea><br><br>
-                    
+
                 </fieldset>
 
                 <!--Buttons: Input 'Apply' & 'Reset Form'-->

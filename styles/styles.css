@@ -234,18 +234,27 @@ footer a:hover {
 
 
 /* APPLY PAGE STYLING*/
-@media screen and (max-width: 600px) {
-    .column {
-      width: 50%;
-    }
-  }
+ /* Responsive Design */
+@media (max-width: 768px) {
+    #apply_body{padding: 10px;}
+        }
 
 /* Element: Making spaces*/
-inputs, textarea {
+inputs, textarea, text {
     padding: 15px 15px;
-    width: 100%
     border-radius: 30px;
+    color: #ffffff;
 }
+
+/* Element: Labels are all uniform in colour and size*/
+label {color: #066026;}
+
+/* Class: Making all headings in Apply Page consistent in size and formatting */
+.form_headings {
+    font-size: 1.5em;           /* UNDECIDED ON SIZE, COMPARE TO OTHERS*/
+    text-transform: uppercase; /* Makes the label all caps */
+    border-bottom: 2px solid #000; /* Adds a subtle underline */
+  }
 
 /* Element: Fieldset Padding, Colour & Border*/
 fieldset {
@@ -253,7 +262,7 @@ fieldset {
     border: 1px double #065321;
     border-radius: 8px;
     color: #066026;
-    background-color:#fafdfa;
+    background-color:#f4fff4;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
     padding: 8px;
