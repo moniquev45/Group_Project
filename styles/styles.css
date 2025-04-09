@@ -235,11 +235,12 @@ footer a:hover {
 
 /* APPLY PAGE STYLING*/
 /* Element: Making Flex Grid for Form*/
-form {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
+form {display: flex;}
+
+/* Element: Making spaces*/
+inputs {
+    justify-content: space-between
+    padding: 15px 15px;
 }
 
 /* Element: Fieldset Padding, Colour & Border*/
@@ -251,10 +252,10 @@ fieldset {
     background-color: #f2fff2;
     padding: 8px;
 }
-/* Elements: Legend & Heading Postitioning*/
-#apply_body {
-    text-align: center;
-}
+
+/* ID: Apply Page Body, text alignment*/
+#apply_body {text-align: center;}
+
 
 @media screen and (max-width: 600px) {
     .column {
@@ -267,8 +268,7 @@ fieldset {
 
 /* Class: Personal Details & Skills Field to the Right*/
 .right_fieldset {    
-    display: flex;                /* Align second and third fieldsets horizontally */
-    gap: 20px;                    /* Space between the two fieldsets */
+    gap: 10px;                    /* Space between the two fieldsets */
     flex-grow: 1; 
 }
 
@@ -285,10 +285,7 @@ fieldset {
 }
 
 /* ID Selector: Gender Fieldset to the Right */
-#gender {
-    width: 15%;
-    justify-content: flex-end;
-}
+#gender { width: 50%;}
 
 /* ID Selector: TEXT POSITIONING: Names to the Left; Address & Contact Right*/
 #fieldset_name {text-align: left;}
@@ -300,9 +297,24 @@ fieldset {
     background-color:#cffdd1;
     text-align: center;
     font-size: 25px;    /* Larger text */
-    width: 200px;       /* Set width if needed */
+    width: 100px;       /* Set width if needed */
     cursor: pointer;    /* Change cursor to pointer */
     border-radius: 5px; /* Rounded corners */
     padding: 15px 30px; /* More padding for a larger button */
     margin-top: 20px;
+    max-height: 50px;     /* button height */
 }
+
+/* GRID FLEX STYLING - STILL IN TESTING*/
+#apply_body {
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 50px);
+    gap: 05px;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: start;
+    align-content: start;
+    grid-auto-flow: row;
+  }
+
