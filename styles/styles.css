@@ -224,15 +224,16 @@ footer a:hover {
 }
 
 #Job_Discription_Image {
-    width: fit-content;
+    padding: 0%;
+    width: 100px;
     margin: 0;
-    height: 20%;
     /* It moves it along the horizontal axis. */
     justify-content: center;
     /* It moves it along the vertical axis. */
     align-items: center;
     flex: auto;
 }
+
 
 
 /* End of Job Listing Page Styling */
