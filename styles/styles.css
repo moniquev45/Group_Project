@@ -223,17 +223,6 @@ footer a:hover {
     color:  #011508;
 }
 
-#Job_Discription_Image {
-    padding: 0%;
-    width: 100px;
-    margin: 0;
-    /* It moves it along the horizontal axis. */
-    justify-content: center;
-    /* It moves it along the vertical axis. */
-    align-items: center;
-    flex: auto;
-}
-
 
 
 /* End of Job Listing Page Styling */
