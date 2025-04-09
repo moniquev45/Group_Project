@@ -257,12 +257,18 @@ fieldset {
     padding: 8px;
 }
 /* Elements: Legend & Heading Postitioning*/
-#apply_body {text-align: center;}
+#apply_body {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
 
 /* Class: personal_details - Removing Borders from Sub Fieldsets in Personal Details*/
-.personal_details {
-    border: none;
-}
+.personal_details {border: none;}
 
 /* Class: Personal Details & Skills Field to the Right*/
 .right_fieldset {    
