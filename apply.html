@@ -40,13 +40,13 @@
             <h1 id="heading_application" class="application_start"><strong>Apply Now</strong></h1>
 
             <!--Introduction Paragraph Content-->
-            <p class="application_start"> The Pear Company, home to the Best Big Brain Group, welcomes all applicants. Please fill out the form below to apply.</p>
+            <p class="application_start"> The Pear Company, home to the Best Big Brain Group, welcomes all applicants. <br> Please fill out the form below to apply.</p>
 
             <!--Form Section. Requirements for all: 1. Inputs need labels 2. All form values (excepting'other skills' text area) are required or default value)-->
-            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
+            <form id="apply_form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
 
                 <!--Fieldset 1: Job Reference Number - Drop Down-->
-                <fieldset id="fieldset_reference" class="left_fieldset"> 
+                <fieldset id="fieldset_reference"> 
                     <h2><strong>Application</strong></h2><br>
                     <!-- Drop Down Boxes-->
                     <p><label for="job_reference">Job Reference Number: </label>
@@ -62,7 +62,7 @@
                 </fieldset> 
 
                 <!--Fieldset 2: Personal Details-->
-                <fieldset id="fieldset_personal" class="right_fieldset"> 
+                <fieldset id="fieldset_personal"> 
                     <h3><strong>Personal Details:</strong></h3><br>
                     <fieldset id="fieldset_name" class="personal_details"> <!-- Name : sub fieldset 1--> 
                     <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
@@ -116,7 +116,7 @@
                 </fieldset> 
 
                 <!--Fieldset 3: Job Requirements-->
-                <fieldset id="fieldset_skills" class="right_fieldset">
+                <fieldset id="fieldset_skills">
                     <h4><strong>Skills Field</strong></h4>
                     <!--Required Technical List - Checkbox Inputs -->
                     <p>
@@ -146,7 +146,7 @@
                 </fieldset>
 
                 <!--Buttons: Input 'Apply' & 'Reset Form'-->
-                <p id="buttons" class="left_fieldset">
+                <p id="buttons">
                     <input type="submit" value="Apply">
                     <input type="reset" value="Reset form">
                 </p> 
