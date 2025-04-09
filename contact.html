@@ -4,13 +4,13 @@
         <!--Charset Declaration-->
         <meta charset="utf-8">
         <!--Page Description for File-->
-        <meta name="description" content="">
+        <meta name="description" content="Contact Page">
         <!--Key Words for File-->
-        <meta name="keywords" content="">
+        <meta name="keywords" content="HTML, Form, Tags">
         <!--Author Information-->
-        <meta name="author" content="" >
+        <meta name="author" content="Stacey Millers" >
 
-        <title></title>
+        <title>Job Applications</title>
 
         <link rel="stylesheet" href="styles/styles.css">
         
@@ -36,39 +36,43 @@
             <hr>
         </header>
         <main>
-        <div class="Content_Grid">
-            <!--Team Photo-->
-            <div class="About_Col2">
-                <img class="Team_Photo" src="https://i.pinimg.com/736x/f5/05/cf/f505cf9fc66f5b7e67badf74fdeb7037.jpg">
-                
-                <!--Individual Team Members Information-->
-                <div class="Individual_Grid">
-                    <img class="Individual_Photo" src="https://i.pinimg.com/736x/b1/7a/c8/b17ac8bf7f49ebbe2a9fc5697dc8f67e.jpg">
-                    <div class="Member_Info"> 
-                        <h2>Monquie</h2>
-                        <!--Core Information-->
-                        <p></p>
-                    </div>
-                    <div class="Info_Expanded">
-                        <p>fjdknvkjdfnjbkdf</p>
-                    </div>
-                    
-                </div>
-            </div>
+            <h1 id="contact_us"><strong>Contact us</strong></h1>
 
-            <div class="About_Col1">
-            <!--Collective team information-->
-                <div class="Team_Information">
-                    <h2>About the Best Big Brain Team</h2>
-                    <p>
-                        The Best Big Brain Group is a rag tag team of the best programmers, scientists and engineers
-                        in the COS10026 - Wednesday 10:30-12:30 Workshop.
-                    </p>
-                </div>
-            </div>
-        </div>
+            <!--Introduction Paragraph Content-->
+            <p> Connect with the Best Big Brain Group.</p>
 
+            <!--Form Section for Contact-->
+            <form id="contact_form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
+                <!--Drop Down Reason Box-->
+                <p><label for="reason">Contact Reason: </label>
+                    <select name="reason" id="reason" required="required">
+                    <option value="" selected="selected" disabled="disabled">Please Select</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="technical_support">Technical Support</option>
+                    <option value="careers_internships">Careers & Internships</option>
+                    <option value="partnership">Partnership Enquiry</option>
+                    <option value="other">Other</option>
+                    </select>
+                </p>
+                <!-- Email Address for return reply-->
+                <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="example@emailaddress.com.au" title="example@emailaddress.com.au" required="required"></label>
 
+                <!--Enquiry Box-->
+                <p>
+                    <label for="enquiry_box">Enquiry Box<br> 
+                    <!--Text box to type in enquiry-->
+                    <textarea id="enquiry_box" name="enquiry_box" rows="10" cols="150" placeholder="Please provide details of your enquiry here..."></textarea>
+                    </label>
+                </p> 
+            </fieldset>
+
+                <!--Buttons: Input 'Submit' & 'Reset Form'-->
+                <p id="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset form">
+                </p> 
+
+            </form>
         </main>
         <footer>
             <!--Horizontal Line that separtes the information above with the information below.-->
