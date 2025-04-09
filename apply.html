@@ -73,7 +73,7 @@
                         <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" placeholder="Please enter Family Name (40 characters max)" required="required"></label> 
 
                     <!-- Date of Birth - Change to a Calendar? ; Format: dd/mm/yyyy-->
-                        <p><label for="dob"> Date of Birth: </label><br> <input type="date" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
+                        <p><label for="dob"> Date of Birth: <br> <input type="date" id="dob" name="dob" title="Must match dd/mm/yyyy format" required="required"></label></p>
 
                         <fieldset id="gender"> <!-- Gender : sub fieldset within Name--> 
                             <legend>Gender</legend>
@@ -127,11 +127,11 @@
                             <label for="skills"> Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
                         </p> 
                         <checkbox id="skills" name="skills" multiple>
-                            <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
-                            <label for="telekinesis"><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis">Telekinesis</label> <br>
-                            <label for="gravitas"><input type="checkbox" id="gravitas" name="gravitas[]" value="gravitas">Gravitas</label> <br>
-                            <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label> <br>
-                            <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label> <br>
+                            <label  for="teleportation"><input type="checkbox" id="teleportation" name="skills1[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
+                            <label for="telekinesis"><input type="checkbox" id="telekinesis" name="skills2[]" value="telekinesis">Telekinesis</label> <br>
+                            <label for="gravitas"><input type="checkbox" id="gravitas" name="skills3[]" value="gravitas">Gravitas</label> <br>
+                            <label for="confidence"><input type="checkbox" id="confidence" name="skills4[]" value="confidence">Confidence</label> <br>
+                            <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="skills5">Love of Fruit</label> <br>
                         </checkbox>
                     </div>
 
