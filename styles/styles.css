@@ -317,22 +317,22 @@ fieldset {
 .Individual_Grid {
     display: grid;
     grid-template-areas:
-    "Individual_Photo"
-    "Member_Info"
-    "Info_Expanded";
+    "Photo"
+    "Info"
+    "Bio";
     grid-template-columns: 1fr, 1fr, 1fr;
 }
 
 .Individual_Grid > img.Individual_Photo {
-    grid-area: Individual_Photo;
+    grid-area: Photo;
 }
 
 .Individual_Grid > div.Member_Info {
-    grid-area: Member_Info;
+    grid-area: Info;
 }
 
 .Individual_Grid > div.Info_Expanded {
-    grid-area: Info-Expanded;
+    grid-area: Bio;
 }
 
 /*Styling Text Blocks*/
@@ -360,3 +360,4 @@ img.Individual_Photo {
     background-color: #b0ffb4;
     text-overflow: none;
 }
+
