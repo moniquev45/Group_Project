@@ -223,11 +223,6 @@ footer a:hover {
     color:  #011508;
 }
 
-#Job_Discription_Landscape_Image {
-    /* Makes things aligned horizontaly. */
-    display: flex;
-
-}
 
 
 /* End of Job Listing Page Styling */
@@ -376,83 +371,62 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 }
 
   /* END OF APPLY PAGE STYLING*/
-  <<<<<<< CSS---Testing-Layout-Configuration
-  max-height: 50px;     /* button height */
-  grid-column: 6 ; /* button grid column positioning */
-  grid-row: 1 / 3; /* button grid row positioning */
-  overflow: hidden;
-}   
-
-/* Apply box-shadow directly to the submit and reset buttons */
-input[type="submit"], input[type="reset"] {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow */
-  transition: box-shadow 0.3s ease;  /* Smooth shadow transition on hover */
-}
-
-input[type="submit"]:hover, input[type="reset"]:hover {
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
-}
-
-/* END OF APPLY PAGE STYLING*/
-=======
-}
 
 /* About Page Styling */
 /*Blocking*/
 .Content_Grid {
-  display: grid;
-  grid-template-areas:
-  "About_Col1"
-  "About_Col2";
-  grid-template-columns: 3fr, 1fr;
-  gap: 4px;
-  padding: 5px;
+    display: grid;
+    grid-template-areas:
+    "About_Col1"
+    "About_Col2";
+    grid-template-columns: 3fr, 1fr;
+    gap: 4px;
+    padding: 5px;
 }
 
 .Individual_Grid {
-  display: grid;
-  grid-template-areas:
-  "Individual_Photo"
-  "Member_Info"
-  "Info_Expanded";
-  grid-template-columns: 1fr, 1fr, 1fr;
+    display: grid;
+    grid-template-areas:
+    "Individual_Photo"
+    "Member_Info"
+    "Info_Expanded";
+    grid-template-columns: 1fr, 1fr, 1fr;
 }
 
 .Individual_Grid > img.Individual_Photo {
-  grid-area: Individual_Photo;
+    grid-area: Individual_Photo;
 }
 
 .Individual_Grid > div.Member_Info {
-  grid-area: Member_Info;
+    grid-area: Member_Info;
 }
 
 .Individual_Grid > div.Info_Expanded {
-  grid-area: Info-Expanded;
+    grid-area: Info-Expanded;
 }
 
 /*Styling Text Blocks*/
 .Individual_Grid {
-  border: none;
-  border-radius: 5px;
-  margin: 2px;
-  background-color: #b0ffb4;
-  text-overflow: none;
-  height: auto;
-  width: auto;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    background-color: #b0ffb4;
+    text-overflow: none;
+    height: auto;
+    width: auto;
 }
 
 /*Image Restructuring*/
 img.Individual_Photo {
-  padding: 7px;
-  height: 15%;
-  width: 15%;
+    padding: 7px;
+    height: 15%;
+    width: 15%;
 }
 
 .Team_Information {
-  border: none;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #b0ffb4;
-  text-overflow: none;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #b0ffb4;
+    text-overflow: none;
 }
->>>>>>> main
