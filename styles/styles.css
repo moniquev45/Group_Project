@@ -311,21 +311,52 @@ fieldset {
     "About_Col2";
     grid-template-columns: 3fr, 1fr;
     gap: 4px;
-    background-color: #065321;
     padding: 5px;
 }
 
 .Individual_Grid {
     display: grid;
-    grid-template-columns:
+    grid-template-areas:
     "Individual_Photo"
     "Member_Info"
     "Info_Expanded";
+    grid-template-columns: 1fr, 1fr, 1fr;
 }
 
+.Individual_Grid > img.Individual_Photo {
+    grid-area: Individual_Photo;
+}
+
+.Individual_Grid > div.Member_Info {
+    grid-area: Member_Info;
+}
+
+.Individual_Grid > div.Info_Expanded {
+    grid-area: Info-Expanded;
+}
+
+/*Styling Text Blocks*/
+.Individual_Grid {
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    background-color: #b0ffb4;
+    text-overflow: none;
+    height: auto;
+    width: auto;
+}
 
 /*Image Restructuring*/
 img.Individual_Photo {
+    padding: 7px;
     height: 15%;
     width: 15%;
+}
+
+.Team_Information {
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #b0ffb4;
+    text-overflow: none;
 }
