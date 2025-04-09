@@ -224,6 +224,7 @@ footer a:hover {
 }
 
 #Job_Discription_Landscape_Image {
+    /* Makes things aligned horizontaly. */
     display: flex;
 
 }
