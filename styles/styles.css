@@ -223,10 +223,15 @@ footer a:hover {
     color:  #011508;
 }
 
-#Job_Discription_Landscape_Image {
-    /* Makes things aligned horizontaly. */
-    display: flex;
-
+#Job_Discription_Image {
+    width: fit-content;
+    margin: 0;
+    height: 20%;
+    /* It moves it along the horizontal axis. */
+    justify-content: center;
+    /* It moves it along the vertical axis. */
+    align-items: center;
+    flex: auto;
 }
 
 
