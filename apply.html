@@ -136,7 +136,6 @@
                         <h5> Recommended Technical Skills </h5> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
                     </p> 
                     <label  for="dragon"><input type="checkbox" id="dragon" name="dragon[]" value="dragon" checked="checked">Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
-
                     <!--Other Skills - Textbox-->
                     <p>
                         <label for="skills_other_textbox">Other Skills<br> 
@@ -144,6 +143,24 @@
                         <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="20" placeholder="Please provide any other further skills here..."></textarea>
                         </label>
                     </p> 
+
+                    <!--Job Expectations -->
+                    <!--Salary (Sliding Scale Range)-->
+                    <label for="salary_scale"> What are your Salary Expectations? (Per Year):</label><br>
+                    <input type="range" id="salary_scale" name="salary_scale" min="1" max="15"><br><br>
+
+                    <!--Working Hours-->
+                    <p>Please provide your preferred working hours.</p>
+                    <label for="hours_start"> Start time: </label>
+                    <input type="time" id="hours_start" name="hours_start"><br><br>
+
+                    <label for="hours_end"> End time: </label>
+                    <input type="time" id="hours_end" name="hours_end"><br><br>
+
+                    <!--Other Job Requirements: Comments (Textarea)-->
+                    <label for="requirements">Any Additional Requirements?</label><br>
+                    <textarea id="requirements" name="requirements" rows="4" cols="50" placeholder="Please share any additional requirements or information here." required></textarea><br><br>
+                    
                 </fieldset>
 
                 <!--Buttons: Input 'Apply' & 'Reset Form'-->
