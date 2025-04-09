@@ -241,9 +241,10 @@ footer a:hover {
   }
 
 /* Element: Making spaces*/
-inputs {
+inputs, textarea {
     padding: 15px 15px;
     width: 100%
+    border-radius: 30px;
 }
 
 /* Element: Fieldset Padding, Colour & Border*/
@@ -252,7 +253,9 @@ fieldset {
     border: 1px double #065321;
     border-radius: 8px;
     color: #066026;
-    background-color: #f2fff2;
+    background-color:#fafdfa;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
     padding: 8px;
     display: grid
     gap: 15px
@@ -286,7 +289,10 @@ fieldset {
   }
 
 /* Class: personal_details - Removing Borders from Sub Fieldsets in Personal Details*/
-.personal_details {border: none;}
+.personal_details {
+    border: none;
+    box-shadow: none;
+}
 
 /* ID Selector: Application Fieldset; Text Alignment & Grid Positioning*/
 #fieldset_reference {
@@ -310,30 +316,30 @@ fieldset {
 
 /* ID Selector: Gender Fieldset to the Right */
 #gender { 
-    grid-column: 6 / 7; /* **Added**: Gender field goes in the 2nd column in the middle */
-    grid-row: 1 / 4; /* **Added**: Spans vertically from row 1 to 4 */
+    grid-column: 6 / 7; /* Gender field goes in the 2nd column in the middle */
+    grid-row: 1 / 4; /* Spans vertically from row 1 to 4 */
     display: flex;
     justify-content: center;
-    align-items: center; /* **New**: To vertically and horizontally center the gender options */
+    align-items: center; /* To vertically and horizontally center the gender options */
 }
 
 /* ID Selector: TEXT POSITIONING via Grid*/
 #fieldset_name {    
-    grid-column: 1 / 2; /* **Added**: Place name fields in the first column */
-    grid-row: 1 / 4; /* **Added**: Spans vertically for the name fields */
+    grid-column: 1 / 2; /* Place name fields in the first column */
+    grid-row: 1 / 4; /* Spans vertically for the name fields */
 }
 #fieldset_address {
-    grid-column: 1 / 6; /* **Added**: Make address span from column 1 to column 6 */
-    grid-row: 4 / 6; /* **Added**: Place address fields below name and gender */
-    display: grid; /* **NEW**: Use grid layout for address fields */
-    gap: 15px; /* **NEW**: Space between address fields */
+    grid-column: 1 / 6; /* Make address span from column 1 to column 6 */
+    grid-row: 4 / 6; /* Place address fields below name and gender */
+    display: grid; /* Use grid layout for address fields */
+    gap: 15px; /* Space between address fields */
 }
 
 #fieldset_contact {
-    grid-column: 1 / 6; /* **Added**: Same as address, spans across columns */
-    grid-row: 6 / 8; /* **Added**: Place contact info below address */
-    display: grid; /* **NEW**: Enable grid layout for contact fields */
-    gap: 15px; /* **NEW**: Add space between contact inputs */
+    grid-column: 1 / 6; /* Same as address, spans across columns */
+    grid-row: 6 / 8; /* Place contact info below address */
+    display: grid; /* Enable grid layout for contact fields */
+    gap: 15px; /* Add space between contact inputs */
 }
 
 /* ID Selector: Button Adjustments*/
@@ -350,5 +356,17 @@ fieldset {
     max-height: 50px;     /* button height */
     grid-column: 1 / 9; /* button grid column positioning */
     grid-row: 6 / 8; /* button grid row positioning */
+    overflow: hidden;
+}   
+
+/* Apply box-shadow directly to the submit and reset buttons */
+input[type="submit"], input[type="reset"] {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow */
+    transition: box-shadow 0.3s ease;  /* Smooth shadow transition on hover */
 }
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
+}
+
   /* END OF APPLY PAGE STYLING*/

@@ -29,6 +29,7 @@
                     <li><a href="index.html">  Home  </a></li>
                     <li><a href="jobs.html">  Jobs Listings  </a></li>
                     <li><a href="apply.html">  Job Application  </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
                     <li style="float: right;"><a href="about.html">  About Us  </a></li>
                 </ul>
             </nav>
@@ -43,16 +44,24 @@
             <!--Form Section for Contact-->
             <form id="contact_form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
                 <!--Drop Down Reason Box-->
-                <p>
-                    <h5> Recommended Technical Skills </h5> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
-                </p> 
-                <label  for="dragon"><input type="checkbox" id="dragon" name="dragon[]" value="dragon" checked="checked">Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
+                <p><label for="reason">Contact Reason: </label>
+                    <select name="reason" id="reason" required="required">
+                    <option value="" selected="selected" disabled="disabled">Please Select</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="technical_support">Technical Support</option>
+                    <option value="careers_internships">Careers & Internships</option>
+                    <option value="partnership">Partnership Enquiry</option>
+                    <option value="other">Other</option>
+                    </select>
+                </p>
+                <!-- Email Address for return reply-->
+                <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label>
 
-                <!--Other Skills - Textbox-->
+                <!--Enquiry Box-->
                 <p>
-                    <label for="skills_other_textbox">Other Skills<br> 
-                    <!--PLACEHOLDER ATTRIBUTE-->
-                    <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="20" placeholder="Please provide details of your enquiry here..."></textarea>
+                    <label for="enquiry_box">Enquiry Box<br> 
+                    <!--Text box to type in enquiry-->
+                    <textarea id="enquiry_box" name="enquiry_box" rows="4" cols="20" placeholder="Please provide details of your enquiry here..."></textarea>
                     </label>
                 </p> 
             </fieldset>
@@ -72,6 +81,7 @@
                 <li><a href="index.html">  Home  </a></li>
                 <li><a href="jobs.html">  Jobs Listings  </a></li>
                 <li><a href="apply.html">  Job Application  </a></li>
+                <li><a href="contact.html"> Contact </a></li>
                 <li style="float: right;"><a href="about.html">  About Us  </a></li>
             </ul>
             <!--Div, devides the paragraph so i can put the information on the same line but aligning it to either the left or the right.-->
