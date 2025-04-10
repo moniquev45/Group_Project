@@ -247,7 +247,6 @@ footer a:hover {
     pointer-events: none; /* Prevent interaction with grid lines */
   }
 
-
  /* Element: Making spaces*/
  inputs, textarea, text {
      padding: 15px 15px;
@@ -260,15 +259,14 @@ footer a:hover {
  
  /* Class: Making all headings (excluding h1) in Apply Page consistent in size and formatting */
  .form_headings {
-     text-transform: uppercase; /* Makes the label all caps */
-     border-bottom: 2px solid #000; /* Adds a subtle underline */
-     display: flex;
-     text-align: center;
-     box-sizing: border-box;
-     max-width: 100%; 
-     overflow-wrap: break-word;
-     font-size: 1vw; /* Font size will adjust based on viewport width */
-     
+    text-transform: uppercase; /* Makes the label all caps */
+    border-bottom: 2px solid #000; /* Adds a subtle underline */
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 100%; 
+    overflow-wrap: break-word;
+    font-size: 1vw; /* Font size will adjust based on viewport width */  
    }
  
  /* Element: Fieldset Padding, Colour & Border*/
@@ -280,8 +278,6 @@ footer a:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
     padding: 8px;
-    display: grid
-    gap: 15px
  }
 
  /* ID Selector: GRID FLEX STYLING*/
@@ -314,17 +310,21 @@ footer a:hover {
     grid-column: 1 / 21; /* grid column positioning & spanning */
     grid-row: 4 / 27; /* grid row positioning & spanning */
  }
+
+  /* Personal Details Input Styling & Positioning*/
+ #fieldset_personal input {
+    margin-bottom: 12px;
+    margin-right: 12px;
+  }
  
  /* ID Selector: Job Expectations; Grid Positioning*/
  #job_expectations {
-    grid-column: 22 / 38
-    ; /* grid column positioning & spanning */
+    grid-column: 22 / 38; /* grid column positioning & spanning */
     grid-row: 19 / 27; /* grid row positioning & spanning */
  }
  
  /* ID Selector: Job Skills Fieldset; Grid Positioning*/
  #fieldset_skills {
-    text-align: center;
     grid-column: 22 / 42 ; /* grid column positioning & spanning */
     grid-row: 1 / 18 ; /* grid row positioning & spanning */
  }
@@ -371,6 +371,7 @@ footer a:hover {
     max-height: 500px;     
  }   
  
+
  /* Apply box-shadow directly to the submit and reset buttons */
  input[type="submit"], input[type="reset"] {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow */
