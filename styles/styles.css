@@ -303,36 +303,50 @@ fieldset {
 }
 
 /* About Page Styling */
-/*Blocking*/
-.Content_Grid {
+/*Page Blocking*/
+#Content_Grid {
     display: grid;
     grid-template-areas:
-    "About_Col1"
-    "About_Col2";
-    grid-template-columns: 3fr, 1fr;
-    gap: 4px;
+    "img info"
+    "indiv info"
+    "indiv info";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
     padding: 5px;
 }
 
+#Team_Photo {
+    grid-area: img;
+}
+
 .Individual_Grid {
+    grid-area: indiv;
+}
+
+#Team_Grid {
+    grid-area: info;
+}
+
+/*Individual Profile Blocking*/
+/*.Individual_Grid {
     display: grid;
     grid-template-areas:
-    "Photo"
-    "Info"
-    "Bio";
-    grid-template-columns: 1fr, 1fr, 1fr;
+    "photo info expand";
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: auto;
+}*/
+
+#Individual_Photo {
+    grid-area: photo;
 }
 
-.Individual_Grid > img.Individual_Photo {
-    grid-area: Photo;
+#Member_Info {
+    grid-area: info;
 }
 
-.Individual_Grid > div.Member_Info {
-    grid-area: Info;
-}
-
-.Individual_Grid > div.Info_Expanded {
-    grid-area: Bio;
+#Info_Expanded {
+    grid-area: expand;
 }
 
 /*Styling Text Blocks*/
@@ -361,3 +375,8 @@ img.Individual_Photo {
     text-overflow: none;
 }
 
+#Portrait {
+    padding: 10px;
+    width: 20%;
+    height: 35%;
+}

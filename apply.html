@@ -30,6 +30,7 @@
                     <li><a href="index.html">  Home  </a></li>
                     <li><a href="jobs.html">  Jobs Listings  </a></li>
                     <li><a href="apply.html">  Job Application  </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
                     <li style="float: right;"><a href="about.html">  About Us  </a></li>
                 </ul>
             </nav>
@@ -37,19 +38,21 @@
         </header>
         <main id="apply_body">
             <!--PAGE TITLE-->
-            <h1 id="heading_application"><strong>Apply Now</strong></h1>
+            <div id="application_start">
+                <h1 id="heading_application"><strong>Apply Now</strong></h1>
 
-            <!--Introduction Paragraph Content-->
-            <p> The Pear Company, home to the Best Big Brain Group, welcomes all applicants. Please fill out the form below to apply.</p>
+                <!--Introduction Paragraph Content-->
+                <p> The Pear Company, home to the Best Big Brain Group, welcomes all applicants. <br> Please fill out the form below to apply.</p>
+            </div>
 
             <!--Form Section. Requirements for all: 1. Inputs need labels 2. All form values (excepting'other skills' text area) are required or default value)-->
-            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
+            <form id="apply_form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
 
                 <!--Fieldset 1: Job Reference Number - Drop Down-->
-                <fieldset id="fieldset_reference" class="left_fieldset"> 
-                    <h2><strong>Application</strong></h2><br>
+                <fieldset id="fieldset_reference"> 
+                    <h2 class="form_headings"><strong>Application</strong></h2><br>
                     <!-- Drop Down Boxes-->
-                    <p><label for="job_reference">Job Reference Number: </label>
+                    <p><label for="job_reference">Job Reference Number: </label><br>
                         <select name="job_reference" id="job_reference" required="required">
                         <option value="" selected="selected" disabled="disabled">Please Select</option>
                         <option value="job_reference1">#00001</option>
@@ -62,15 +65,15 @@
                 </fieldset> 
 
                 <!--Fieldset 2: Personal Details-->
-                <fieldset id="fieldset_personal" class="right_fieldset"> 
-                    <h3><strong>Personal Details:</strong></h3><br>
+                <fieldset id="fieldset_personal"> 
+                    <h3 class="form_headings"><strong>Personal Details</strong></h3><br>
                     <fieldset id="fieldset_name" class="personal_details"> <!-- Name : sub fieldset 1--> 
                     <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
-                        <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label>
-                        <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" required="required"></label> 
+                        <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" placeholder="Please enter First Name (40 characters max)" required="required"></label><br>
+                        <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" placeholder="Please enter Family Name (40 characters max)" required="required"></label> 
 
                     <!-- Date of Birth - Change to a Calendar? ; Format: dd/mm/yyyy-->
-                        <p><label for="dob">Date of Birth: <input type="text" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
+                        <p><label for="dob"> Date of Birth: <br> <input type="date" id="dob" name="dob" title="Must match dd/mm/yyyy format" required="required"></label></p>
 
                         <fieldset id="gender"> <!-- Gender : sub fieldset within Name--> 
                             <legend>Gender</legend>
@@ -108,7 +111,7 @@
                     <fieldset id="fieldset_contact" class="personal_details"> <!-- Contact Details : sub fieldset 3 -->
                         <text id="contact" name="contact">
                             <!-- Email Address - Input Text: includes regular expression and patterns-->
-                            <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label> 
+                            <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label>
                             <!-- Phone Numbers - Input Text: 8-12 digits or spaces -->
                             <label for="mobile">Phone Number: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 Digits & Spaces Only" required="required"></label> <!-- ADD SPACES PATTERN ???-->
                         </text>
@@ -116,37 +119,58 @@
                 </fieldset> 
 
                 <!--Fieldset 3: Job Requirements-->
-                <fieldset id="fieldset_skills" class="right_fieldset">
-                    <h4><strong>Skills Field</strong></h4>
+                <fieldset id="fieldset_skills">
+                    <h4 class="form_headings"><strong> Skills Field</strong></h4>
                     <!--Required Technical List - Checkbox Inputs -->
-                    <p>
-                        <label for="skills"> Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
-                    </p> 
-                    <checkbox id="skills" name="skills" multiple>
-                        <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <!--DEFAULT TICK ON FIRST-->
-                        <label for="telekinesis"><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis" checked="checked">Telekinesis</label>
-                        <label for="gravitas"><input type="checkbox" id="gravitas" name="gravitas[]" value="gravitas">Gravitas</label>
-                        <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label>
-                        <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label>
-                    </checkbox>
+                    <div id="required_skills" class="skills_req_rec_other">
+                        <p>
+                            <label for="skills"> Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
+                        </p> 
+                        <checkbox id="skills" name="skills" multiple>
+                            <label  for="teleportation"><input type="checkbox" id="teleportation" name="skills1[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
+                            <label for="telekinesis"><input type="checkbox" id="telekinesis" name="skills2[]" value="telekinesis">Telekinesis</label> <br>
+                            <label for="gravitas"><input type="checkbox" id="gravitas" name="skills3[]" value="gravitas">Gravitas</label> <br>
+                            <label for="confidence"><input type="checkbox" id="confidence" name="skills4[]" value="confidence">Confidence</label> <br>
+                            <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="skills5">Love of Fruit</label> <br>
+                        </checkbox>
+                    </div>
 
                     <!--Recommended Skills List - Checkbox Inputs -->
-                    <p>
-                        <label for="skills_other" > Recommended Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
-                    </p> 
-                    <label  for="dragon"><input type="checkbox" id="dragon" name="dragon[]" value="dragon" checked="checked">Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
+                    <div id="recommended_skills" class="skills_req_rec_other">
+                        <label  for="rec_skills"> Recommended Technical Skills <br>
+                        <input type="checkbox" id="rec_skills" name="rec_skills1[]" value="rec_skills1" checked="checked"> Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
+                    </div>
 
-                    <!--Other Skills - Textbox-->
-                    <p>
-                        <label for="skills_other_textbox">Other Skills<br> 
-                        <!--PLACEHOLDER ATTRIBUTE-->
-                        <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="20" placeholder="Please provide any other further skills here..."></textarea>
-                        </label>
-                    </p> 
+                        <!--Other Skills - Textbox-->
+                        <p id="skills_other" class="skills_req_rec_other">
+                            <label for="skills_other_textbox">Other Skills<br> 
+                            <!--PLACEHOLDER ATTRIBUTE-->
+                            <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="50" placeholder="Please provide any other further skills here..."></textarea>
+                            </label>
+                        </p> 
+
+                    <!--Other Job Requirements: Comments (Textarea)-->
+                    <label for="requirements">Any Additional Requirements?</label><br>
+                    <textarea id="requirements" name="requirements" rows="4" cols="50" placeholder="Please share any additional requirements or information here." required></textarea><br><br>
+
                 </fieldset>
+                <fieldset id="job_expectations">
+                    <h5 class="form_headings"><strong> Job Expectations</strong></h5>
+                    <!--Job Expectations -->
+                    <!--Salary (Sliding Scale Range)-->
+                    <label for="salary_scale"> What are your Salary Expectations? (Per Year):</label><br>
+                    <input type="range" id="salary_scale" name="salary_scale" min="1" max="15"><br><br>
 
+                    <!--Working Hours-->
+                    <p>Please provide your preferred working hours.</p>
+                    <label for="hours_start"> Start time: </label>
+                    <input type="time" id="hours_start" name="hours_start"><br><br>
+
+                    <label for="hours_end"> End time: </label>
+                    <input type="time" id="hours_end" name="hours_end"><br><br>
+                </fieldset>
                 <!--Buttons: Input 'Apply' & 'Reset Form'-->
-                <p id="buttons" class="left_fieldset">
+                <p id="buttons">
                     <input type="submit" value="Apply">
                     <input type="reset" value="Reset form">
                 </p> 
@@ -161,6 +185,7 @@
                 <li><a href="index.html">  Home  </a></li>
                 <li><a href="jobs.html">  Jobs Listings  </a></li>
                 <li><a href="apply.html">  Job Application  </a></li>
+                <li><a href="contact.html"> Contact </a></li>
                 <li style="float: right;"><a href="about.html">  About Us  </a></li>
             </ul>
             <!--Div, devides the paragraph so i can put the information on the same line but aligning it to either the left or the right.-->
