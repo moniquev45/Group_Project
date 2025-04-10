@@ -232,21 +232,6 @@ footer a:hover {
  /* Responsive Design */
  @media (max-width: 768px) {#apply_body{padding: 10px;}}
 
-   /* ADDING: grid lines for visualization - REMOVE AFTER DONE FIGURING OUT GRID */
-#apply_form::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-      linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px), /* Vertical lines */
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px); /* Horizontal lines */
-    background-size: 2.43% 3.846%; /* 20 columns: 100%/20 = 5%, 20 rows: 100%/15 = 6.66% */
-    pointer-events: none; /* Prevent interaction with grid lines */
-  }
-
  /* Element: Making spaces*/
  inputs, textarea, text {
      padding: 15px 15px;
@@ -336,31 +321,18 @@ footer a:hover {
     grid-row: 1 / 18 ; /* grid row positioning & spanning */
  }
  
- 
- /* ID Selector: Gender Fieldset to the Right */
+ /* ID Selector: Centered Gender Fieldset */
  #gender { 
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center; /* To vertically and horizontally center the gender options */
  }
- 
- /* ID Selector: TEXT POSITIONING via Grid*/
- #fieldset_name {   
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    padding: 15%;
- }
- 
- #fieldset_address {
-    display: flex;
-    flex-direction: column;
- }
- 
- #fieldset_contact {
-    display: flex;
-    flex-direction: column;
+
+ /* Class: Centered Gender Fieldset */
+
+.apply_textarea { 
+    text-align: center; /* To vertically and horizontally center the gender options */
  }
  
  /* ID Selector: Button Adjustments*/
@@ -375,11 +347,10 @@ footer a:hover {
     border-radius: 10px;
     transition: background-color 0.3s;
     grid-column: 38 / 42 ; /* button grid column positioning */
-    grid-row: 19 / 27; /* button grid row positioning */
+    grid-row: 22 / 27; /* button grid row positioning */
     max-height: 500px;     
  }   
  
-
  /* Apply box-shadow directly to the submit and reset buttons */
  input[type="submit"], input[type="reset"] {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow */

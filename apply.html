@@ -51,7 +51,7 @@
                 <!--Fieldset 1: Job Reference Number - Drop Down-->
                 <fieldset id="fieldset_reference"> 
                     <!-- Drop Down Boxes-->
-                    <p><label for="job_reference"><bold> JOB REFERENCE NUMBER:</bold></label>
+                    <p><label for="job_reference"><strong> JOB REFERENCE NUMBER:</strong></label>
                         <select name="job_reference" id="job_reference" required="required">
                         <option value="" selected="selected" disabled="disabled">Please Select</option>
                         <option value="job_reference1">#00001</option>
@@ -148,8 +148,9 @@
                     <!--Required Technical List - Checkbox Inputs -->
                     <div id="required_skills" class="skills_req_rec_other">
                         <p>
-                            <label for="skills"> Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
+                            <label for="skills"> Required Technical Skills</label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
                         </p> 
+
                         <checkbox id="skills" name="skills" multiple>
                             <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
                             <label for="telekinesis"><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis">Telekinesis</label> <br>
@@ -160,22 +161,26 @@
                     </div>
 
                     <!--Recommended Skills List - Checkbox Inputs -->
-                    <div id="recommended_skills" class="skills_req_rec_other">
-                        <label  for="rec_skills"> Recommended Technical Skills <br>
+                    <div id="recommended_skills">
+                        <p>
+                            <label  for="rec_skills"> Recommended Technical Skills <br>
+                        </p>
                         <input type="checkbox" id="rec_skills" name="rec_skills1[]" value="rec_skills1" checked="checked"> Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
                     </div>
 
                         <!--Other Skills - Textbox-->
-                        <p id="skills_other" class="skills_req_rec_other">
-                            <label for="skills_other_textbox">Other Skills<br> 
-                            <!--PLACEHOLDER ATTRIBUTE-->
-                            <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="50" placeholder="Please provide any other further skills here..."></textarea>
-                            </label>
-                        </p> 
+                    <p id="skills_other" class="apply_textarea">
+                        <label for="skills_other_textbox">Other Skills<br> 
+                        <!--PLACEHOLDER ATTRIBUTE-->
+                        <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="60" placeholder="Please provide any other further skills here..."></textarea>
+                        </label>
+                    </p> 
 
                     <!--Other Job Requirements: Comments (Textarea)-->
-                    <label for="requirements">Any Additional Requirements?</label><br>
-                    <textarea id="requirements" name="requirements" rows="4" cols="50" placeholder="Please share any additional requirements or information here." required></textarea><br><br>
+                    <p class="apply_textarea">
+                        <label for="requirements">Any Additional Requirements?</label><br>
+                        <textarea id="requirements" name="requirements" rows="4" cols="60" placeholder="Please share any additional requirements or information here." required></textarea><br><br>
+                    </p>
 
                 </fieldset>
                 <fieldset id="job_expectations">
