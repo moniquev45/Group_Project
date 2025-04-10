@@ -243,7 +243,7 @@ footer a:hover {
     background-image: 
       linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px), /* Vertical lines */
       linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px); /* Horizontal lines */
-    background-size: 5% 7.692%; /* 20 columns: 100%/20 = 5%, 20 rows: 100%/15 = 6.66% */
+    background-size: 2.43% 3.846%; /* 20 columns: 100%/20 = 5%, 20 rows: 100%/15 = 6.66% */
     pointer-events: none; /* Prevent interaction with grid lines */
   }
 
@@ -273,115 +273,112 @@ footer a:hover {
  
  /* Element: Fieldset Padding, Colour & Border*/
  fieldset {
-     border: 1px double #065321;
-     border-radius: 8px;
-     color: #066026;
-     background-color:#f4fff4;
-     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-     overflow: hidden; 
-     padding: 8px;
-     display: grid
-     gap: 15px
+    border: 1px double #065321;
+    border-radius: 8px;
+    color: #066026;
+    background-color:#f4fff4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    padding: 8px;
+    display: grid
+    gap: 15px
  }
- 
- /* ID: Apply Page Body, text alignment*/
- #apply_body {text-align: center;}
- 
+
  /* ID Selector: GRID FLEX STYLING*/
  #apply_form, application_start {
-     display: grid;
-     grid-template-columns: repeat(20, 5%);
-     grid-template-rows: repeat(13, 7.692%);
-     gap: 0; /* You can adjust this if you want some space between the items */
-     position: relative; /* This allows positioning of the pseudo-element */
+    display: grid;
+    grid-template-columns: repeat(41, 2.43%);
+    grid-template-rows: repeat(26, 3.846%);
+    gap: 0; /* You can adjust this if you want some space between the items */
+    position: relative; /* This allows positioning of the pseudo-element */
    }
  
  /* Class: personal_details - Removing Borders from Sub Fieldsets in Personal Details*/
  .personal_details {
-     border: none;
-     box-shadow: none;
+    border: none;
+    box-shadow: none;
  }
  
  /* ID Selector: Heading Section Text Alignment & Grid Positioning*/
- #application_start {
- }
+ #application_start {text-align: center;}
  
  /* ID Selector: Application Fieldset; Text Alignment & Grid Positioning*/
  #fieldset_reference {
-     text-align: center;
-     grid-column: 1 / 10 ; /* grid column positioning & spanning */
-     grid-row: 1 / 3; /* grid row positioning & spanning */
+    text-align: center;
+    grid-column: 1 / 21 ; /* grid column positioning & spanning */
+    grid-row: 1 / 3; /* grid row positioning & spanning */
  }
  
  /* ID Selector: Personal Details Fieldset; Grid Positioning*/
  #fieldset_personal {
-     grid-column: 1 / 10; /* grid column positioning & spanning */
-     grid-row: 3 / 10; /* grid row positioning & spanning */
+    grid-column: 1 / 21; /* grid column positioning & spanning */
+    grid-row: 4 / 27; /* grid row positioning & spanning */
  }
  
  /* ID Selector: Job Expectations; Grid Positioning*/
  #job_expectations {
-     grid-column: 1 / 10; /* grid column positioning & spanning */
-     grid-row: 10 / 14; /* grid row positioning & spanning */
+    grid-column: 22 / 38
+    ; /* grid column positioning & spanning */
+    grid-row: 19 / 27; /* grid row positioning & spanning */
  }
  
  /* ID Selector: Job Skills Fieldset; Grid Positioning*/
  #fieldset_skills {
-     text-align: center;
-     grid-column: 11 / 21 ; /* grid column positioning & spanning */
-     grid-row: 1 / 10 ; /* grid row positioning & spanning */
+    text-align: center;
+    grid-column: 22 / 42 ; /* grid column positioning & spanning */
+    grid-row: 1 / 18 ; /* grid row positioning & spanning */
  }
  
  
  /* ID Selector: Gender Fieldset to the Right */
  #gender { 
-     display: flex;
-     justify-content: center;
-     align-items: center; /* To vertically and horizontally center the gender options */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* To vertically and horizontally center the gender options */
  }
  
  /* ID Selector: TEXT POSITIONING via Grid*/
- #fieldset_name {    
-     display: flex;
-     flex-direction: column;
-     float: left;
+ #fieldset_name {   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15%;
  }
  
  #fieldset_address {
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
  }
  
  #fieldset_contact {
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
  }
  
  /* ID Selector: Button Adjustments*/
  #buttons {
-     border: none;
-     background-color:#cffdd1;
-     text-align: center;
-     font-size: 25px;    /* Larger text */
-     width: 100px;       /* Set width if needed */
-     cursor: pointer;    /* Change cursor to pointer */
-     border-radius: 5px; /* Rounded corners */
-     padding: 15px 30px; /* More padding for a larger button */
-     margin-top: 20px;
-     max-height: 50px;     /* button height */
-     grid-column: 15 ; /* button grid column positioning */
-     grid-row: 1 / 3; /* button grid row positioning */
-     overflow: hidden;
+    border: none;
+    background-color:#cffdd1;
+    text-align: center;
+    font-size: 25px;    /* Larger text */
+    width: 100%;       /* Set width if needed */
+    cursor: pointer;    /* Change cursor to pointer */
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    grid-column: 38 / 42 ; /* button grid column positioning */
+    grid-row: 19 / 27; /* button grid row positioning */
+    max-height: 500px;     
  }   
  
  /* Apply box-shadow directly to the submit and reset buttons */
  input[type="submit"], input[type="reset"] {
-     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow */
-     transition: box-shadow 0.3s ease;  /* Smooth shadow transition on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow */
+    transition: box-shadow 0.3s ease;  /* Smooth shadow transition on hover */
  }
  
  input[type="submit"]:hover, input[type="reset"]:hover {
-     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
  }
  
  /* END OF APPLY PAGE STYLING*/
