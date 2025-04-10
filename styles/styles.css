@@ -14,9 +14,7 @@ description: index.html, jobs.html, apply.html, about.html
 * { font-family: Georgia, 'Times New Roman', Times, serif}
 
 /* This forces all paragraphs to have a simular colour, to make the website continuous. */
-p {
-    color: #011e0a;
-}
+p {color: #011e0a;}
 
 /* NAVIGATION BAR/HEADER STYLING */
 #right_float {float: right;}

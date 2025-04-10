@@ -188,7 +188,15 @@
                     <!--Job Expectations -->
                     <!--Salary (Sliding Scale Range)-->
                     <label for="salary_scale"> What are your Salary Expectations? (Per Year):</label><br>
-                    <input type="range" id="salary_scale" name="salary_scale" min="1" max="15"><br><br>
+                    <!-- Slider Container -->
+                    <div class="slider-container">
+                        <!-- Money label for the minimum value -->
+                        <span class="money-label" id="min-value">$50,000</span>
+                        <!-- Salary slider -->
+                        <input type="range" id="salary_scale" name="salary_scale" min="1" max="15" step="1" value="1" class="money-slider">
+                        <!-- Money label for the maximum value -->
+                        <span class="money-label" id="max-value">$200,000</span>
+                    </div>
 
                     <!--Working Hours-->
                     <p>Please provide your preferred working hours.</p>
