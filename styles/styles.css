@@ -19,6 +19,7 @@ p {
 }
 
 /* NAVIGATION BAR/HEADER STYLING */
+#about_float {float: right;}
 
 /* The Unordered list in the navigation bar (the whole group hyper links that take you to different pages) styling. */
 nav ul{
