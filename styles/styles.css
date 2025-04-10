@@ -316,6 +316,13 @@ footer a:hover {
     margin-bottom: 12px;
     margin-right: 12px;
   }
+
+/* Getting Rid of the List Item Dots*/
+  .apply_personal_list {
+    list-style-type: none;
+    padding-left: 0; /* Optional: removes extra padding on the left */
+    margin-left: 0; /* Optional: ensures no extra space on the left side */
+}
  
  /* ID Selector: Job Expectations; Grid Positioning*/
  #job_expectations {
@@ -332,6 +339,7 @@ footer a:hover {
  
  /* ID Selector: Gender Fieldset to the Right */
  #gender { 
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center; /* To vertically and horizontally center the gender options */
@@ -339,9 +347,9 @@ footer a:hover {
  
  /* ID Selector: TEXT POSITIONING via Grid*/
  #fieldset_name {   
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 15%;
  }
  

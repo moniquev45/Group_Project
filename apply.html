@@ -66,17 +66,24 @@
                 <!--Fieldset 2: Personal Details-->
                 <fieldset id="fieldset_personal"> 
                     <h2 class="form_headings"><strong>Personal Details</strong></h2><br>
-                    <fieldset id="fieldset_name" class="personal_details"> <!-- Name : sub fieldset 1--> 
-                    <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
-                        <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" placeholder="Please enter First Name (40 characters max)" required="required"></label><br>
-                        <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" placeholder="Please enter Family Name (40 characters max)" required="required"></label> 
+                    <fieldset id="fieldset_name" class="personal_details"> <!-- Name : sub fieldset 1-->
+                        <ul class="apply_personal_list"> 
+                            <li class="personal_listing">
+                                <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
+                                <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" placeholder="Please enter First Name (40 characters max)" required="required"></label><br>
+                            </li>
+                            <li class="personal_listing">
+                                <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="40" title="maximum 20 characters" placeholder="Please enter Family Name (40 characters max)" required="required"></label> 
+                            </li>
 
-                    <!-- Date of Birth - Change to a Calendar? ; Format: dd/mm/yyyy-->
-                        <p><label for="dob"> Date of Birth: <br> <input type="date" id="dob" name="dob" title="Must match dd/mm/yyyy format" required="required"></label></p>
+                            <li class="personal_listing">
+                                <!-- Date of Birth ; Format: dd/mm/yyyy-->
+                                <p><label for="dob"> Date of Birth: </label><br> <input type="date" id="dob" name="dob" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]" title="Must match dd/mm/yyyy format" placeholder="dd/mm/yyyy" required="required"></label></p>
+                            </li>
 
                         <fieldset id="gender"> <!-- Gender : sub fieldset within Name--> 
                             <legend>Gender</legend>
-                            <!-- Gender - Radio Input ; Needs own Fieldset & Legend-->
+                                <!-- Gender - Radio Input ; Needs own Fieldset & Legend-->
                                 <label for="gender1"><input type="radio" id="gender1" name="gender" value="female">Female</label> 
                                 <label for="gender2"><input type="radio" id="gender2" name="gender" value="male">Male</label>
                                 <label for="gender3"><input type="radio" id="gender3" name="gender" value="other">Other</label> 
@@ -85,35 +92,53 @@
                     </fieldset>
 
                     <fieldset id="fieldset_address" class="personal_details"> <!-- Address : sub fieldset 2 -->
-                        <!-- Street Address- Input Text; Format: Max 20 Alpha Characters-->
-                        <label for="street_address">Street Address: <input type="text" id="street_address" name="street_address" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label>
-                        <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
-                        <label for="suburb">Suburb/Town: <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label> 
-                        <!-- State - Drop Down Boxes-->
-                        <p><label for="state">State: </label>
-                            <select name="state" id="state" required="required">
-                            <option value="" selected="selected" disabled="disabled">Please Select</option>
-                            <option value="state_VIC">VIC</option>
-                            <option value="state_NSW">NSW</option>
-                            <option value="state_QLD">QLD</option>
-                            <option value="state_NT">NT</option>
-                            <option value="state_WA">WA</option>
-                            <option value="state_SA">SA</option>
-                            <option value="state_TAS">TAS</option>
-                            <option value="state_ACT">ACT</option>
-                            </select>
-                        </p>
-                        <!-- Postcode - Text Input: Four Digits Only-->
-                        <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="4 Digits Only" required="required"></label>
+
+                        <ul class="apply_personal_list">
+                            <li class="personal_listing">
+                                <!-- Street Address- Input Text; Format: Max 20 Alpha Characters-->
+                                <label for="street_address">Street Address: <input type="text" id="street_address" name="street_address" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label>
+                            </li>
+                            <li class="personal_listing">
+                                <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
+                                <label for="suburb">Suburb/Town: <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label> 
+                            </li>
+                            <li class="personal_listing">
+                                <!-- State - Drop Down Boxes-->
+                                <p><label for="state">State: </label>
+                                    <select name="state" id="state" required="required">
+                                    <option value="" selected="selected" disabled="disabled">Please Select</option>
+                                    <option value="state_VIC">VIC</option>
+                                    <option value="state_NSW">NSW</option>
+                                    <option value="state_QLD">QLD</option>
+                                    <option value="state_NT">NT</option>
+                                    <option value="state_WA">WA</option>
+                                    <option value="state_SA">SA</option>
+                                    <option value="state_TAS">TAS</option>
+                                    <option value="state_ACT">ACT</option>
+                                    </select>
+                                </p>
+                            </li>
+                            <li class="personal_listing">
+                                <!-- Postcode - Text Input: Four Digits Only-->
+                                <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="4 Digits Only" required="required"></label>
+                            </li>
+                        </ul>
                     </fieldset>
 
                     <fieldset id="fieldset_contact" class="personal_details"> <!-- Contact Details : sub fieldset 3 -->
-                        <text id="contact" name="contact">
-                            <!-- Email Address - Input Text: includes regular expression and patterns-->
-                            <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label>
-                            <!-- Phone Numbers - Input Text: 8-12 digits or spaces -->
-                            <label for="mobile">Phone Number: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 Digits & Spaces Only" required="required"></label> <!-- ADD SPACES PATTERN ???-->
-                        </text>
+
+                        <ul class="apply_personal_list">
+                            <text id="contact" name="contact">
+                                <li class="personal_listing">
+                                    <!-- Email Address - Input Text: includes regular expression and patterns-->
+                                    <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label>
+                                </li>
+                                <li class="personal_listing">
+                                    <!-- Phone Numbers - Input Text: 8-12 digits or spaces -->
+                                    <label for="mobile">Phone Number: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 Digits & Spaces Only" required="required"></label> <!-- ADD SPACES PATTERN ???-->
+                                </li>
+                            </text>
+                        </ul>
                     </fieldset>
                 </fieldset> 
 
@@ -126,11 +151,11 @@
                             <label for="skills"> Required Technical Skills </label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
                         </p> 
                         <checkbox id="skills" name="skills" multiple>
-                            <label  for="teleportation"><input type="checkbox" id="teleportation" name="skills1[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
-                            <label for="telekinesis"><input type="checkbox" id="telekinesis" name="skills2[]" value="telekinesis">Telekinesis</label> <br>
-                            <label for="gravitas"><input type="checkbox" id="gravitas" name="skills3[]" value="gravitas">Gravitas</label> <br>
-                            <label for="confidence"><input type="checkbox" id="confidence" name="skills4[]" value="confidence">Confidence</label> <br>
-                            <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="skills5">Love of Fruit</label> <br>
+                            <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
+                            <label for="telekinesis"><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis">Telekinesis</label> <br>
+                            <label for="gravitas"><input type="checkbox" id="gravitas" name="gravitas[]" value="gravitas">Gravitas</label> <br>
+                            <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label> <br>
+                            <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label> <br>
                         </checkbox>
                     </div>
 
