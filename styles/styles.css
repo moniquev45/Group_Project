@@ -308,10 +308,12 @@ fieldset {
     display: grid;
     grid-template-areas:
     "img info"
-    "indiv info"
-    "indiv info";
+    "indiv1 info"
+    "indiv2 ."
+    "indiv3 ."
+    "indiv4 .";
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto;
     gap: 5px;
     padding: 5px;
 }
@@ -320,22 +322,35 @@ fieldset {
     grid-area: img;
 }
 
-.Individual_Grid {
-    grid-area: indiv;
+.Monique {
+    grid-area: indiv1;
 }
+
+.Riley {
+    grid-area: indiv2;
+}
+
+.Stacey {
+    grid-area: indiv3;
+}
+
+.Vic {
+    grid-area: indiv4;
+}
+
 
 #Team_Grid {
     grid-area: info;
 }
 
 /*Individual Profile Blocking*/
-/*.Individual_Grid {
+.Individual_Grid {
     display: grid;
     grid-template-areas:
     "photo info expand";
     grid-template-columns: 1fr 3fr 3fr;
     grid-template-rows: auto;
-}*/
+}
 
 #Individual_Photo {
     grid-area: photo;
