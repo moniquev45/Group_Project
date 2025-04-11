@@ -330,7 +330,7 @@ footer a:hover {
     grid-row: 19 / 27; /* grid row positioning & spanning */
  }
 
-  /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
+ /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
   #salary_scale {
     width: 75%;
     margin-bottom: 20px;
@@ -338,7 +338,10 @@ footer a:hover {
  }
  
  /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
- #hours_start, #hours_end {}
+ #hours_start, #hours_end {
+    width: 15%;
+    margin-bottom: 5px;
+ }
  
  /* BUTTONS | ID Selector: Button Adjustments*/
  #buttons {
