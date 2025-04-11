@@ -17,8 +17,8 @@ description: index.html, jobs.html, apply.html, about.html
 p {color: #011e0a;}
 
 /* NAVIGATION BAR/HEADER STYLING */
-#right_float {float: right;}
-#left_float {float: left;}
+.right_float {float: right;}
+.left_float {float: left;}
 
 /* The Unordered list in the navigation bar (the whole group hyper links that take you to different pages) styling. */
 nav ul{
