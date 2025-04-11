@@ -234,9 +234,12 @@ footer a:hover {
      border-radius: 30px;
      color: #ffffff;
  }
+
+ /* ID Selector: Heading Section Text Alignment & Grid Positioning*/
+  #application_start {text-align: center;}
  
  /* Element: Labels are all uniform in colour and size*/
- label {color: #066026;}
+ label, p {color: #066026;}
  
  /* Class: Making all headings (excluding h1) in Apply Page consistent in size and formatting */
  .form_headings {
@@ -269,82 +272,75 @@ footer a:hover {
     gap: 0; /* You can adjust this if you want some space between the items */
     position: relative; /* This allows positioning of the pseudo-element */
    }
- 
- /* Child combination - Class ID & Input: personal_details sections- Styling*/
 
- .personal_details input {
-    display: block;
-    width: 80%;
-    margin-bottom: 20px;
-    margin-top: 20px;
- }
-
- #salary_scale {
-    width: 75%;
-    margin-bottom: 20px;
-    margin-top: 20px;
- }
-
- /* Class: personal_details sections- Styling*/
-#fieldset_address {}
-
-  /* Class: personal_details sections- Styling*/
-#fieldset_contact {} 
- 
- /* ID Selector: Heading Section Text Alignment & Grid Positioning*/
- #application_start {text-align: center;}
- 
- /* ID Selector: Application Fieldset; Text Alignment & Grid Positioning*/
+ /* REFERENCE | ID Selector: Application Fieldset; Text Alignment & Grid Positioning*/
  #fieldset_reference {
     text-align: center;
     grid-column: 1 / 21 ; /* grid column positioning & spanning */
     grid-row: 1 / 3; /* grid row positioning & spanning */
  }
- 
- /* ID Selector: Personal Details Fieldset; Grid Positioning*/
- #fieldset_personal {
+
+  /* PERSONAL DETAILS | Grid Positioning*/
+  #fieldset_personal {
     grid-column: 1 / 21; /* grid column positioning & spanning */
     grid-row: 4 / 27; /* grid row positioning & spanning */
  }
+ 
+ /* PERSONAL DETAILS | Child combination - Class ID & Input: personal_details sections- Styling*/
+ .personal_details input {
+    display: block;
+    width: 80%; /* how much of the page the input takes up*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+ }
 
-/* Getting Rid of the List Item Dots*/
-  .apply_personal_list {
-    list-style-type: none;
-    padding-left: 0; /* Optional: removes extra padding on the left */
-    margin-left: 0; /* Optional: ensures no extra space on the left side */
-}
- 
- /* ID Selector: Job Expectations; Grid Positioning*/
- #job_expectations {
-    grid-column: 22 / 38; /* grid column positioning & spanning */
-    grid-row: 19 / 27; /* grid row positioning & spanning */
- }
- 
- /* ID Selector: Job Skills Fieldset; Grid Positioning*/
- #fieldset_skills {
-    grid-column: 22 / 42 ; /* grid column positioning & spanning */
-    grid-row: 1 / 18 ; /* grid row positioning & spanning */
- }
- 
- /* ID Selector: Centered Gender Fieldset */
- #gender { 
+ /* PERSONAL DETAILS | ID Selector: Centered Gender Fieldset */
+  #gender { 
     text-align: center;    display: flex;
     justify-content:center;
     align-items: center; /* To vertically and horizontally center the gender options */
  }
-/* Child: Gender ID & Label: Radio buttons are evenly spaced*/
-#gender label { 
+ /* PERSONAL DETAILS | Child: Gender ID & Label: Radio buttons are evenly spaced*/
+ #gender label { 
     width: 100%;
     display: flex;
     justify-content:space-around;
     text-align: center;
  }
 
- /* Class: Centered Gender Fieldset */
-
-.apply_textarea {text-align: center;}
+/* PERSONAL DETAILS | Getting Rid of the List Item Dots*/
+  .apply_personal_list {
+    list-style-type: none;
+    padding-left: 0; /* Optional: removes extra padding on the left */
+    margin-left: 0; /* Optional: ensures no extra space on the left side */
+}
  
- /* ID Selector: Button Adjustments*/
+ /* SKILLS FIELD | Grid Positioning*/
+ #fieldset_skills {
+    grid-column: 22 / 42 ; /* grid column positioning & spanning */
+    grid-row: 1 / 18 ; /* grid row positioning & spanning */
+ }
+
+ /* SKILLS FIELD | Text Area Placement */
+ .apply_textarea {text-align: center;}
+
+ /* JOB EXPECTATIONS | ID Selector: Job Expectations; Grid Positioning*/
+ #job_expectations {
+    grid-column: 22 / 38; /* grid column positioning & spanning */
+    grid-row: 19 / 27; /* grid row positioning & spanning */
+ }
+
+  /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
+  #salary_scale {
+    width: 75%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+ }
+ 
+ /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
+ #hours_start, #hours_end {}
+ 
+ /* BUTTONS | ID Selector: Button Adjustments*/
  #buttons {
     border: none;
     background-color:#cffdd1;
@@ -360,18 +356,16 @@ footer a:hover {
     max-height: 500px;     
  }   
  
- /* Apply box-shadow directly to the submit and reset buttons */
+ /* BUTTONS | Apply box-shadow directly to the submit and reset buttons */
  input[type="submit"], input[type="reset"] {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow */
     transition: box-shadow 0.3s ease;  /* Smooth shadow transition on hover */
  }
  
-  /* Pseudo Element - Hovering for buttons */
- input[type="submit"]:hover, input[type="reset"]:hover {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
- }
+  /* Pseudo Element - Hovering for Inputs */
+ #apply_body input:hover {box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);} /* Darker shadow on hover */
  
- /* END OF APPLY PAGE STYLING*/
+/* END OF APPLY PAGE STYLING*/
 
 /* About Page Styling */
 /*Page Blocking*/
