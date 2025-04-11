@@ -218,7 +218,10 @@ footer a:hover {
 /* APPLY PAGE STYLING*/
 
  /* Responsive Design */
- @media (max-width: 768px) {#apply_body{padding: 10px;}}
+ @media (max-width: 768px) {
+    #apply_body{padding: 10px;}
+    #apply_form, application_start {display: block;} /* disables grid at mobile sizes */
+}
 
  /* Element: Making spaces*/
  inputs, textarea, text {
@@ -242,7 +245,7 @@ footer a:hover {
     box-sizing: border-box;
     max-width: 100%; 
     overflow-wrap: break-word;
-    font-size: 1vw; /* Font size will adjust based on viewport width */  
+    font-size: clamp(1rem, 1vw, 1rem); /* Font size will adjust based on viewport width */  
    }
  
  /* Element: Fieldset Padding, Colour & Border*/
