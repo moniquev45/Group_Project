@@ -323,7 +323,6 @@ footer a:hover {
   #recommended_skills label {
     display: block; /* Makes the label take up the full width, giving space below it */
     margin-bottom: 10px; /* Adds space below the checkbox */
-    margin-right: 10px;
 }
 
 #required_skills label {
@@ -337,7 +336,27 @@ footer a:hover {
 }
 
  /* SKILLS FIELD | Text Area Placement */
- .apply_textarea {text-align: center;}
+ .apply_textarea {
+    text-align: center;
+    margin-bottom: 20px; /* Adds spacing between form fields */
+}
+
+/* SKILLS FIELD | Text Area Label, Positioning and Style */
+.apply_textarea label {
+    display: block; /* Makes the label a block element to stack it above the textarea */
+    margin-bottom: 5px; /* Adds some space between the label and the textarea */
+    font-weight: bold; /* Optional: makes the label text stand out more */
+}
+
+/* SKILLS FIELD | Text Area - Box formatting */
+.apply_textarea textarea {
+    width: 100%; /* Makes the textarea fill the available width */
+    padding: 10px; /* Adds some padding inside the textarea */
+    font-size: 16px; /* Adjusts the font size for better readability */
+    border: 1px solid #ccc; /* Adds a light border around the textarea */
+    border-radius: 4px; /* Optional: makes the textarea corners slightly rounded */
+    box-sizing: border-box; /* Ensures padding doesn't affect the element's width */
+}
 
  /* JOB EXPECTATIONS | ID Selector: Job Expectations; Grid Positioning*/
  #job_expectations {
