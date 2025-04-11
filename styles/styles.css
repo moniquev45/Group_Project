@@ -279,6 +279,12 @@ footer a:hover {
     margin-top: 20px;
  }
 
+ #salary_scale {
+    width: 75%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+ }
+
  /* Class: personal_details sections- Styling*/
 #fieldset_address {}
 
@@ -322,13 +328,12 @@ footer a:hover {
  
  /* ID Selector: Centered Gender Fieldset */
  #gender { 
-    text-align: center;
-    display: flex;
+    text-align: center;    display: flex;
     justify-content:center;
     align-items: center; /* To vertically and horizontally center the gender options */
  }
 /* Child: Gender ID & Label: Radio buttons are evenly spaced*/
- #gender label { 
+#gender label { 
     width: 100%;
     display: flex;
     justify-content:space-around;
@@ -337,9 +342,7 @@ footer a:hover {
 
  /* Class: Centered Gender Fieldset */
 
-.apply_textarea { 
-    text-align: center; /* To vertically and horizontally center the gender options */
- }
+.apply_textarea {text-align: center;}
  
  /* ID Selector: Button Adjustments*/
  #buttons {
