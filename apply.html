@@ -66,7 +66,7 @@
                 <!--Fieldset 2: Personal Details-->
                 <fieldset id="fieldset_personal"> 
                     <h2 class="form_headings"><strong>Personal Details</strong></h2><br>
-                    <section id="fieldset_name" class="personal_details"> <!-- Name : section 1-->
+                    <div id="fieldset_name" class="personal_details"> <!-- Name : div 1-->
                         <ul class="apply_personal_list"> 
                             <li class="personal_listing">
                                 <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
@@ -78,7 +78,7 @@
 
                             <li class="personal_listing">
                                 <!-- Date of Birth ; Format: dd/mm/yyyy-->
-                                <p><label for="dob"> Date of Birth: <br> <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy" required="required"></label></p>
+                                <p><label for="dob"> Date of Birth: <br> <input type="date" id="dob" name="dob" required="required"></label></p>
                             </li>
                         </ul>
 
@@ -90,10 +90,9 @@
                                 <label for="gender3"><input type="radio" id="gender3" name="gender" value="other">Other</label> 
                                 <label for="gender4"><input type="radio" id="gender4" name="gender" value="NA" checked="checked">Prefer not to say</label>
                         </fieldset>
-                    </section>
+                    </div>
 
-                    <section id="fieldset_address" class="personal_details"> <!-- Address : section 2 -->
-
+                    <div id="fieldset_address" class="personal_details"> <!-- Address : div 2 -->
                         <ul class="apply_personal_list">
                             <li class="personal_listing">
                                 <!-- Street Address- Input Text; Format: Max 20 Alpha Characters-->
@@ -121,71 +120,75 @@
                             </li>
                             <li class="personal_listing">
                                 <!-- Postcode - Text Input: Four Digits Only-->
-                                <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="4 Digits Only" required="required"></label>
+                                <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="4 digits only" required="required"></label>
                             </li>
                         </ul>
-                    </section>
+                    </div>
 
-                    <section id="fieldset_contact" class="personal_details"> <!-- Contact Details : section 3 -->
-
-                        <ul class="apply_personal_list">
-                            <text id="contact" name="contact">
+                    <div id="fieldset_contact" class="personal_details"> <!-- Contact Details : div 3 -->
+                            <ul class="apply_personal_list">
                                 <li class="personal_listing">
                                     <!-- Email Address - Input Text: includes regular expression and patterns-->
-                                    <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label>
+                                    <label for="email_apply"> Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label>
                                 </li>
                                 <li class="personal_listing">
                                     <!-- Phone Numbers - Input Text: 8-12 digits or spaces -->
-                                    <label for="mobile">Phone Number: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 Digits & Spaces Only" required="required"></label> <!-- ADD SPACES PATTERN ???-->
+                                    <label for="mobile"> Phone Number: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 digits &amp; Spaces Only" required="required"></label>
                                 </li>
-                            </text>
-                        </ul>
-                    </section>
+                            </ul>
+                    </div>
                 </fieldset> 
 
                 <!--Fieldset 3: Job Requirements-->
                 <fieldset id="fieldset_skills">
                     <h3 class="form_headings"><strong> Skills Field</strong></h3>
                     <!--Required Technical List - Checkbox Inputs -->
-                    <section id="required_skills" class="skills_req_rec_other">
-                        <p>
-                            <label for="skills"> Required Technical Skills</label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
-                        </p> 
+                    <div id="required_skills" class="skills_req_rec_other">
 
-                        <checkbox id="skills" name="skills" multiple>
-                            <label  for="teleportation"><input type="checkbox" id="teleportation" name="teleportation[]" value="teleportation" checked="checked">Teleportation</label> <br> <!--DEFAULT TICK ON FIRST-->
-                            <label for="telekinesis"><input type="checkbox" id="telekinesis" name="telekinesis[]" value="telekinesis">Telekinesis</label> <br>
-                            <label for="gravitas"><input type="checkbox" id="gravitas" name="gravitas[]" value="gravitas">Gravitas</label> <br>
-                            <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label> <br>
-                            <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label> <br>
-                        </checkbox>
-                    </section>
+                        <h4> Required Technical Skills </h4> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
+
+                            <div id="skills">
+                                <label  for="teleportation">
+                                    <input type="checkbox" id="teleportation" name="skills[]" value="teleportation" checked="checked">Teleportation
+                                </label> <!--DEFAULT TICK ON FIRST-->
+                                <label for="telekinesis">
+                                    <input type="checkbox" id="telekinesis" name="skills[]" value="telekinesis">Telekinesis
+                                </label>
+                                <label for="gravitas"><input type="checkbox" id="gravitas" name="skills[]" value="gravitas">
+                                    Gravitas
+                                </label>
+                                <label for="confidence"><input type="checkbox" id="confidence" name="skills[]" value="confidence">
+                                    Confidence
+                                </label>
+                                <label for="fruit"><input type="checkbox" id="fruit" name="skills[]" value="fruit">
+                                    Love of Fruit
+                                </label>
+                            </div>
+                    </div>
 
                     <!--Recommended Skills List - Checkbox Inputs -->
-                    <section id="recommended_skills">
-                        <p>
-                            <label  for="rec_skills"> Recommended Technical Skills <br>
-                        </p>
-                        <input type="checkbox" id="rec_skills" name="rec_skills1[]" value="rec_skills1" checked="checked"> Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
-                    </section>
+                    <div id="recommended_skills">
+                        <label  for="rec_skills"> Recommended Technical Skills 
+                            <input type="checkbox" id="rec_skills" name="rec_skills[]" value="dragon" checked="checked"> Dragon Pet. Extra points if brought to interview.
+                        </label> <!--DEFAULT TICK ON FIRST-->
+                    </div>
 
                         <!--Other Skills - Textbox-->
-                    <p id="skills_other" class="apply_textarea">
-                        <label for="skills_other_textbox">Other Skills<br> 
-                        <!--PLACEHOLDER ATTRIBUTE-->
-                        <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="60" placeholder="Please provide any other further skills here..."></textarea>
+                    <div id="skills_other" class="apply_textarea">
+                        <label for="skills_other_textbox"> Other Skills
+                            <textarea id="skills_other_textbox" name="skills_other_textbox" rows="4" cols="60" placeholder="Please provide any other further skills here..."></textarea>
                         </label>
-                    </p> 
+                    </div> 
 
                     <!--Other Job Requirements: Comments (Textarea)-->
                     <p class="apply_textarea">
                         <label for="requirements">Any Additional Requirements?</label><br>
                         <textarea id="requirements" name="requirements" rows="4" cols="60" placeholder="Please share any additional requirements or information here." required></textarea><br><br>
                     </p>
-
                 </fieldset>
+
                 <fieldset id="job_expectations">
-                    <h4 class="form_headings"><strong> Job Expectations</strong></h4>
+                    <h5 class="form_headings"><strong> Job Expectations</strong></h5>
                     <!--Job Expectations -->
                     <!--Salary (Sliding Scale Range)-->
                     <label for="salary_scale"> What are your Salary Expectations? (Per Year):</label><br>

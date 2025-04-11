@@ -77,8 +77,6 @@ header{
     color: #f2fff2;
 }
 
-
-
 /* The main conents of the page styling. */
 main{
     border-radius: 8px;
@@ -87,8 +85,6 @@ main{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-
-
 
 /* FOOTER STYLING */
 
@@ -145,7 +141,6 @@ footer a:hover {
     color: #011e0a;
 }
 
-
 /* JOB LISTING PAGE STYLING */
 
 #Jobs_Table_Data{
@@ -178,7 +173,6 @@ footer a:hover {
     text-align: center;
     float: center;
 }
-
 
 #Apply_Here:hover{
     color: #066026;
@@ -219,12 +213,10 @@ footer a:hover {
     color:  #011508;
 }
 
-
-
 /* End of Job Listing Page Styling */
 
-
 /* APPLY PAGE STYLING*/
+
  /* Responsive Design */
  @media (max-width: 768px) {#apply_body{padding: 10px;}}
 
@@ -320,6 +312,29 @@ footer a:hover {
     grid-column: 22 / 42 ; /* grid column positioning & spanning */
     grid-row: 1 / 18 ; /* grid row positioning & spanning */
  }
+
+ /* SKILLS FIELD | Required Technial Skills - List the Checkboxes */
+ #skills label {
+    display: block; /* Makes each checkbox and label stack vertically */
+    margin-bottom: 10px; /* Adds space between checkboxes */
+}
+
+  /* SKILLS FIELD | Input Margins */
+  #recommended_skills label {
+    display: block; /* Makes the label take up the full width, giving space below it */
+    margin-bottom: 10px; /* Adds space below the checkbox */
+    margin-right: 10px;
+}
+
+#required_skills label {
+    width: 45%;
+    margin-bottom: 10px; 
+}
+
+#skills_other label {
+    display: block; /* Makes the label a block-level element */
+    margin-bottom: 10px; /* Adds space between label and textarea */
+}
 
  /* SKILLS FIELD | Text Area Placement */
  .apply_textarea {text-align: center;}
