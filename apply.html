@@ -66,7 +66,7 @@
                 <!--Fieldset 2: Personal Details-->
                 <fieldset id="fieldset_personal"> 
                     <h2 class="form_headings"><strong>Personal Details</strong></h2><br>
-                    <fieldset id="fieldset_name" class="personal_details"> <!-- Name : sub fieldset 1-->
+                    <section id="fieldset_name" class="personal_details"> <!-- Name : section 1-->
                         <ul class="apply_personal_list"> 
                             <li class="personal_listing">
                                 <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
@@ -82,7 +82,7 @@
                             </li>
                         </ul>
 
-                        <fieldset id="gender"> <!-- Gender : sub fieldset within Name--> 
+                        <fieldset id="gender"> <!-- Gender : sub fieldset --> 
                             <legend>Gender</legend>
                                 <!-- Gender - Radio Input ; Needs own Fieldset & Legend-->
                                 <label for="gender1"><input type="radio" id="gender1" name="gender" value="female">Female</label> 
@@ -90,9 +90,9 @@
                                 <label for="gender3"><input type="radio" id="gender3" name="gender" value="other">Other</label> 
                                 <label for="gender4"><input type="radio" id="gender4" name="gender" value="NA" checked="checked">Prefer not to say</label>
                         </fieldset>
-                    </fieldset>
+                    </section>
 
-                    <fieldset id="fieldset_address" class="personal_details"> <!-- Address : sub fieldset 2 -->
+                    <section id="fieldset_address" class="personal_details"> <!-- Address : section 2 -->
 
                         <ul class="apply_personal_list">
                             <li class="personal_listing">
@@ -124,9 +124,9 @@
                                 <label for="postcode">Postcode: <input type="text" id="postcode" name="postcode" minlength="4" maxlength="4" pattern="[0-9]+" title="4 Digits Only" required="required"></label>
                             </li>
                         </ul>
-                    </fieldset>
+                    </section>
 
-                    <fieldset id="fieldset_contact" class="personal_details"> <!-- Contact Details : sub fieldset 3 -->
+                    <section id="fieldset_contact" class="personal_details"> <!-- Contact Details : section 3 -->
 
                         <ul class="apply_personal_list">
                             <text id="contact" name="contact">
@@ -140,14 +140,14 @@
                                 </li>
                             </text>
                         </ul>
-                    </fieldset>
+                    </section>
                 </fieldset> 
 
                 <!--Fieldset 3: Job Requirements-->
                 <fieldset id="fieldset_skills">
                     <h3 class="form_headings"><strong> Skills Field</strong></h3>
                     <!--Required Technical List - Checkbox Inputs -->
-                    <div id="required_skills" class="skills_req_rec_other">
+                    <section id="required_skills" class="skills_req_rec_other">
                         <p>
                             <label for="skills"> Required Technical Skills</label> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
                         </p> 
@@ -159,16 +159,15 @@
                             <label for="confidence"><input type="checkbox" id="confidence" name="confidence[]" value="confidence">Confidence</label> <br>
                             <label for="fruit"><input type="checkbox" id="fruit" name="fruit[]" value="fruit">Love of Fruit</label> <br>
                         </checkbox>
-                    </div>
+                    </section>
 
                     <!--Recommended Skills List - Checkbox Inputs -->
-                    <div id="recommended_skills">
+                    <section id="recommended_skills">
                         <p>
                             <label  for="rec_skills"> Recommended Technical Skills <br>
                         </p>
-                        
                         <input type="checkbox" id="rec_skills" name="rec_skills1[]" value="rec_skills1" checked="checked"> Dragon Pet. Extra points if brought to interview.</label> <!--DEFAULT TICK ON FIRST-->
-                    </div>
+                    </section>
 
                         <!--Other Skills - Textbox-->
                     <p id="skills_other" class="apply_textarea">

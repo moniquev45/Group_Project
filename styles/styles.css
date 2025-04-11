@@ -274,11 +274,20 @@ footer a:hover {
     position: relative; /* This allows positioning of the pseudo-element */
    }
  
- /* Class: personal_details - Removing Borders from Sub Fieldsets in Personal Details*/
- .personal_details {
-    border: none;
-    box-shadow: none;
+ /* Child combination - Class ID & Input: personal_details sections- Styling*/
+
+ .personal_details input {
+    display: block;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
  }
+
+ /* Class: personal_details sections- Styling*/
+#fieldset_address {}
+
+  /* Class: personal_details sections- Styling*/
+#fieldset_contact {} 
  
  /* ID Selector: Heading Section Text Alignment & Grid Positioning*/
  #application_start {text-align: center;}
@@ -295,12 +304,6 @@ footer a:hover {
     grid-column: 1 / 21; /* grid column positioning & spanning */
     grid-row: 4 / 27; /* grid row positioning & spanning */
  }
-
-  /* Personal Details Input Styling & Positioning*/
- #fieldset_personal input {
-    margin-bottom: 12px;
-    margin-right: 12px;
-  }
 
 /* Getting Rid of the List Item Dots*/
   .apply_personal_list {
@@ -325,8 +328,15 @@ footer a:hover {
  #gender { 
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center; /* To vertically and horizontally center the gender options */
+ }
+/* Child: Gender ID & Label: Radio buttons are evenly spaced*/
+ #gender label { 
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
  }
 
  /* Class: Centered Gender Fieldset */
@@ -357,6 +367,7 @@ footer a:hover {
     transition: box-shadow 0.3s ease;  /* Smooth shadow transition on hover */
  }
  
+  /* Pseudo Element - Hovering for buttons */
  input[type="submit"]:hover, input[type="reset"]:hover {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
  }
