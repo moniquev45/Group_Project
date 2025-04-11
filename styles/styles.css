@@ -16,10 +16,6 @@ description: index.html, jobs.html, apply.html, about.html
 /* This forces all paragraphs to have a simular colour, to make the website continuous. */
 p {color: #011e0a;}
 
-/* NAVIGATION BAR/HEADER STYLING */
-#right_float {float: right;}
-#left_float {float: left;}
-
 /* The Unordered list in the navigation bar (the whole group hyper links that take you to different pages) styling. */
 nav ul{
     /* This removes the list dot point from the unordered list. */
