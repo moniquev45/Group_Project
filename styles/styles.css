@@ -13,7 +13,7 @@ description: index.html, jobs.html, apply.html, about.html
 /* This forces all the text on the website to be part of the same font family/font style. */
 * { font-family: Georgia, 'Times New Roman', Times, serif}
 
-/* This forces all paragraphs to have a simular colour, to make the website continuous. */
+/* This forces all paragraphs to have a similar colour, to make the website continuous. */
 p {color: #011e0a;}
 
 /* The Unordered list in the navigation bar (the whole group hyper links that take you to different pages) styling. */
@@ -500,4 +500,61 @@ img.Individual_Photo {
     padding: 10px;
     width: 20%;
     height: 35%;
+}
+
+/*Homepage styling*/
+
+#TitlePgraph {
+    text-align: center;
+    color: #000000;
+}
+
+#Who_we_are{
+    float: left;
+    width: 30%;
+    p{
+        color: #000000;
+    }
+}
+
+#What_we_do{
+    float: right;
+    width: 30%;
+    p{
+        color: #000000;
+    }
+}
+
+#Company_Graphic{
+    display: inline-block;
+    text-align: center;
+    padding: 0.5%;
+    width: 30%;
+    img{
+        width: 50%;
+        height: normal;
+        border-radius: 8px;
+    }
+}
+
+#Our_Mission{
+    display: inline;
+    text-align: center;
+    width: 40%;
+    p{
+        color: #000000;
+    }
+}
+
+#Meet_Us{
+    clear: both;
+    border: 5px, double, #000000;
+    border-radius: 8px;
+    text-align: center;
+    h3{
+        font-size: medium;
+    }
+    p {
+        color: #000000;
+    }
 }
