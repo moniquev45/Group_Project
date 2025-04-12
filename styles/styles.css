@@ -16,10 +16,6 @@ description: index.html, jobs.html, apply.html, about.html
 /* This forces all paragraphs to have a simular colour, to make the website continuous. */
 p {color: #011e0a;}
 
-/* NAVIGATION BAR/HEADER STYLING */
-#right_float {float: right;}
-#left_float {float: left;}
-
 /* The Unordered list in the navigation bar (the whole group hyper links that take you to different pages) styling. */
 nav ul{
     /* This removes the list dot point from the unordered list. */
@@ -82,8 +78,6 @@ header{
     color: #f2fff2;
 }
 
-
-
 /* The main conents of the page styling. */
 main{
     border-radius: 8px;
@@ -92,8 +86,6 @@ main{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-
-
 
 /* FOOTER STYLING */
 
@@ -112,7 +104,7 @@ footer ul{
     /* It removes space around the elements outside the borders. */
     margin: 0;
     /* Creates space between the text/elements inside and the border. */
-    padding: 8px;
+    padding: 4px;
     /* This hides elements if content overflows out of the box. */
     overflow: hidden;
     /* This rounds the edges of the border. */
@@ -150,7 +142,6 @@ footer a:hover {
     color: #011e0a;
 }
 
-
 /* JOB LISTING PAGE STYLING */
 
 #Jobs_Table_Data{
@@ -183,7 +174,6 @@ footer a:hover {
     text-align: center;
     float: center;
 }
-
 
 #Apply_Here:hover{
     color: #066026;
@@ -224,14 +214,15 @@ footer a:hover {
     color:  #011508;
 }
 
-
-
 /* End of Job Listing Page Styling */
 
-
 /* APPLY PAGE STYLING*/
+
  /* Responsive Design */
- @media (max-width: 768px) {#apply_body{padding: 10px;}}
+ @media (max-width: 768px) {
+    #apply_body{padding: 10px;}
+    #apply_form, application_start {display: block;} /* disables grid at mobile sizes */
+}
 
  /* Element: Making spaces*/
  inputs, textarea, text {
@@ -239,9 +230,12 @@ footer a:hover {
      border-radius: 30px;
      color: #ffffff;
  }
+
+ /* ID Selector: Heading Section Text Alignment & Grid Positioning*/
+  #application_start {text-align: center;}
  
  /* Element: Labels are all uniform in colour and size*/
- label {color: #066026;}
+ label, p {color: #066026;}
  
  /* Class: Making all headings (excluding h1) in Apply Page consistent in size and formatting */
  .form_headings {
@@ -252,7 +246,7 @@ footer a:hover {
     box-sizing: border-box;
     max-width: 100%; 
     overflow-wrap: break-word;
-    font-size: 1vw; /* Font size will adjust based on viewport width */  
+    font-size: clamp(1rem, 1vw, 1rem); /* Font size will adjust based on viewport width */  
    }
  
  /* Element: Fieldset Padding, Colour & Border*/
@@ -274,69 +268,120 @@ footer a:hover {
     gap: 0; /* You can adjust this if you want some space between the items */
     position: relative; /* This allows positioning of the pseudo-element */
    }
- 
- /* Class: personal_details - Removing Borders from Sub Fieldsets in Personal Details*/
- .personal_details {
-    border: none;
-    box-shadow: none;
- }
- 
- /* ID Selector: Heading Section Text Alignment & Grid Positioning*/
- #application_start {text-align: center;}
- 
- /* ID Selector: Application Fieldset; Text Alignment & Grid Positioning*/
+
+ /* REFERENCE | ID Selector: Application Fieldset; Text Alignment & Grid Positioning*/
  #fieldset_reference {
     text-align: center;
     grid-column: 1 / 21 ; /* grid column positioning & spanning */
     grid-row: 1 / 3; /* grid row positioning & spanning */
  }
- 
- /* ID Selector: Personal Details Fieldset; Grid Positioning*/
- #fieldset_personal {
+
+  /* PERSONAL DETAILS | Grid Positioning*/
+  #fieldset_personal {
     grid-column: 1 / 21; /* grid column positioning & spanning */
     grid-row: 4 / 27; /* grid row positioning & spanning */
  }
+ 
+ /* PERSONAL DETAILS | Child combination - Class ID & Input: personal_details sections- Styling*/
+ .personal_details input {
+    display: block;
+    width: 80%; /* how much of the page the input takes up*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+ }
 
-  /* Personal Details Input Styling & Positioning*/
- #fieldset_personal input {
-    margin-bottom: 12px;
-    margin-right: 12px;
-  }
+ /* PERSONAL DETAILS | ID Selector: Centered Gender Fieldset */
+  #gender { 
+    text-align: center;    display: flex;
+    justify-content:center;
+    align-items: center; /* To vertically and horizontally center the gender options */
+ }
+ /* PERSONAL DETAILS | Child: Gender ID & Label: Radio buttons are evenly spaced*/
+ #gender label { 
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+ }
 
-/* Getting Rid of the List Item Dots*/
+/* PERSONAL DETAILS | Getting Rid of the List Item Dots*/
   .apply_personal_list {
     list-style-type: none;
     padding-left: 0; /* Optional: removes extra padding on the left */
     margin-left: 0; /* Optional: ensures no extra space on the left side */
 }
  
- /* ID Selector: Job Expectations; Grid Positioning*/
- #job_expectations {
-    grid-column: 22 / 38; /* grid column positioning & spanning */
-    grid-row: 19 / 27; /* grid row positioning & spanning */
- }
- 
- /* ID Selector: Job Skills Fieldset; Grid Positioning*/
+ /* SKILLS FIELD | Grid Positioning*/
  #fieldset_skills {
     grid-column: 22 / 42 ; /* grid column positioning & spanning */
     grid-row: 1 / 18 ; /* grid row positioning & spanning */
  }
- 
- /* ID Selector: Centered Gender Fieldset */
- #gender { 
+
+ /* SKILLS FIELD | Required Technial Skills - List the Checkboxes */
+ #skills label {
+    display: block; /* Makes each checkbox and label stack vertically */
+    margin-bottom: 10px; /* Adds space between checkboxes */
+}
+
+  /* SKILLS FIELD | Input Margins */
+  #recommended_skills label {
+    display: block; /* Makes the label take up the full width, giving space below it */
+    margin-bottom: 10px; /* Adds space below the checkbox */
+}
+
+#required_skills label {
+    width: 45%;
+    margin-bottom: 10px; 
+}
+
+#skills_other label {
+    display: block; /* Makes the label a block-level element */
+    margin-bottom: 10px; /* Adds space between label and textarea */
+}
+
+ /* SKILLS FIELD | Text Area Placement */
+ .apply_textarea {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* To vertically and horizontally center the gender options */
+    margin-bottom: 20px; /* Adds spacing between form fields */
+}
+
+/* SKILLS FIELD | Text Area Label, Positioning and Style */
+.apply_textarea label {
+    display: block; /* Makes the label a block element to stack it above the textarea */
+    margin-bottom: 5px; /* Adds some space between the label and the textarea */
+    font-weight: bold; /* Optional: makes the label text stand out more */
+}
+
+/* SKILLS FIELD | Text Area - Box formatting */
+.apply_textarea textarea {
+    width: 100%; /* Makes the textarea fill the available width */
+    padding: 10px; /* Adds some padding inside the textarea */
+    font-size: 16px; /* Adjusts the font size for better readability */
+    border: 1px solid #ccc; /* Adds a light border around the textarea */
+    border-radius: 4px; /* Optional: makes the textarea corners slightly rounded */
+    box-sizing: border-box; /* Ensures padding doesn't affect the element's width */
+}
+
+ /* JOB EXPECTATIONS | ID Selector: Job Expectations; Grid Positioning*/
+ #job_expectations {
+    grid-column: 22 / 38; /* grid column positioning & spanning */
+    grid-row: 19 / 27; /* grid row positioning & spanning */
  }
 
- /* Class: Centered Gender Fieldset */
-
-.apply_textarea { 
-    text-align: center; /* To vertically and horizontally center the gender options */
+ /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
+  #salary_scale {
+    width: 75%;
+    margin-bottom: 20px;
+    margin-top: 20px;
  }
  
- /* ID Selector: Button Adjustments*/
+ /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
+ #hours_start, #hours_end {
+    width: 15%;
+    margin-bottom: 5px;
+ }
+ 
+ /* BUTTONS | ID Selector: Button Adjustments*/
  #buttons {
     border: none;
     background-color:#cffdd1;
@@ -352,17 +397,16 @@ footer a:hover {
     max-height: 500px;     
  }   
  
- /* Apply box-shadow directly to the submit and reset buttons */
+ /* BUTTONS | Apply box-shadow directly to the submit and reset buttons */
  input[type="submit"], input[type="reset"] {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Add shadow */
     transition: box-shadow 0.3s ease;  /* Smooth shadow transition on hover */
  }
  
- input[type="submit"]:hover, input[type="reset"]:hover {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
- }
+  /* Pseudo Element - Hovering for Inputs */
+ #apply_body input:hover {box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);} /* Darker shadow on hover */
  
- /* END OF APPLY PAGE STYLING*/
+/* END OF APPLY PAGE STYLING*/
 
 /* About Page Styling */
 /*Page Blocking*/
