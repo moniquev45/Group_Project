@@ -23,7 +23,7 @@ nav ul{
     /* It removes space around the elements outside the borders. */
     margin: 0;
     /* Creates space between the text/elements inside and the border. */
-    padding: 0px;
+    padding: 8px;
     /* This hides elements if content overflows out of the box. */
     overflow: hidden;
     /* This rounds the edges of the border. */
