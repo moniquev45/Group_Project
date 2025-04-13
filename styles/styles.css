@@ -247,8 +247,25 @@ footer a:hover {
     font-size: 17px;
 }
 
-.Qualifications_Table{
 
+.Qualifications_Table{
+    width: 75%;
+    display: table-cell;
+    border: 1px solid #065321;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #011e0a;
+    background-color: #e0ffe1;
+}
+
+.Qualifications_Table_Row{
+    background-color: #e0ffe1;
+    padding: 20px;
+}
+
+.Qualifications_Table_Header{
+    background-color: #4EB774;
 }
 
 /* End of Job Listing Pages Styling */
