@@ -9,24 +9,19 @@
         <meta name="keywords" content="">
         <!--Author Information-->
         <meta name="author" content="" >
-
         <title></title>
-        <!--Icon for the browser-->
-        <link rel="icon" href="images/Pear_Logo_Backgroundless.png" type="image/png">
-        <!-- Logo Link: https://www.shutterstock.com/image-vector/green-pear-vector-icon-logo-design-2308212369 -->
 
-        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles.css">
         
     </head>
     <body>
         <header>
-            <div class="Job_Position_And_Logo">
+            <div id="Job_Position_And_Logo">
                 <figure>
                 <!--Change to company Logo-->  
-                <img src="images/Pear_Company_Logo.png" alt="Pear Company Logo" class="Company_Logo"/>
-                <!-- Logo Link: https://www.shutterstock.com/image-vector/green-pear-vector-icon-logo-design-2308212369 -->
+                <img src="images/Pear_Logo.png" alt="Pear Company Logo" id="Company_Logo"/>
                 </figure>
-                <h1 class="Company_Name">The Best Big Brain Group </h1>
+                <h1 id="Company_Name">The Best Big Brain Group </h1>
             </div>
             <nav>
                 <ul>
@@ -39,96 +34,220 @@
             </nav>
             <hr>
         </header>
-        <main>
-        <div id="Content_Grid">
-            <!--Team Photo-->
-            <div id="Team_Photo"><img src="https://i.pinimg.com/736x/f5/05/cf/f505cf9fc66f5b7e67badf74fdeb7037.jpg"></div>
-            
-            <!--Individual Team Members Information-->
-            <div class="Individual_Grid">
-                <div id="Monique">
-                    <div class="Individual_Photo"><img id="Portrait" src="https://i.pinimg.com/736x/b1/7a/c8/b17ac8bf7f49ebbe2a9fc5697dc8f67e.jpg">
-                    </div>                
-                    <div class="Member_Info"> 
-                        <h2>Monique</h2>
-                        <!--Core Information-->
-                        <p><strong>Student ID:</strong> 105910625 </p>
-                        <p><strong>Bachelor:</strong> Engineering (Honours) & Computer Science </p>
-                        <p><strong>Major: </strong> Robotics/Mechatronics & AI </p>
-                    </div>
-                    <div class="Info_Expanded">
-                        <p>Monique is a creative and talent performer and future engineer.
-                            Currently in the process of auditioning for the role of Moritica & Alice in the Addam's Family
-                            Musical.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>  
-            <div class="Individual_Grid">
-                <div id="Riley">
-                <div class="Individual_Photo"><img id="Portrait" src="https://i.pinimg.com/736x/b1/7a/c8/b17ac8bf7f49ebbe2a9fc5697dc8f67e.jpg">
-                </div>
-                <div class="Member_Info"> 
-                    <h2>Riley</h2>
-                    <!--Core Information-->
-                    <p><strong>Student ID:</strong></p>
-                    <p><strong>Bachelor:</strong> Engineering (Honours) & Computer Science </p>
-                    <p><strong>Major: </strong> Robotics/Mechatronics & AI </p>
-                </div>
-                <div class="Info_Expanded">
-                    <p></p>
-                </div>
-            </div>
+        <main id="About_Team">
+            <!--This is the team photo-->
+            <div class="Team_Photo">
+
             </div>
 
-            <div class="Individual_Grid">
-                <div id="Stacey">
-                    <div class="Individual_Photo"><img id="Portrait" src="https://i.pinimg.com/736x/b1/7a/c8/b17ac8bf7f49ebbe2a9fc5697dc8f67e.jpg">
-                    </div>
-                    <div class="Member_Info"> 
-                        <h2>Stacey</h2>
-                        <!--Core Information-->
-                        <p><strong>Student ID:</strong></p>
-                        <p><strong>Bachelor:</strong> Computer Science</p>
-                        <p><strong>Major: </strong> Game Development</p>
-                    </div>
-                    <div id="Info_Expanded">
-                        <p></p>
-                    </div> 
-                </div>  
+            <!--This is the individual team information blocks-->
+            <div class="Individual_Profiles">
+            <!--This is Monique's Profile-->
+            <div id="Monique">
+                <h2>Monique</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Contribution</th>
+                            <th>Prior Experience</th>
+                            <th>Hobbies</th>
+                            <th>Favourite Things</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>Formatting</dt>
+                                        <dd>Structured the entire website header and footer to create templates</dd>
+                                    <dt></dt>
+                                </dl>
+                            </td> <!--Contribution-->
+                            <td>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td> <!--Prior Experience-->
+                            <td>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td> <!--Hobbies-->
+                            <td>
+                                <ul>
+                                    <li><em>Colour: </em></li>
+                                    <li><em>Food: </em></li>
+                                    <li><em>Drink: </em></li>
+                                    <li><em>Animal: </em></li>
+                                    <li><em>Band: </em></li>
+                                    <li><em>Film: </em></li>
+                                    <li><em></em></li>
+                                </ul>
+                            </td> <!--Favourite Things-->
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
-
-            <div class="Individual_Grid">
-                <div id="Vic">
-                    <div class="Individual_Photo"><img id="Portrait" src="https://i.pinimg.com/736x/b1/7a/c8/b17ac8bf7f49ebbe2a9fc5697dc8f67e.jpg">
-                    </div>
-                    <div class="Member_Info"> 
-                        <h2>Vic</h2>
-                        <!--Core Information-->
-                        <p><strong>Student ID:</strong></p>
-                        <p><strong>Bachelor:</strong> Computer Science</p>
-                        <p><strong>Major: </strong> Data Science</p>
-                    </div>
-                    <div class="Info_Expanded">
-                        <p></p>
-                    </div>   
-                </div>
+            <!--This is Riley's Profile-->
+            <div id="Riley">
+                <h2>Riley</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Contribution</th>
+                            <th>Prior Experience</th>
+                            <th>Hobbies</th>
+                            <th>Favourite Things</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>Formatting</dt>
+                                        <dd>Colour pallett design</dd>
+                                </dl>
+                            </td> <!--Contribution-->
+                            <td>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td> <!--Prior Experience-->
+                            <td>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td> <!--Hobbies-->
+                            <td>
+                                <ul>
+                                    <li><em>Colour: </em></li>
+                                    <li><em>Food: </em></li>
+                                    <li><em>Drink: </em></li>
+                                    <li><em>Animal: </em></li>
+                                    <li><em>Band: </em></li>
+                                    <li><em>Film: </em></li>
+                                    <li><em></em></li>
+                                </ul>
+                            </td> <!--Favourite Things-->
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
-            <div class="Team_Grid">
-            <!--Collective team information-->
-                <div class="Team_Information">
-                    <h2>About the Best Big Brain Team</h2>
-                    <p>
-                        The Best Big Brain Group is a rag tag team of the best programmers, scientists and engineers
-                        in the COS10026 - Wednesday 10:30-12:30 Workshop.
-                    </p>
-                </div>
+            <!--This is Stacey's Profile-->
+            <div id="Stacey">
+                <h2>Stacey</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Contribution</th>
+                            <th>Prior Experience</th>
+                            <th>Hobbies</th>
+                            <th>Favourite Things</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>Jira</dt>
+                                        <dd>Created epics</dd>
+                                </dl>
+                            </td> <!--Contribution-->
+                            <td>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td> <!--Prior Experience-->
+                            <td>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td> <!--Hobbies-->
+                            <td>
+                                <ul>
+                                    <li><em>Colour: </em></li>
+                                    <li><em>Food: </em></li>
+                                    <li><em>Drink: </em></li>
+                                    <li><em>Animal: </em></li>
+                                    <li><em>Band: </em></li>
+                                    <li><em>Film: </em></li>
+                                    <li><em></em></li>
+                                </ul>
+                            </td> <!--Favourite Things-->
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-
+            <!--This is Vic's Profile-->
+            <div id="Vic">
+                <h2>Vic</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Contribution</th>
+                            <th>Prior Experience</th>
+                            <th>Hobbies</th>
+                            <th>Favourite Things</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>Jira</dt>
+                                        <dd>Created stories</dd>
+                                </dl>
+                            </td> <!--Contribution-->
+                            <td>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td> <!--Prior Experience-->
+                            <td>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td> <!--Hobbies-->
+                            <td>
+                                <ul>
+                                    <li><em>Colour: </em>Pink</li>
+                                    <li><em>Food: </em></li>
+                                    <li><em>Drink: </em></li>
+                                    <li><em>Animal: </em>Cats!!</li>
+                                    <li><em>Band: </em></li>
+                                    <li><em>Film: </em></li>
+                                    <li><em></em></li>
+                                </ul>
+                            </td> <!--Favourite Things-->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+            <!--This is the overall team information-->
+            <div class="Team_Profile">
+                    <h2>The Best Big Brain Group</h2>
+                    <p>Welcome to the best group you have ever seen</p>
+                    <ul>
+                        <li>Wednesday</li>
+                        <li>10:30-12:30</li>
+                        <li>Rahul Raghavan</li>
+                    </ul>
+                    <p><strong>Team Members</strong></p>
+                    <dl>
+                        <ul>
+                        <dt>Monique</dt>
+                            <dd>Bachelor</dd>
+                        <dt>Riley</dt>
+                            <dd>Bachelor</dd>
+                        <dt>Stacey</dt>
+                            <dd>Bachelor of</dd>
+                        <dt>Vic</dt>
+                            <dd>105864492</dd>
+                            <dd>Bachelor of Computer Science</dd>
+                        </ul>
+                    </dl>
+            </div>
 
         </main>
         <footer>
@@ -138,24 +257,24 @@
                 <li><a href="index.html">  Home  </a></li>
                 <li><a href="jobs.html">  Jobs Listings  </a></li>
                 <li><a href="apply.html">  Job Application  </a></li>
-                <li><a href="contact.html"> Contact </a></li>
                 <li><a href="about.html">  About Us  </a></li>
             </ul>
             <!--Div, devides the paragraph so i can put the information on the same line but aligning it to either the left or the right.-->
-            <br>
             <!--A Hyperlink to an external website.-->
-            <div class="Jira_Link_Footer">
-                <a class="Footer_Links" href= "https://thebestbigbraingroup.atlassian.net/jira/software/projects/SCRUM/summary"
+            <br>
+            <div class="left"> 
+                <a class="Footer_Links" href= "https://www.swinburne.edu.au/"
                 target="_blank"
                 title="Go to The Best Big Brain Group Jira"
                 hreflang="en">Go To The Company's Jira</a>
             </div>
             <!--A Hyperlink to send me the company an email.-->
-            <div class="Company_Email">
+            <div class="right_float">
             Email:
             <a class="Footer_Links" href="mailto:thebestbigbraingroup@gmail.com">info@thebestbigbraingroup.com.au</a></div>
             <!--Forces their to be a line break below to not squish all the the hyperlinks to the border of the page.-->
-            <p class="Copyright_in_footer">
+            <br>
+            <p id="Copyright_in_footer">
             &copy; <strong>
                 2025 The Best Big Brain Group. All Rights Reserved.
                 </strong>
