@@ -221,15 +221,11 @@ footer a:hover {
  /* Responsive Design */
  @media (max-width: 768px) {
     #apply_body{padding: 10px;}
-    #apply_form, application_start {display: block;} /* disables grid at mobile sizes */
+    #apply_form, #application_start {display: block;} /* disables grid at mobile sizes */
 }
 
- /* Element: Making spaces*/
- inputs, textarea, text {
-     padding: 15px 15px;
-     border-radius: 30px;
-     color: #ffffff;
- }
+ /* Making Input and Text Area all stark white*/
+ input, textarea {color: #ffffff;}
 
  /* ID Selector: Heading Section Text Alignment & Grid Positioning*/
   #application_start {text-align: center;}
@@ -324,11 +320,6 @@ footer a:hover {
 }
 
   /* SKILLS FIELD | Input Margins */
-  #recommended_skills label {
-    display: block; /* Makes the label take up the full width, giving space below it */
-    margin-bottom: 10px; /* Adds space below the checkbox */
-}
-
 #required_skills label {
     width: 45%;
     margin-bottom: 10px; 
