@@ -249,10 +249,6 @@ footer a:hover {
     text-align: left;
 }
 
-.Home_Title{
-    text-align: center;
-}
-
 .Reporting_To_Job{
     color:  #011508;
     text-align: left;
@@ -816,6 +812,10 @@ footer a:hover {
 }
 
 /*Homepage styling*/
+
+#Home_Title{
+    text-align: center;
+}
 
 #TitlePgraph {
     text-align: center;
