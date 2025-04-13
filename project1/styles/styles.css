@@ -304,16 +304,13 @@ while also making it appear more like a proper button rather than a hyperlink wi
     border-radius: 8px;
 }
 
-/* This is for the job specific pages */
+/* This is for the job specific pages, for their main employment details font size be a little bigger than the generic one. */
 .Main_Employment_Details{
     font-size: 18px;
 }
 
-.Table_Title_Job_Listing{
-    text-align: left;
-    font-size: 17px;
-}
-
+/* This is for the job specific pages, and forces the qualifications part to be 75% of the total table width, as well as
+makes the edges curved and nice. */
 .Qualifications_Table{
     width: 75%;
     display: table-cell;
@@ -325,6 +322,8 @@ while also making it appear more like a proper button rather than a hyperlink wi
     background-color: #e0ffe1;
 }
 
+/* This is for the job specific pages, and is the essential/preffered side of the table and does the same things as the one above
+except makes it the size of 25% of its total table width. */
 .Qualifications_Table_Essential_Preffered{
     width: 25%;
     display: table-cell;
@@ -336,22 +335,25 @@ while also making it appear more like a proper button rather than a hyperlink wi
     background-color: #e0ffe1;
 }
 
+/* This is so when you hover over the essential/preferred information it changes colour and adds some interactivity into the page. */
 .Qualifications_Table_Essential_Preffered:hover{
     background-color: #a6eac6;
     transition: 0.5s;
 }
 
+/* This makes all rows have a simular colour and have space between all the content. */
 .Qualifications_Table_Row{
     background-color: #e0ffe1;
     padding: 20px;
-
 }
 
+/* This is so when you hover over the main qualifications information it changes colour and adds some interactivity into the page. */
 .Qualifications_Table:hover{
     background-color: #a6eac6;
     transition: 0.5s;
 }
 
+/* This gets the header of the qualifications table on the job specifc pages to have darker mroe vibrant colours. */
 .Qualifications_Table_Header{
     background-color: #4EB774;
     display: table-cell;
