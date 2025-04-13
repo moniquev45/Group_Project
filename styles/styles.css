@@ -398,10 +398,10 @@ footer a:hover {
  
  /* PERSONAL DETAILS | Child combination - Class ID & Input: personal_details sections- Styling*/
  .personal_details input {
-    display: block;
-    width: 80%; /* how much of the page the input takes up*/
-    margin-bottom: 20px;
-    margin-top: 20px;
+   display: block;
+   width: 80%;
+   margin-bottom: 20px;
+   margin-top: 20px;
  }
 
  /* PERSONAL DETAILS | ID Selector: Centered Gender Fieldset */
@@ -412,6 +412,7 @@ footer a:hover {
     align-items: center; /* To vertically and horizontally center the gender options */
     gap: 15px; /* Adds space between the radio buttons */
  }
+
  /* PERSONAL DETAILS | Child: Gender ID & Label: Radio buttons are evenly spaced*/
  #gender label { 
     width: 100%;
@@ -490,9 +491,19 @@ footer a:hover {
  }
 
  /* JOB EXPECTATIONS | Ensure time labels are aligned */
- #job_expectations label {
+ #working_hours label {
     display: inline-block;
     width: 100px; /* Makes all labels the same width */
+ }
+
+ #working_hours {
+    display: flex;
+    flex-direction: column; /* This makes the items stack vertically */
+    gap: 10px; /* Optional: Adds space between the items */
+}
+
+ #working_hours label {
+    margin-right: 10px;  /* Adds space between the label and the input */
  }
  
  /* BUTTONS | ID Selector: Button Position & Size Adjustments*/
@@ -596,44 +607,43 @@ footer a:hover {
  
 /* END OF APPLY PAGE STYLING*/
 
-/* START OF CONTACT PAGE STYLING*/
+/* START OF CONTACT PAGE STYLING */
     #contact_form p,
     #contact_form label,
-    email_apply label {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    email_contact label {
+        display: block; /* Changed from flex to block to fix alignment issue */
         margin-bottom: 10px;
         max-width: 600px;
     }
 
-    /* Email input slightly longer than dropdown */
-    #email_apply {
-        width: 100%;
-        max-width: 600px;
+    /* Ensure consistent width for fields */
+    #reason,
+    #enquiry_box {
+        width: 100%; /* Makes sure input, textarea, and select fields take full width */
+        max-width: 600px; /* Keeps the max width consistent across all fields */
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
-        box-sizing: border-box;
+        box-sizing: border-box; /* Ensures padding and border are included in width */
     }
 
     /* Keep dropdown same start position as email */
     #reason {
         width: 100%;
-        max-width: 400px;
+        max-width: 600px;
         padding: 10px;
         border-radius: 4px;
         box-sizing: border-box;
     }
 
-    /* label for textarea hidden by class - css code at the end of apply page section*/
+    /* label for textarea hidden by class - css code at the end of apply page section */
     /* Center textarea */
     #enquiry_box {
         width: 100%;
         max-width: 600px;
         margin: 0 auto;
         padding: 10px;
-        height: 200px;
+        height: 200px; /* Keeps textarea height fixed */
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
@@ -650,7 +660,7 @@ footer a:hover {
         border-radius: 8px;
     }
 
-    /* Button  */
+    /* Button */
     #contact_buttons input[type="submit"] {
         padding: 10px 20px;
         margin: 5px;
@@ -668,7 +678,7 @@ footer a:hover {
         background-color: #cffdd1;
         color: #065321;
     }
-/* END OF CONTACT PAGE STYLING*/
+/* END OF CONTACT PAGE STYLING */
 
 /* About Page Styling */
 /*Page Blocking*/

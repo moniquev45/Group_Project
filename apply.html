@@ -73,10 +73,14 @@
                         <ul class="apply_personal_list"> 
                             <li class="personal_listing">
                                 <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
-                                <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="max 20 characters" required="required"></label><br>
+                                <label for="first_name">First Name: 
+                                    <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="max 20 characters" required="required">
+                                </label><br>
                             </li>
                             <li class="personal_listing">
-                                <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="20" title="max 20 characters" required="required"></label> 
+                                <label for="family_name">Family Name: 
+                                    <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="20" title="max 20 characters" required="required">
+                                </label> 
                             </li>
 
                             <li class="personal_listing">
@@ -99,11 +103,15 @@
                         <ul class="apply_personal_list">
                             <li class="personal_listing">
                                 <!-- Street Address- Input Text; Format: Max 20 Alpha Characters-->
-                                <label for="street_address">Street Address: <input type="text" id="street_address" name="street_address" pattern="^\d+\s[A-Za-z\s\.]+$" maxlength="40" title="i.e 123 Main St (max 40 characters)" required="required"></label>
+                                <label for="street_address">Street Address: 
+                                    <input type="text" id="street_address" name="street_address" pattern="^\d+\s[A-Za-z\s\.]+$" maxlength="40" title="i.e 123 Main St (max 40 characters)" required="required">
+                                </label>
                             </li>
                             <li class="personal_listing">
                                 <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
-                                <label for="suburb">Suburb/Town: <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="max 40 characters" required="required"></label> 
+                                <label for="suburb">Suburb/Town: 
+                                    <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="max 40 characters" required="required">
+                                </label> 
                             </li>
                             <li class="personal_listing">
                                 <!-- State - Drop Down Boxes-->
@@ -132,11 +140,15 @@
                             <ul class="apply_personal_list">
                                 <li class="personal_listing">
                                     <!-- Email Address - Input Text: includes regular expression and patterns-->
-                                    <label for="email_apply"> Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required"></label>
+                                    <label for="email_apply"> Email Address: 
+                                        <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required">
+                                    </label>
                                 </li>
                                 <li class="personal_listing">
                                     <!-- Phone Numbers - Input Text: 8-12 digits or spaces -->
-                                    <label for="mobile"> Phone Number: <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 digits &amp; Spaces Only" required="required"></label>
+                                    <label for="mobile"> Phone Number: 
+                                        <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 digits &amp; Spaces Only" required="required">
+                                    </label>
                                 </li>
                             </ul>
                     </div>
@@ -201,11 +213,13 @@
 
                     <!--Working Hours-->
                     <p>Please provide your preferred working hours.</p>
-                    <label for="hours_start"> Start time: </label>
-                    <input type="time" id="hours_start" name="hours_start"><br><br>
-
-                    <label for="hours_end"> End time: </label>
-                    <input type="time" id="hours_end" name="hours_end"><br><br>
+                    <div id="working_hours">
+                        <label for="hours_start"> Start time: </label>
+                        <input type="time" id="hours_start" name="hours_start">
+                    
+                        <label for="hours_end"> End time: </label>
+                        <input type="time" id="hours_end" name="hours_end">
+                    </div>
                 </fieldset>
                 <!--Buttons: Input 'Apply' & 'Reset Form'-->
                 <p id="buttons">
