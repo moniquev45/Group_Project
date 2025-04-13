@@ -144,6 +144,14 @@ footer a:hover {
 
 /* JOB LISTING PAGE STYLING */
 
+#Random_Company_Names{
+    float: left;
+}
+
+#Company_Location{
+    float: right;
+}
+
 #Jobs_Table_Data{
     width: 75%;
     display: table-cell;
