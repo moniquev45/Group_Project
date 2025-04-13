@@ -436,7 +436,7 @@ footer a:hover {
  /* ID Selector: Heading Section Text Alignment & Grid Positioning*/
   #application_start {text-align: center;}
  
- /* Element: Labels are all uniform in colour and size*/
+ /* Element: Labels are all uniform in colour and size to the universal <p> colouring*/
  label, p {color: #011e0a;;}
  
  /* Class: Making all headings (excluding h1) in Apply Page consistent in size and formatting */
@@ -467,24 +467,24 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     grid-template-rows: repeat(26, auto); /* Adjust the row sizes as needed */
-    gap: 20px; /* space between items/columns */
-    width: 100%; /* Ensures the grid takes up the full width of the page */
+    gap: 20px; 
+    width: 100%; 
     box-sizing: border-box; /* Makes sure padding doesn't affect the width */
     position: relative; /* This allows positioning of the pseudo-element */
-    padding: 0 10px; /* Optional: adds a little padding on the sides */
+    padding: 0 10px;
    }
 
  /* REFERENCE | ID Selector: Application Fieldset; Text Alignment & Grid Positioning*/
  #fieldset_reference {
     text-align: center;
-    grid-column: 1; /* Place in the first column */
-    grid-row: 1 / 3; /* Keep it spanning rows 1 to 3 (or adjust depending on content) */
+    grid-column: 1; 
+    grid-row: 1 / 3; 
  }
 
   /* PERSONAL DETAILS | Grid Positioning*/
  #fieldset_personal {
-    grid-column: 1; /* Place in the first column */
-    grid-row: 3 / 27; /* Keep it spanning rows 4 to 27 */
+    grid-column: 1; 
+    grid-row: 3 / 27; 
  }
  
  /* PERSONAL DETAILS | Child combination - Class ID & Input: personal_details sections- Styling*/
@@ -512,22 +512,18 @@ footer a:hover {
     gap: 8px; /* Adds space between the radio button and the label text */
  }
 
-    /* PERSONAL DETAILS | Getting Rid of the List Item Dots*/
- .apply_personal_list {
-    list-style-type: none;
-    padding-left: 0; /* Optional: removes extra padding on the left */
-    margin-left: 0; /* Optional: ensures no extra space on the left side */
-    }
+ /* PERSONAL DETAILS | Getting Rid of the List Item Dots*/
+ .apply_personal_list {list-style-type: none;}
  
  /* SKILLS FIELD | Grid Positioning*/
  #fieldset_skills {
-    grid-column: 2; /* Place in the second column */
-    grid-row: 1 / 18; /* Keep it spanning rows 1 to 18 */
+    grid-column: 2;
+    grid-row: 1 / 18;
  }
 
  /* SKILLS FIELD | Required Technial Skills - List the Checkboxes */
  #skills label {
-    display: block; /* Makes each checkbox and label stack vertically */
+    display: block; 
     margin-bottom: 10px; /* Adds space between checkboxes */
     }
 
@@ -555,23 +551,23 @@ footer a:hover {
  .apply_textarea label {
     display: block; /* Makes the label a block element to stack it above the textarea */
     margin-bottom: 5px; /* Adds some space between the label and the textarea */
-    font-weight: bold; /* Optional: makes the label text stand out more */
+    font-weight: bold;
     }
 
     /* SKILLS FIELD | Text Area - Box formatting */
  .apply_textarea textarea {
-    width: 100%; /* Makes the textarea fill the available width */
-    padding: 10px; /* Adds some padding inside the textarea */
-    font-size: 16px; /* Adjusts the font size for better readability */
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px; 
     border: 1px solid #ccc; /* Adds a light border around the textarea */
-    border-radius: 4px; /* Optional: makes the textarea corners slightly rounded */
+    border-radius: 4px; /* textarea corners slightly rounded */
     box-sizing: border-box; /* Ensures padding doesn't affect the element's width */
     }
 
  /* JOB EXPECTATIONS | ID Selector: Job Expectations; Grid Positioning*/
  #job_expectations {
-    grid-column: 2; /* Place in the second column */
-    grid-row: 18 / 27; /* Keep it spanning rows 19 to 27 */
+    grid-column: 2; 
+    grid-row: 18 / 27; 
  }
 
  /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
@@ -584,34 +580,31 @@ footer a:hover {
  /* JOB EXPECTATIONS | Ensure time labels are aligned */
  #working_hours label {
     display: inline-block;
-    width: 100px; /* Makes all labels the same width */
+    width: 100px; 
+    margin-right: 10px;
  }
 
  #working_hours {
     display: flex;
-    flex-direction: column; /* This makes the items stack vertically */
-    gap: 10px; /* Optional: Adds space between the items */
+    flex-direction: column; 
+    gap: 10px; 
 }
 
- #working_hours label {
-    margin-right: 10px;  /* Adds space between the label and the input */
- }
- 
  /* BUTTONS | ID Selector: Button Position & Size Adjustments*/
  #buttons {
-    display: grid; /* Use grid instead of flex for alignment */
-    grid-template-columns: 1fr 1fr; /* Two equal columns, like the form */
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
     column-gap: 20px; /* Matches #apply_form gap */
     justify-content: start; /* Align with form’s column start */
     border: none;
     background-color: #cffdd1;
-    font-size: 25px;    /* Larger text */
+    font-size: 25px;   
     width: 100%;
     cursor: pointer;    /* Change cursor to pointer */
     padding: 10px 0;    /* Top and bottom padding only */
     border-radius: 10px;
     transition: background-color 0.3s;
-    grid-column: 1 / 3; /* Span across both columns */
+    grid-column: 1 / 3; 
     grid-row: auto; /* Automatically position in a new row */
     max-height: 500px;
  } 
@@ -636,7 +629,6 @@ footer a:hover {
  #buttons input[type="reset"]:hover {
     background-color: #cffdd1;
     color: #065321;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
  }
  
   /* Pseudo Element - Hovering for all inputs except radio, checkbox and slider, they get their own custom code */
@@ -653,10 +645,10 @@ footer a:hover {
  /* SLIDER STYLING */
  /* Base styling for the range input slider */
  input[type="range"] {
-    width: 100%; /* Full width of the container */
-    height: 8px; /* Height of the track */
-    background: #d4f5d7; /* Light green track */
-    border-radius: 5px; /* Rounded corners for the track */
+    width: 100%; 
+    height: 8px; 
+    background: #d4f5d7;
+    border-radius: 5px;
     outline: none; /* Removes the default outline around the slider */
     cursor: pointer; /* Changes the cursor to indicate it's clickable */
     accent-color: #4EB774; /* Set thumb color to match the theme */
@@ -671,17 +663,17 @@ footer a:hover {
   
   /* SLIDER CONTAINER: to hold the slider and label */
   .slider-container {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center the slider and label */
-    gap: 10px; /* Add space between the slider and label */
-    padding: 10px 0; /* Padding around the container */
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px 0;
   }
   
   /* MONEY LABEL: Label for showing values next to the slider */
   .money-label {
-    font-weight: bold; /* Bold label text */
-    color: #065321; /* Dark green text color */
-    font-size: 0.9rem; /* Slightly smaller font size */
+    font-weight: bold;
+    color: #065321; 
+    font-size: clamp(1rem, 1vw, 1rem); /* Font size will adjust based on viewport width */  
   }
 
  /* hiding the fieldset legends (excepting Gender). Also hides the contact page text area label*/
@@ -710,43 +702,24 @@ footer a:hover {
     /* Ensure consistent width for fields */
     #reason,
     #enquiry_box {
-        width: 100%; /* Makes sure input, textarea, and select fields take full width */
-        max-width: 600px; /* Keeps the max width consistent across all fields */
+        width: 100%; 
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box; /* Ensures padding and border are included in width */
     }
 
-    /* Keep dropdown same start position as email */
-    #reason {
-        width: 100%;
-        max-width: 600px;
-        padding: 10px;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
     /* label for textarea hidden by class - css code at the end of apply page section */
     /* Center textarea */
     #enquiry_box {
-        width: 100%;
-        max-width: 600px;
         margin: 0 auto;
-        padding: 10px;
         height: 200px; /* Keeps textarea height fixed */
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        display: block;
-        font-family: inherit;
     }
 
     /* Button styling — color match + spacing */
     #contact_buttons {
         text-align: center;
         margin-top: 20px;
-        padding: 10px;
         background-color: #cffdd1; /* Matches your <main> background */
         border-radius: 8px;
     }
