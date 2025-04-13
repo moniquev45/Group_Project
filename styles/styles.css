@@ -245,6 +245,16 @@ footer a:hover {
     color:  #011508;
     text-align: center;
     float: right;
+    transition: 0.5s;
+}
+
+.See_More:hover{
+    border: 1px solid #065321;
+    background-color: #065321;
+    color:  #cffdd1;
+    transition: 0.5s;
+    padding: 4px;
+    border-radius: 8px;
 }
 
 .Main_Employment_Details{
