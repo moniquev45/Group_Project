@@ -365,6 +365,8 @@ except makes it the size of 25% of its total table width. */
     font-size: 20px;
 }
 
+/* This makes all the employment details on the job specific pages live in a content box and float it to the left so the summary
+can go to the right this also makes this section take up 45% of the full page. */
 .Main_Employment_Details_Background{
     background-color: #e0ffe1;
     border: 1px solid #065321;
@@ -376,13 +378,15 @@ except makes it the size of 25% of its total table width. */
     float: left;
 }
 
-
+/* This makes the qualifications table in the job specific pages align into the center of the page while also being reactive
+to if the page is streched or shrunk. */
 .Qualifications_Whole_Table{
     margin-left: auto;
     margin-right: auto;
 }
 
-
+/* This makes the employment summary on the job specific pages to have a certain colour and background and forces it to the 
+right, right next to the employment details, and it allows the data to take up 50% of the full page width. */
 .Employment_Summary{
     background-color: #e0ffe1;
     border: 1px solid #065321;
@@ -394,7 +398,7 @@ except makes it the size of 25% of its total table width. */
     float: right;
 }
 
-
+/* Makes the Benifits in the job specific pages align to the centre and take up 1000px of the page. */
 .Benifits_Of_Job{
     background-color: #e0ffe1;
     border: 1px solid #065321;
@@ -407,6 +411,7 @@ except makes it the size of 25% of its total table width. */
     margin-right: auto;
 }
 
+/* This makes the back button on the job specific page look nice and look like a button and not like a hyperlink. */
 .Back_Button_Job_Page{
     text-decoration: none;
     padding: 15px 15px;
@@ -419,6 +424,7 @@ except makes it the size of 25% of its total table width. */
     float: right;
 }
 
+/* This makes the button revert colours on the job specific page when it is hovered on, and has a nice transition. */
 .Back_Button_Job_Page:hover{
     color: #065321;
     background-color: #cffdd1;
@@ -427,6 +433,7 @@ except makes it the size of 25% of its total table width. */
     float: right;
 }
 
+/* This makes the headers on the job specific page have a double boder to sperate sections from each other. */
 .Job_Headers_Other_Page{
     text-align: center;
     padding: 8px;
