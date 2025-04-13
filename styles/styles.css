@@ -439,10 +439,7 @@ footer a:hover {
  }
  
   /* Pseudo Element - Hovering for all inputs except radio, checkbox and slider, they get their own custom code */
- #apply_body 
- input:not([type="radio"]):
-    not([type="checkbox"]):
-    not([type="range"]):hover{box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);} /* Darker shadow on hover */
+ #apply_body input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):hover{box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);} /* Darker shadow on hover */
 
  /* Custom hover effect for checkboxes and radio buttons */
  #apply_body input[type="radio"]:hover,
@@ -487,6 +484,8 @@ footer a:hover {
   }
  
 /* END OF APPLY PAGE STYLING*/
+
+/* START OF APPLY PAGE STYLING*/
 
 /* About Page Styling */
 /*Page Blocking*/
