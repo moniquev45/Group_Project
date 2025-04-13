@@ -292,8 +292,34 @@ footer a:hover {
 
 #Main_Employment_Details_Background{
     background-color: #e0ffe1;
-    width: 75%;
-    display: table-cell;
+    border: 1px solid #065321;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #011e0a;
+    width: 45%;
+    float: left;
+}
+
+
+#Employment_Details_And_Summary{
+    height: fit-content;
+}
+
+
+#Employment_Summary{
+    background-color: #e0ffe1;
+    border: 1px solid #065321;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #011e0a;
+    width: 50%;
+    float: right;
+}
+
+#Benifits_Of_Job{
+    background-color: #e0ffe1;
     border: 1px solid #065321;
     padding: 12px;
     border-radius: 8px;
