@@ -210,8 +210,16 @@ footer a:hover {
     text-align: center;
 }
 
+#Reporting_To_Job{
+    color:  #011508;
+    text-align: left;
+    float: left;
+}
+
 #See_More{
     color:  #011508;
+    text-align: center;
+    float: right;
 }
 
 /* End of Job Listing Page Styling */
