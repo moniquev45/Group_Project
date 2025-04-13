@@ -775,17 +775,14 @@ footer a:hover {
 
 .Individual_Profiles table {
     margin-left: 15px;
-    text-align: left;
-    padding: 5px;
+    
 }
 
 .Individual_Profiles td {
-    margin-top: 0px;
+    vertical-align: top;
+    text-align: left;
 }
 
-.Individual_Profiles th {
-    margin-bottom: 4px;
-}
 
 #Monique {
     background-color: #b0ffb4;
