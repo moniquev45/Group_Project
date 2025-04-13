@@ -769,6 +769,24 @@ footer a:hover {
 }
 
 /*Individual profile block styling*/
+.Individual_Profiles h2 {
+    padding: 10px;
+}
+
+.Individual_Profiles table {
+    margin-left: 15px;
+    text-align: left;
+    padding: 5px;
+}
+
+.Individual_Profiles td {
+    margin-top: 0px;
+}
+
+.Individual_Profiles th {
+    margin-bottom: 4px;
+}
+
 #Monique {
     background-color: #b0ffb4;
     border: none;
@@ -798,6 +816,8 @@ footer a:hover {
     border: none;
     border-radius: 25px;
 }
+
+
 
 .Team_Profile {
     background-color: #b0ffb4;
