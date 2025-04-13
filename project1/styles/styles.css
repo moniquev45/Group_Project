@@ -267,6 +267,7 @@ can't fit on the same line. */
     flex-wrap: wrap;
 }
 
+/* This is the job titles and forces them left while allowing it to stay on one line while sharing space with the logo. */
 .Job_Title{
     /* Allows the job title to take as much space as possible on the line while still allowing the logo to share the area. */
     flex: 1;
