@@ -370,6 +370,9 @@ footer a:hover {
 
 #Job_Headers_Other_Page{
     text-align: center;
+    padding: 8px;
+    border-top: 5px double ;
+    border-bottom: 5px double;
 }
 
 /* End of Job Listing Pages Styling */
