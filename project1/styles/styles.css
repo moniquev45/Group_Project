@@ -838,60 +838,65 @@ footer a:hover {
 /*Homepage styling*/
 
 #Home_Title{
-    text-align: center;
+    text-align: center; /* Aligns the title to the center */
 }
 
 #TitlePgraph {
-    text-align: center;
-    color: #000000;
+    text-align: center; /* Aligns the paragraph to the center */
+    color: #000000; /* Sets the text color to black for accessability purposes*/
 }
 
 #Who_we_are{
-    float: left;
-    width: 30%;
+    float: left; /* Aligns the division to the left */
+    width: 30%; /* Sets the width of the division to 30% */
     p{
+        /* Sets the text color of the paragraph to black for accessability purposes*/
         color: #000000;
     }
 }
 
 #What_we_do{
-    float: right;
-    width: 30%;
+    float: right; /* Aligns the division to the right */
+    width: 30%; /* Sets the width of the division to 30% */
     p{
+        /* Sets the text color of the paragraph to black for accessability purposes*/
         color: #000000;
     }
 }
 
 #Company_Graphic{
-    display: inline-block;
-    text-align: center;
+    display: inline-block; /* Allows the image to be inline with the text */
+    text-align: center; /* Aligns the image to the center */
     padding: 0.5%;
-    width: 30%;
+    width: 30%; /* Sets the width of the division itself to 30% */
     img{
-        width: 50%;
+        width: 50%; /* Sets the width of the image to 50% of the division */
         height: normal;
         border-radius: 8px;
     }
 }
 
 #Our_Mission{
-    display: inline;
-    text-align: center;
-    width: 40%;
+    display: inline; /* Allows the text to be inline with the rest of the page */
+    text-align: center; /* Aligns the text to the center */
+    width: 40%; /* Restricts the width of the division to 40% */
     p{
+        /* Sets the text color of the paragraph to black for accessability purposes*/
         color: #000000;
     }
 }
 
 #Meet_Us{
-    clear: both;
-    border: 5px, double, #000000;
-    border-radius: 8px;
-    text-align: center;
+    clear: both; /* Clears the float of the previous divisions */
+    border: 5px, double, #000000; /* Sets the border of the division to a double line */
+    border-radius: 8px; /* Rounds the corners of the division */
+    text-align: center; /* Aligns the text to the center */
     h3{
+        /*Sets the size of the header to medium*/
         font-size: medium;
     }
     p {
+        /* Sets the text color of the paragraph to black for accessability purposes*/
         color: #000000;
     }
 }
