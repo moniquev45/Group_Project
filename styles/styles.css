@@ -144,26 +144,8 @@ footer a:hover {
     text-align: center;
 }
 
-.Jira_Link_Footer:hover{
-    border: 1px solid #065321;
-    background-color: #065321;
-    color:  #cffdd1;
-    transition: 0.5s;
-    padding: 4px;
-    border-radius: 8px;
-}
-
 .Company_Email{
     text-align: center;
-}
-
-.Company_Email:hover{
-    border: 1px solid #065321;
-    background-color: #065321;
-    color:  #cffdd1;
-    transition: 0.5s;
-    padding: 4px;
-    border-radius: 8px;
 }
 
 /* Company copy right styling. */
