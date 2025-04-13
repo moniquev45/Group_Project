@@ -57,14 +57,14 @@ nav a:hover {
 }
 
 /* Company logo styling */
-#Company_Logo{
+.Company_Logo{
     border-radius: 100%;
     height: 60px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Company name styling */
-#Company_Name{
+.Company_Name{
     color: #011e0a;
     text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
 }
@@ -137,7 +137,7 @@ footer a:hover {
 }
 
 /* Company copy right styling. */
-#Copyright_in_footer{
+.Copyright_in_footer{
     text-align: center;
     color: #011e0a;
 }
@@ -152,15 +152,15 @@ footer a:hover {
     float: right;
 }
 
-#Job_Salary_Job_Page{
+.Job_Salary_Job_Page{
     float: left;
 }
 
-#Job_Reference_Number_Job_Page{
+.Job_Reference_Number_Job_Page{
     float: right;
 }
 
-#Jobs_Table_Data{
+.Jobs_Table_Data{
     width: 75%;
     display: table-cell;
     border: 1px solid #065321;
@@ -170,16 +170,16 @@ footer a:hover {
     color: #011e0a;
 }
 
-#Jobs_Table_Row{
+.Jobs_Table_Row{
     background-color: #e0ffe1;
 }
 
-#Jobs_Table_Row:hover{
+.Jobs_Table_Row:hover{
     background-color: #a6eac6;
     transition: 0.5s;
 }
 
-#Apply_Here{
+.Apply_Here{
     text-decoration: none;
     padding: 15px 15px;
     border: 4px solid #065321;
@@ -191,7 +191,7 @@ footer a:hover {
     float: center;
 }
 
-#Job_Discription_Image{
+.Job_Discription_Image{
     width: fit-content;
     max-width: 1300px;
     height: 300px;
@@ -201,28 +201,28 @@ footer a:hover {
     background-size: 100% 100%;
 }
 
-#Apply_Here:hover{
+.Apply_Here:hover{
     color: #065321;
     background-color: #cffdd1;
     /* When you hover it transitions from the original state to the hover state. */
     transition: 0.5s;
 }
 
-#Companies_Logo_Image{
+.Companies_Logo_Image{
     border-radius: 100%;
     height: 40px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     float: right;
 }
 
-#Job_Position_And_Logo{
+.Job_Position_And_Logo{
     /* Makes things aligned horizontaly. */
     display: flex;
     /**/
     flex-wrap: wrap;
 }
 
-#Job_Title{
+.Job_Title{
     /* Allows the job title to take as much space as possible on the line while still allowing the logo to share the area. */
     flex: 1;
     text-align: left;
@@ -232,17 +232,17 @@ footer a:hover {
     color: #011508;
 }
 
-#Home_Title{
+.Home_Title{
     text-align: center;
 }
 
-#Reporting_To_Job{
+.Reporting_To_Job{
     color:  #011508;
     text-align: left;
     float: left;
 }
 
-#See_More{
+.See_More{
     color:  #011508;
     text-align: center;
     float: right;
@@ -306,7 +306,7 @@ footer a:hover {
     font-size: 20px;
 }
 
-#Main_Employment_Details_Background{
+.Main_Employment_Details_Background{
     background-color: #e0ffe1;
     border: 1px solid #065321;
     padding: 12px;
@@ -318,13 +318,13 @@ footer a:hover {
 }
 
 
-#Qualifications_Whole_Table{
+.Qualifications_Whole_Table{
     margin-left: auto;
     margin-right: auto;
 }
 
 
-#Employment_Summary{
+.Employment_Summary{
     background-color: #e0ffe1;
     border: 1px solid #065321;
     padding: 12px;
@@ -336,7 +336,7 @@ footer a:hover {
 }
 
 
-#Benifits_Of_Job{
+.Benifits_Of_Job{
     background-color: #e0ffe1;
     border: 1px solid #065321;
     padding: 12px;
@@ -348,7 +348,7 @@ footer a:hover {
     margin-right: auto;
 }
 
-#Back_Button_Job_Page{
+.Back_Button_Job_Page{
     text-decoration: none;
     padding: 15px 15px;
     border: 4px solid #065321;
@@ -360,7 +360,7 @@ footer a:hover {
     float: right;
 }
 
-#Back_Button_Job_Page:hover{
+.Back_Button_Job_Page:hover{
     color: #065321;
     background-color: #cffdd1;
     /* When you hover it transitions from the original state to the hover state. */
@@ -368,7 +368,7 @@ footer a:hover {
     float: right;
 }
 
-#Job_Headers_Other_Page{
+.Job_Headers_Other_Page{
     text-align: center;
     padding: 8px;
     border-top: 5px double ;
