@@ -314,7 +314,7 @@ footer a:hover {
  fieldset {
     border: 1px double #065321;
     border-radius: 8px;
-    color: #066026;
+    color: #011e0a;
     background-color:#f4fff4;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
@@ -567,8 +567,7 @@ footer a:hover {
     }
 
     /* Individual buttons */
-    #contact_buttons input[type="submit"],
-    #contact_buttons input[type="reset"] {
+    #contact_buttons input[type="submit"] {
         padding: 10px 20px;
         margin: 5px;
         border: 2px solid #065321;
@@ -580,8 +579,7 @@ footer a:hover {
         font-size: 16px;
     }
 
-    #contact_buttons input[type="submit"]:hover,
-    #contact_buttons input[type="reset"]:hover {
+    #contact_buttons input[type="submit"]:hover {
         background-color: #cffdd1;
         color: #065321;
     }
