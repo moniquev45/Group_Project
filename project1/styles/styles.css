@@ -158,6 +158,9 @@ footer a:hover {
 }
 
 /* JOB LISTING PAGES STYLING */
+/* There is a difference between job specific and job listing pages, job listing page is jobs.html wheras job specific pages are,
+data_anaylst_job_page.html and junior_software_developer_job_page.html. Although they are clump all together in this same section of
+the CSS page as many of the classes are used in both job listing and job specific pages. */
 
 /* This forces the company names to the left to allow the company logo float on the right of the same line. */
 .Random_Company_Names{
@@ -274,12 +277,15 @@ can't fit on the same line. */
     text-align: left;
 }
 
+/* This formats the reporting to person, email link forces it left and makes it a specific colour. */
 .Reporting_To_Job{
     color:  #011508;
     text-align: left;
     float: left;
 }
 
+/* This formats the see more button and aligns the text to the center of the section, but forces it to the right of the page,
+with a transition for when you hover over it, it's smooth. */
 .See_More{
     color:  #011508;
     text-align: center;
@@ -287,6 +293,8 @@ can't fit on the same line. */
     transition: 0.5s;
 }
 
+/* This make sure that if you hover over the see more putton it changes the colour of the background and text,
+while also making it appear more like a proper button rather than a hyperlink with a nice transition to top it off. */
 .See_More:hover{
     border: 1px solid #065321;
     background-color: #065321;
@@ -296,6 +304,7 @@ can't fit on the same line. */
     border-radius: 8px;
 }
 
+/* This is for the job specific pages */
 .Main_Employment_Details{
     font-size: 18px;
 }
