@@ -152,6 +152,14 @@ footer a:hover {
     float: right;
 }
 
+#Job_Salary_Job_Page{
+    float: left;
+}
+
+#Job_Reference_Number_Job_Page{
+    float: right;
+}
+
 #Jobs_Table_Data{
     width: 75%;
     display: table-cell;
