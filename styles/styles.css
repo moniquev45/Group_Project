@@ -218,11 +218,42 @@ footer a:hover {
 
 /* APPLY PAGE STYLING*/
 
- /* Responsive Design */
+ /* Responsive Design - Ensuring everything is still readable when on a smaller screen*/
  @media (max-width: 768px) {
-    #apply_body{padding: 10px;}
-    #apply_form, #application_start {display: block;} /* disables grid at mobile sizes */
-}
+    #apply_body {padding: 10px;}
+
+    #apply_form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Adds space between each stacked fieldset */
+    }
+
+    #application_start {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Make fieldsets take full width */
+    #apply_form fieldset,
+    #apply_form #buttons {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* resize form elements for smaller screens */
+    .personal_details input, textarea, select {width: 100%;}
+
+    #gender {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #buttons {
+        text-align: center;
+        padding: 10px;
+    }
+    }
 
  /* ID Selector: Heading Section Text Alignment & Grid Positioning*/
   #application_start {text-align: center;}
@@ -273,9 +304,9 @@ footer a:hover {
  }
 
   /* PERSONAL DETAILS | Grid Positioning*/
-  #fieldset_personal {
+ #fieldset_personal {
     grid-column: 1; /* Place in the first column */
-    grid-row: 4 / 27; /* Keep it spanning rows 4 to 27 */
+    grid-row: 3 / 27; /* Keep it spanning rows 4 to 27 */
  }
  
  /* PERSONAL DETAILS | Child combination - Class ID & Input: personal_details sections- Styling*/
@@ -288,24 +319,26 @@ footer a:hover {
 
  /* PERSONAL DETAILS | ID Selector: Centered Gender Fieldset */
   #gender { 
-    text-align: center;    display: flex;
+    text-align: center;    
+    display: flex;
     justify-content:center;
     align-items: center; /* To vertically and horizontally center the gender options */
+    gap: 15px; /* Adds space between the radio buttons */
  }
  /* PERSONAL DETAILS | Child: Gender ID & Label: Radio buttons are evenly spaced*/
  #gender label { 
     width: 100%;
     display: flex;
-    justify-content:space-around;
-    text-align: center;
+    align-items: center; /* Ensures the radio button and label are vertically centered */
+    gap: 8px; /* Adds space between the radio button and the label text */
  }
 
-/* PERSONAL DETAILS | Getting Rid of the List Item Dots*/
-  .apply_personal_list {
+    /* PERSONAL DETAILS | Getting Rid of the List Item Dots*/
+ .apply_personal_list {
     list-style-type: none;
     padding-left: 0; /* Optional: removes extra padding on the left */
     margin-left: 0; /* Optional: ensures no extra space on the left side */
-}
+    }
  
  /* SKILLS FIELD | Grid Positioning*/
  #fieldset_skills {
@@ -317,51 +350,53 @@ footer a:hover {
  #skills label {
     display: block; /* Makes each checkbox and label stack vertically */
     margin-bottom: 10px; /* Adds space between checkboxes */
-}
+    }
 
-  /* SKILLS FIELD | Input Margins */
-#required_skills label {
+  /* SKILLS FIELD | Input margins so that the checkboxes and text areas aren't so close together*/
+  /* SKILLS FIELD | the skills checkboxes*/
+ #required_skills label {
     width: 100%;
     margin-bottom: 10px; 
-}
+    }
 
-#skills_other label {
+ /* SKILLS FIELD | the other skills textarea*/
+ #skills_other label {
     display: block; /* Makes the label a block-level element */
     margin-bottom: 10px; /* Adds space between label and textarea */
-    margin-top: 20px ; /* Adds space between label and last checkbox input */
-}
+    margin-top: 35px ; /* Adds space between label and last checkbox input */
+    }
 
  /* SKILLS FIELD | Text Area Placement */
  .apply_textarea {
     text-align: center;
     margin-bottom: 20px; /* Adds spacing between form fields */
-}
+    }
 
-/* SKILLS FIELD | Text Area Label, Positioning and Style */
-.apply_textarea label {
+    /* SKILLS FIELD | Text Area Label, Positioning and Style */
+ .apply_textarea label {
     display: block; /* Makes the label a block element to stack it above the textarea */
     margin-bottom: 5px; /* Adds some space between the label and the textarea */
     font-weight: bold; /* Optional: makes the label text stand out more */
-}
+    }
 
-/* SKILLS FIELD | Text Area - Box formatting */
-.apply_textarea textarea {
+    /* SKILLS FIELD | Text Area - Box formatting */
+ .apply_textarea textarea {
     width: 100%; /* Makes the textarea fill the available width */
     padding: 10px; /* Adds some padding inside the textarea */
     font-size: 16px; /* Adjusts the font size for better readability */
     border: 1px solid #ccc; /* Adds a light border around the textarea */
     border-radius: 4px; /* Optional: makes the textarea corners slightly rounded */
     box-sizing: border-box; /* Ensures padding doesn't affect the element's width */
-}
+    }
 
  /* JOB EXPECTATIONS | ID Selector: Job Expectations; Grid Positioning*/
  #job_expectations {
     grid-column: 2; /* Place in the second column */
-    grid-row: 19 / 27; /* Keep it spanning rows 19 to 27 */
+    grid-row: 18 / 27; /* Keep it spanning rows 19 to 27 */
  }
 
  /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
-  #salary_scale {
+ #salary_scale {
     width: 50%;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -369,7 +404,7 @@ footer a:hover {
  
  /* JOB EXPECTATIONS | Child combination - Class ID & Input: personal_details sections- Styling*/
  #hours_start, #hours_end {
-    width: 15%;
+    width: 14%;
     margin-bottom: 5px;
  }
  
@@ -395,8 +430,53 @@ footer a:hover {
     transition: box-shadow 0.3s ease;  /* Smooth shadow transition on hover */
  }
  
-  /* Pseudo Element - Hovering for Inputs */
- #apply_body input:hover {box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);} /* Darker shadow on hover */
+  /* Pseudo Element - Hovering for all inputs except radio, checkbox and slider, they get their own custom code */
+ #apply_body 
+ input:not([type="radio"]):
+ not([type="checkbox"]):
+ not([type="range"]):hover{box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);} /* Darker shadow on hover */
+
+ /* Custom hover effect for checkboxes and radio buttons */
+ #apply_body input[type="radio"]:hover,
+ #apply_body input[type="checkbox"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+
+ /* SLIDER STYLING */
+ /* Base styling for the range input slider */
+ input[type="range"] {
+    width: 100%; /* Full width of the container */
+    height: 8px; /* Height of the track */
+    background: #d4f5d7; /* Light green track */
+    border-radius: 5px; /* Rounded corners for the track */
+    outline: none; /* Removes the default outline around the slider */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    accent-color: #4EB774; /* Set thumb color to match the theme */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect to slightly darken the track and add a subtle shadow */
+  input[type="range"]:hover {
+    background: #c0eac4; /* Slightly darker green when hovered */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+  }
+  
+  /* SLIDER CONTAINER: Optional container to hold the slider and label */
+  .slider-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the slider and label */
+    gap: 10px; /* Add space between the slider and label */
+    padding: 10px 0; /* Padding around the container */
+  }
+  
+  /* MONEY LABEL: Label for showing values next to the slider */
+  .money-label {
+    font-weight: bold; /* Bold label text */
+    color: #065321; /* Dark green text color */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
  
 /* END OF APPLY PAGE STYLING*/
 
