@@ -72,15 +72,15 @@
                         <ul class="apply_personal_list"> 
                             <li class="personal_listing">
                                 <!-- Name - Input Text; Format: Max 20 Alpha Characters-->
-                                <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label><br>
+                                <label for="first_name">First Name: <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" maxlength="20" title="max 20 characters" required="required"></label><br>
                             </li>
                             <li class="personal_listing">
-                                <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="20" title="maximum 20 characters" required="required"></label> 
+                                <label for="family_name">Family Name: <input type="text" id="family_name" name="family_name" pattern="[A-Za-z]+" maxlength="20" title="max 20 characters" required="required"></label> 
                             </li>
 
                             <li class="personal_listing">
                                 <!-- Date of Birth ; Format: dd/mm/yyyy-->
-                                <p><label for="dob"> Date of Birth: <br> <input type="date" id="dob" name="dob" required="required"></label></p>
+                                <p><label for="dob"> Date of Birth: <input type="date" id="dob" name="dob" required="required"></label></p>
                             </li>
                         </ul>
 
@@ -98,11 +98,11 @@
                         <ul class="apply_personal_list">
                             <li class="personal_listing">
                                 <!-- Street Address- Input Text; Format: Max 20 Alpha Characters-->
-                                <label for="street_address">Street Address: <input type="text" id="street_address" name="street_address" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label>
+                                <label for="street_address">Street Address: <input type="text" id="street_address" name="street_address" pattern="^\d+\s[A-Za-z\s\.]+$" maxlength="40" title="i.e 123 Main St (max 40 characters)" required="required"></label>
                             </li>
                             <li class="personal_listing">
                                 <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
-                                <label for="suburb">Suburb/Town: <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="maximum 40 characters" required="required"></label> 
+                                <label for="suburb">Suburb/Town: <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="max 40 characters" required="required"></label> 
                             </li>
                             <li class="personal_listing">
                                 <!-- State - Drop Down Boxes-->
@@ -166,16 +166,6 @@
                                     Love of Fruit
                                 </label>
                             </div>
-                    </div>
-
-                    <!--Recommended Skills List - Checkbox Inputs -->
-                    <div id="recommended_skills">
-
-                        <h4> Recommended Technical Skills </h4> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
-
-                        <label  for="rec_skills">
-                            <input type="checkbox" id="rec_skills" name="rec_skills[]" value="dragon" checked="checked"> Dragon Pet. Extra points if brought to interview.
-                        </label> <!--DEFAULT TICK ON FIRST-->
                     </div>
 
                         <!--Other Skills - Textbox-->
