@@ -485,7 +485,78 @@ footer a:hover {
  
 /* END OF APPLY PAGE STYLING*/
 
-/* START OF APPLY PAGE STYLING*/
+/* START OF CONTACT PAGE STYLING*/
+    #contact_form p,
+    #contact_form label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        max-width: 600px;
+    }
+
+    /* Email input slightly longer than dropdown */
+    #email_apply {
+        width: 100%;
+        max-width: 600px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Keep dropdown same start position as email */
+    #reason {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Center textarea */
+    #enquiry_box {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+        height: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        display: block;
+        font-family: inherit;
+    }
+
+    /* Buttons styling — color match + spacing */
+    #contact_buttons {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #cffdd1; /* Matches your <main> background */
+        border-radius: 8px;
+    }
+
+    /* Individual buttons */
+    #contact_buttons input[type="submit"],
+    #contact_buttons input[type="reset"] {
+        padding: 10px 20px;
+        margin: 5px;
+        border: 2px solid #065321;
+        border-radius: 6px;
+        background-color: #065321;
+        color: #cffdd1;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 16px;
+    }
+
+    #contact_buttons input[type="submit"]:hover,
+    #contact_buttons input[type="reset"]:hover {
+        background-color: #cffdd1;
+        color: #065321;
+    }
+/* END OF CONTACT PAGE STYLING*/
 
 /* About Page Styling */
 /*Page Blocking*/
