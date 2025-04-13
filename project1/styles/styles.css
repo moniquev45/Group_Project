@@ -202,13 +202,23 @@ footer a:hover {
     text-align: center;
 }
 
-.Job_Discription_Image{
+#Job_Discription_Image_Data_Analyst{
     width: fit-content;
     max-width: 1300px;
     height: 300px;
     object-fit: cover;
     width: 100%;
-    background-image: url("images/Office_People");
+    background-image: url("styles/images/Office_People");
+    background-size: 100% 100%;
+}
+
+#Job_Discription_Image_Junior_Software_Developer{
+    width: fit-content;
+    max-width: 1300px;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    background-image: url("styles/images/Office_People_2");
     background-size: 100% 100%;
 }
 
