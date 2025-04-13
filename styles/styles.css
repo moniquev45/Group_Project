@@ -497,7 +497,7 @@ footer a:hover {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
   }
   
-  /* SLIDER CONTAINER: Optional container to hold the slider and label */
+  /* SLIDER CONTAINER: to hold the slider and label */
   .slider-container {
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Vertically center the slider and label */
@@ -511,16 +511,29 @@ footer a:hover {
     color: #065321; /* Dark green text color */
     font-size: 0.9rem; /* Slightly smaller font size */
   }
+
+ /* hiding the fieldset legends (excepting Gender). Also hides the contact page text area label*/
+ .visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+ }
  
 /* END OF APPLY PAGE STYLING*/
 
 /* START OF CONTACT PAGE STYLING*/
     #contact_form p,
-    #contact_form label {
+    #contact_form label,
+    email_apply label {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         max-width: 600px;
     }
 
@@ -542,7 +555,8 @@ footer a:hover {
         border-radius: 4px;
         box-sizing: border-box;
     }
-
+    
+    /* label for textarea hidden by class - css code at the end of apply page section*/
     /* Center textarea */
     #enquiry_box {
         width: 100%;
@@ -557,7 +571,7 @@ footer a:hover {
         font-family: inherit;
     }
 
-    /* Buttons styling — color match + spacing */
+    /* Button styling — color match + spacing */
     #contact_buttons {
         text-align: center;
         margin-top: 20px;
@@ -566,7 +580,7 @@ footer a:hover {
         border-radius: 8px;
     }
 
-    /* Individual buttons */
+    /* Button  */
     #contact_buttons input[type="submit"] {
         padding: 10px 20px;
         margin: 5px;
@@ -579,6 +593,7 @@ footer a:hover {
         font-size: 16px;
     }
 
+    /* Button hover function */
     #contact_buttons input[type="submit"]:hover {
         background-color: #cffdd1;
         color: #065321;
