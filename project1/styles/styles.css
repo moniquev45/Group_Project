@@ -441,6 +441,13 @@ right, right next to the employment details, and it allows the data to take up 5
     border-bottom: 5px double;
 }
 
+/* This forces the hyperlinks to the mangers emails and bolder so you can tell it is special but it doesn't look like a link. */
+.Reporting_To_Jobs_Specific{
+    text-decoration: none;
+    color: #011e0a;
+    font-weight: bold;
+}
+
 /* End of Job Listing Pages Styling */
 
 /* APPLY PAGE STYLING*/
