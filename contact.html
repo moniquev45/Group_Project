@@ -60,20 +60,19 @@
                     </select>
                 </p>
                 <!-- Email Address for return reply-->
-                <label for="email_apply">Email Address: <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="exampleemailaddress@.com.au" title="example@emailaddress.com.au" required="required"></label>
+                <label for="email_apply"> Email Address:</label> 
+                <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="exampleemailaddress@.com.au" title="example@emailaddress.com.au" required="required">
 
                 <!--Enquiry Box-->
                 <p>
-                    <label for="enquiry_box">Enquiry Box<br> 
+                    <label for="enquiry_box" class="visually_hidden"> Enquiry Box </label>
                     <!--Text box to type in enquiry-->
                     <textarea id="enquiry_box" name="enquiry_box" rows="10" cols="150" placeholder="Please provide details of your enquiry here..."></textarea>
-                    </label>
                 </p> 
 
                 <!--Buttons: Input 'Submit' & 'Reset Form'-->
                 <p id="contact_buttons">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset form">
+                    <input type="submit" value="SUBMIT">
                 </p> 
 
             </form>
