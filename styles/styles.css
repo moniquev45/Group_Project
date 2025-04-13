@@ -142,7 +142,23 @@ footer a:hover {
     color: #011e0a;
 }
 
-/* JOB LISTING PAGE STYLING */
+/* JOB LISTING PAGES STYLING */
+
+.Random_Company_Names{
+    float: left;
+}
+
+.Company_Location{
+    float: right;
+}
+
+#Job_Salary_Job_Page{
+    float: left;
+}
+
+#Job_Reference_Number_Job_Page{
+    float: right;
+}
 
 #Jobs_Table_Data{
     width: 75%;
@@ -222,7 +238,20 @@ footer a:hover {
     float: right;
 }
 
-/* End of Job Listing Page Styling */
+.Main_Employment_Details{
+    font-size: 18px;
+}
+
+.Table_Title_Job_Listing{
+    text-align: left;
+    font-size: 17px;
+}
+
+.Qualifications_Table{
+
+}
+
+/* End of Job Listing Pages Styling */
 
 /* APPLY PAGE STYLING*/
 
