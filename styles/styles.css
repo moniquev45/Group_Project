@@ -136,6 +136,18 @@ footer a:hover {
     transition: 0.5s;
 }
 
+.Footer_Links{
+    color: #011508;
+}
+
+.Jira_Link_Footer{
+    text-align: center;
+}
+
+.Company_Email{
+    text-align: center;
+}
+
 /* Company copy right styling. */
 .Copyright_in_footer{
     text-align: center;
@@ -225,10 +237,6 @@ footer a:hover {
     /* Allows the job title to take as much space as possible on the line while still allowing the logo to share the area. */
     flex: 1;
     text-align: left;
-}
-
-.Footer_Links{
-    color: #011508;
 }
 
 .Home_Title{
