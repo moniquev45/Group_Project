@@ -684,7 +684,6 @@ footer a:hover {
     margin: -1px;
     padding: 0;
     overflow: hidden;
-    clip: rect(0 0 0 0);
     border: 0;
  }
  
@@ -714,14 +713,6 @@ footer a:hover {
     #enquiry_box {
         margin: 0 auto;
         height: 200px; /* Keeps textarea height fixed */
-    }
-
-    /* Button styling — color match + spacing */
-    #contact_buttons {
-        text-align: center;
-        margin-top: 20px;
-        background-color: #cffdd1; /* Matches your <main> background */
-        border-radius: 8px;
     }
 
     /* Button */

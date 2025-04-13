@@ -43,10 +43,10 @@
         <main id="apply_body">
             <!--PAGE TITLE-->
             <div id="application_start">
-                <h1 id="heading_application"><strong>Apply Now</strong></h1>
+                <h2 id="heading_application"><strong>Apply Now</strong></h2>
 
                 <!--Introduction Paragraph Content-->
-                <p> The Best Big Brain Group, welcomes all applicants. Please fill out the form below to apply.</p>
+                <p> The Best Big Brain Group welcomes all applicants. Please fill out the form below to apply.</p>
             </div>
 
             <!--Form Section. Requirements for all: 1. Inputs need labels 2. All form values (excepting'other skills' text area) are required or default value)-->
@@ -68,7 +68,7 @@
                 <!--Fieldset 2: Personal Details-->
                 <fieldset id="fieldset_personal"> 
                     <legend class="visually_hidden"> Fieldset Containing Personal Details </legend>
-                    <h2 class="form_headings"><strong>Personal Details</strong></h2><br>
+                    <h3 class="form_headings"><strong>Personal Details</strong></h3><br>
                     <div id="fieldset_name" class="personal_details"> <!-- Name : div 1-->
                         <ul class="apply_personal_list"> 
                             <li class="personal_listing">
@@ -139,15 +139,15 @@
                     <div id="fieldset_contact" class="personal_details"> <!-- Contact Details : div 3 -->
                             <ul class="apply_personal_list">
                                 <li class="personal_listing">
-                                    <!-- Email Address - Input Text: includes regular expression and patterns-->
+                                    <!-- Email Address - Input type "email" automatically validates email and gives pattern. See contact page for how to do it as a text input with pattern -->
                                     <label for="email_apply"> Email Address: 
-                                        <input type="text" id="email_apply" name="email_apply" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="example@emailaddress.com.au" required="required">
+                                        <input type="email" id="email_apply" name="email_apply" title="example@emailaddress.com.au" required="required">
                                     </label>
                                 </li>
                                 <li class="personal_listing">
                                     <!-- Phone Numbers - Input Text: 8-12 digits or spaces -->
                                     <label for="mobile"> Phone Number: 
-                                        <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 digits &amp; Spaces Only" required="required">
+                                        <input type="text" id="mobile" name="mobile" minlength="8" maxlength="12" pattern="[0-9\s]+" title="8-12 digits &amp; spaces only" required="required">
                                     </label>
                                 </li>
                             </ul>
@@ -157,12 +157,12 @@
                 <!--Fieldset 3: Job Requirements-->
                 <fieldset id="fieldset_skills">
                     <legend class="visually_hidden"> Fieldset Containing Job Skills </legend>
-                    <h3 class="form_headings"><strong> Skills Field</strong></h3>
+                    <h4 class="form_headings"><strong> Skills Field</strong></h4>
                     <!--Required Technical List - Checkbox Inputs -->
                     <div id="required_skills">
 
-                        <h4> Required Technical Skills </h4> <!--PLACEHOLDER DATA UNTIL JOBS SKILLS ARE FINALISED-->
-
+                        <h5> Required Technical Skills </h5> 
+                        <!-- Skills from Jobs Page -->
                             <div id="skills">
                                 <label  for="bachelor">
                                     <input type="checkbox" id="bachelor" name="skills[]" value="bachelor" checked="checked"> Bachelor Degree in listed area
@@ -197,7 +197,7 @@
 
                 <fieldset id="job_expectations">
                     <legend class="visually_hidden"> Fieldset For Outlining Job Expectations </legend>
-                    <h4 class="form_headings"><strong> Job Expectations</strong></h4>
+                    <h6 class="form_headings"><strong> Job Expectations</strong></h6>
                     <!--Job Expectations -->
                     <!--Salary (Sliding Scale Range)-->
                     <label for="salary_scale"> What are your Salary Expectations? (Per Year):</label><br>
