@@ -176,7 +176,7 @@ footer a:hover {
 }
 
 #Apply_Here:hover{
-    color: #066026;
+    color: #065321;
     background-color: #cffdd1;
     /* When you hover it transitions from the original state to the hover state. */
     transition: 0.5s;
@@ -259,7 +259,7 @@ footer a:hover {
   #application_start {text-align: center;}
  
  /* Element: Labels are all uniform in colour and size*/
- label, p {color: #066026;}
+ label, p {color: #011e0a;;}
  
  /* Class: Making all headings (excluding h1) in Apply Page consistent in size and formatting */
  .form_headings {
