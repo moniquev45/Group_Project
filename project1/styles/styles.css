@@ -136,15 +136,17 @@ footer a:hover {
     transition: 0.5s;
 }
 
-/*  */
+/* The colour for the footer links on all pages. */
 .Footer_Links{
     color: #011508;
 }
 
+/* This forces the Jira Link in the footer to the centre. */
 .Jira_Link_Footer{
     text-align: center;
 }
 
+/* This forces the company email in the footer on all pages to the centre. */
 .Company_Email{
     text-align: center;
 }
@@ -157,22 +159,27 @@ footer a:hover {
 
 /* JOB LISTING PAGES STYLING */
 
+/* This forces the company names to the left to allow the company logo float on the right of the same line. */
 .Random_Company_Names{
     float: left;
 }
 
+/* This forces the company location to the right of the page. */
 .Company_Location{
     float: right;
 }
 
+/* This forces the job salary to the left on the main job page. */
 .Job_Salary_Job_Page{
     float: left;
 }
 
+/* This forces all job reference numbers to the right of the page. */
 .Job_Reference_Number_Job_Page{
     float: right;
 }
 
+/*  */
 .Jobs_Table_Data{
     width: 75%;
     display: table-cell;
