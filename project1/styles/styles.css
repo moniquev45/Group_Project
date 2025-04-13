@@ -814,3 +814,60 @@ footer a:hover {
 .Individual_Profiles table{
     width: 95%;
 }
+
+/*Homepage styling*/
+
+#TitlePgraph {
+    text-align: center;
+    color: #000000;
+}
+
+#Who_we_are{
+    float: left;
+    width: 30%;
+    p{
+        color: #000000;
+    }
+}
+
+#What_we_do{
+    float: right;
+    width: 30%;
+    p{
+        color: #000000;
+    }
+}
+
+#Company_Graphic{
+    display: inline-block;
+    text-align: center;
+    padding: 0.5%;
+    width: 30%;
+    img{
+        width: 50%;
+        height: normal;
+        border-radius: 8px;
+    }
+}
+
+#Our_Mission{
+    display: inline;
+    text-align: center;
+    width: 40%;
+    p{
+        color: #000000;
+    }
+}
+
+#Meet_Us{
+    clear: both;
+    border: 5px, double, #000000;
+    border-radius: 8px;
+    text-align: center;
+    h3{
+        font-size: medium;
+    }
+    p {
+        color: #000000;
+    }
+}
