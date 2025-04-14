@@ -157,6 +157,11 @@ footer a:hover {
     color: #011e0a;
 }
 
+/*Website github link styling*/
+.Github_Link_Footer{
+    text-align: center;
+}
+
 /* JOB LISTING PAGES STYLING */
 /* There is a difference between job specific and job listing pages, job listing page is jobs.html wheras job specific pages are,
 data_anaylst_job_page.html and junior_software_developer_job_page.html. Although they are clump all together in this same section of
