@@ -448,6 +448,15 @@ right, right next to the employment details, and it allows the data to take up 5
     font-weight: bold;
 }
 
+/* This changes the h1 titles of the jobs to have its own short hand font property. */
+#Data_Anaylst_Job_Title, #Junior_Software_Developer_Job_Title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
 /* End of Job Listing Pages Styling */
 
 /* APPLY PAGE STYLING*/
@@ -933,9 +942,17 @@ right, right next to the employment details, and it allows the data to take up 5
     border: 5px, double, #000000; /* Sets the border of the division to a double line */
     border-radius: 8px; /* Rounds the corners of the division */
     text-align: center; /* Aligns the text to the center */
+    background: url("/project1/images/Team_Photo.png"); /* Sets the background image of the division */
+    background-color: rgba(255,255,255,0.55);
+    background-blend-mode: lighten; /* Blends the background image with the background color */
+    background-size: cover; /* Sets the background image to cover the entire division */
+    background-position: center; /* Centers the background image */
+    height: 425px; /* Sets a specified height of the image */
+    overflow: scroll; /* Allows the division to scroll if the content overflows */
     h3{
         /*Sets the size of the header to medium*/
         font-size: medium;
+        color: black; /* Sets the text color of the header to black for accessability purposes*/
     }
     p {
         /* Sets the text color of the paragraph to black for accessability purposes*/
