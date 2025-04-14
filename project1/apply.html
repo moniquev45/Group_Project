@@ -111,7 +111,7 @@
                             <li class="personal_listing">
                                 <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
                                 <label for="suburb">Suburb/Town: 
-                                    <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="max 40 characters" required="required">
+                                    <input type="text" id="suburb" name="suburb" pattern="[A-Za-z\s]+" maxlength="40" title="max 40 characters" required="required">
                                 </label> 
                             </li>
                             <li class="personal_listing">
@@ -192,7 +192,7 @@
                     <!--Other Job Requirements: Comments (Textarea)-->
                     <div id="personal_requirements" class="apply_textarea">
                         <label for="requirements">Any Additional Personal Requirements?</label>
-                        <textarea id="requirements" name="requirements" rows="4" cols="60" placeholder="Please share any additional personal requirements or information here." required></textarea><br><br>
+                        <textarea id="requirements" name="requirements" rows="4" cols="60" placeholder="Please share any additional personal requirements or information here."></textarea><br><br>
                     </div>
                 </fieldset>
 
