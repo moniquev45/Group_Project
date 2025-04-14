@@ -809,8 +809,40 @@ right, right next to the employment details, and it allows the data to take up 5
 /* END OF CONTACT PAGE STYLING */
 
 /* About Page Styling */
+/*Page resizing*/
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .header {
+        font-size: 24px;
+    }
 
-/*ABOUT PAGE*/
+    #About_Team {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img"
+        "team"
+        "info";
+    }
+
+    .Individual_Profules h2 {
+        font-size: 18px;
+    }
+
+    .Team_Photo img {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .Individual_Profiles table{
+        width: 100%;
+        padding-left: 10px;
+        font-size: 12px;           
+    }
+}
+
 /*Page Styling*/
 #About_Team {
     display: grid; /*Creates an invisible grid to align everything in columns*/
@@ -869,6 +901,10 @@ right, right next to the employment details, and it allows the data to take up 5
     margin-right: 25px; /*Adds a margin push to the right of the table*/
 }
 
+#Monique:hover {
+    background-color: #4EB774; 
+}
+
 #Riley {
     background-color: #b0ffb4; /*Adds colour to the div box*/
     border: none; /*Removes border from the div box*/
@@ -879,6 +915,10 @@ right, right next to the employment details, and it allows the data to take up 5
     margin-top: 15px; /*Adds a margin push to the top of the table*/
     margin-left: 25px; /*Adds a margin push to the left of the table*/
     margin-right: 25px; /*Adds a margin push to the right of the table*/
+}
+
+#Riley:hover {
+    background-color: #4EB774;
 }
 
 #Stacey {
@@ -893,6 +933,10 @@ right, right next to the employment details, and it allows the data to take up 5
     margin-right: 25px; /*Adds a margin push to the right of the table*/
 }
 
+#Stacey:hover {
+    background-color: #4EB774;
+}
+
 #Vic {
     background-color: #b0ffb4; /*Adds colour to the div box*/
     border: none; /*Removes border from the div box*/
@@ -905,6 +949,10 @@ right, right next to the employment details, and it allows the data to take up 5
     margin-right: 25px; /*Adds a margin push to the right of the table*/
 }
 
+#Vic:hover {
+    background-color: #4EB774;
+}
+
 .Team_Profile {
     background-color: #b0ffb4; /*Creates a background to the Team_Profile div*/
     border: none; /*Removes the border*/
@@ -913,6 +961,8 @@ right, right next to the employment details, and it allows the data to take up 5
     padding-left: 25px; /*Adds padding to the left to keep more centred*/
     padding-top: 10px; /*Pushes content down*/
 }
+
+
 
 .Individual_Profiles table{
     width: 95%; /*Reduces the stretch to the table so that it doesnt push against the borders*/
