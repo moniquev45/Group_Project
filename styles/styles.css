@@ -465,7 +465,6 @@ right, right next to the employment details, and it allows the data to take up 5
 /* End of Job Listing Pages Styling */
 
 /* APPLY PAGE STYLING*/
-
  /* Responsive Design - Ensuring everything is still readable when on a smaller screen*/
  @media (max-width: 768px) {
     #apply_body {padding: 10px;}
@@ -543,6 +542,7 @@ right, right next to the employment details, and it allows the data to take up 5
     position: relative; /* This allows positioning of the pseudo-element */
     padding: 0 10px;
    }
+ /* the grid-template-columns and rows were GenAI (https://chatgpt.com/). Initally manually coded it as a large number of rows and columns. Prompt: I will give you my css, simplify my grid to make if more efficient.*/
 
  /* REFERENCE | ID Selector: Application Fieldset; Text Alignment & Grid Positioning*/
  #fieldset_reference {
