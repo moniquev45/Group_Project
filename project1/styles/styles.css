@@ -448,8 +448,12 @@ right, right next to the employment details, and it allows the data to take up 5
     font-weight: bold;
 }
 
-#Data_Anaylst_Job_Title{
-    
+/* This changes the h1 titles of the jobs to have its own short hand font property. */
+#Data_Anaylst_Job_Title, #Junior_Software_Developer_Job_Title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: bold;
 }
 
 
