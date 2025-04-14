@@ -847,36 +847,52 @@ right, right next to the employment details, and it allows the data to take up 5
 }
 
 #Monique {
-    background-color: #b0ffb4;
-    border: none;
-    border-radius: 25px;
+    background-color: #b0ffb4; /*Adds colour to the div box*/
+    border: none; /*Removes border from the div box*/
+    border-radius: 25px; /*Curves the corners*/
 }
 
 #Monique table {
-    margin-top: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-top: 15px; /*Adds a margin push to the top of the table*/
+    margin-left: 25px; /*Adds a margin push to the left of the table*/
+    margin-right: 25px; /*Adds a margin push to the right of the table*/
 }
 
 #Riley {
-    background-color: #b0ffb4;
-    border: none;
-    border-radius: 25px;
+    background-color: #b0ffb4; /*Adds colour to the div box*/
+    border: none; /*Removes border from the div box*/
+    border-radius: 25px; /*Curves the corners*/
+}
+
+#Riley table {
+    margin-top: 15px; /*Adds a margin push to the top of the table*/
+    margin-left: 25px; /*Adds a margin push to the left of the table*/
+    margin-right: 25px; /*Adds a margin push to the right of the table*/
 }
 
 #Stacey {
-    background-color: #b0ffb4;
-    border: none;
-    border-radius: 25px;
+    background-color: #b0ffb4; /*Adds colour to the div box*/
+    border: none; /*Removes border from the div box*/
+    border-radius: 25px; /*Curves the corners*/
+}
+
+#Stacey table {
+    margin-top: 15px; /*Adds a margin push to the top of the table*/
+    margin-left: 25px; /*Adds a margin push to the left of the table*/
+    margin-right: 25px; /*Adds a margin push to the right of the table*/
 }
 
 #Vic {
-    background-color: #b0ffb4;
-    border: none;
-    border-radius: 25px;
+    background-color: #b0ffb4; /*Adds colour to the div box*/
+    border: none; /*Removes border from the div box*/
+    border-radius: 25px; /*Curves the corners*/
 }
 
-
+#Vic table {
+    margin-top: 15px; /*Adds a margin push to the top of the table*/
+    margin-left: 25px; /*Adds a margin push to the left of the table*/
+    margin-right: 25px; /*Adds a margin push to the right of the table*/
+}
 
 .Team_Profile {
     background-color: #b0ffb4;
