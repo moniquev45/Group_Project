@@ -944,6 +944,7 @@ right, right next to the employment details, and it allows the data to take up 5
     background-size: cover; /* Sets the background image to cover the entire division */
     background-position: center; /* Centers the background image */
     height: 425px; /* Sets a specified height of the image */
+    overflow: scroll; /* Allows the division to scroll if the content overflows */
     h3{
         /*Sets the size of the header to medium*/
         font-size: medium;
