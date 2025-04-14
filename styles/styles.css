@@ -833,10 +833,11 @@ right, right next to the employment details, and it allows the data to take up 5
 
 /*Photo styling*/
 .Team_Photo img {
-    border: 10px single solid;
+    display: block;
+    width: 100%; /*Grows the image to fill out the column*/
+    border: 7px black solid; 
     margin: 10px;
 }
-
 
 /*Individual profile block styling*/
 .Individual_Profiles h2 {
