@@ -111,7 +111,7 @@
                             <li class="personal_listing">
                                 <!-- Suburb- Input Text; Format: Max 20 Alpha Characters-->
                                 <label for="suburb">Suburb/Town: 
-                                    <input type="text" id="suburb" name="suburb" pattern="[A-Za-z]+" maxlength="40" title="max 40 characters" required="required">
+                                    <input type="text" id="suburb" name="suburb" pattern="[A-Za-z\s]+" maxlength="40" title="max 40 characters" required="required">
                                 </label> 
                             </li>
                             <li class="personal_listing">
@@ -192,13 +192,13 @@
                     <!--Other Job Requirements: Comments (Textarea)-->
                     <div id="personal_requirements" class="apply_textarea">
                         <label for="requirements">Any Additional Personal Requirements?</label>
-                        <textarea id="requirements" name="requirements" rows="4" cols="60" placeholder="Please share any additional personal requirements or information here." required></textarea><br><br>
+                        <textarea id="requirements" name="requirements" rows="4" cols="60" placeholder="Please share any additional personal requirements or information here."></textarea><br><br>
                     </div>
                 </fieldset>
 
                 <fieldset id="job_expectations">
                     <legend class="visually_hidden"> Fieldset For Outlining Job Expectations </legend>
-                    <h6 class="form_headings"><strong> Job Expectations</strong></h6>
+                    <h6 class="form_headings"><strong> Job Expectations (Optional)</strong></h6>
                     <!--Job Expectations -->
                     <!--Salary (Sliding Scale Range)-->
                     <label for="salary_scale"> What are your Salary Expectations? (Per Year):</label><br>
@@ -224,8 +224,8 @@
                 </fieldset>
                 <!--Buttons: Input 'Apply' & 'Reset Form'-->
                 <p id="buttons">
-                    <input type="submit" value="Apply">
-                    <input type="reset" value="Reset form">
+                    <input type="submit" value="Apply" title="Click to Apply Now">
+                    <input type="reset" value="Reset form" title="Click to Reset Form">
                 </p> 
             </form>
         </main>
@@ -254,7 +254,12 @@
             <div class="Company_Email">
             Email:
             <a class="Footer_Links" href="mailto:thebestbigbraingroup@gmail.com">info@thebestbigbraingroup.com.au</a></div>
-            <!--Forces their to be a line break below to not squish all the the hyperlinks to the border of the page.-->
+            <!--Hyperlink to the website's github-->
+            <div class="Github_Link_Footer">
+                Github:
+                <a class="Footer_Links" href="https://github.com/moniquev45/Group_Project" target="_blank">This website's github repository</a>
+            </div>
+            <!--Forces there to be a line break below to not squish all the the hyperlinks to the border of the page.-->
             <p class="Copyright_in_footer">
             &copy; <strong>
                 2025 The Best Big Brain Group. All Rights Reserved.
