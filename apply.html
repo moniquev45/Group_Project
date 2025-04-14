@@ -4,9 +4,9 @@
         <!--Charset Declaration-->
         <meta charset="utf-8">
         <!--Page Description for File-->
-        <meta name="description" content="Form for Job Applications">
+        <meta name="description" content="The page to apply for the Job Applications">
         <!--Key Words for File-->
-        <meta name="keywords" content="HTML, Form, Tags">
+        <meta name="keywords" content="HTML, Form, Tags, apply, job, submit">
         <!--Author Information-->
         <meta name="author" content="Stacey Millers" >
 
@@ -23,7 +23,7 @@
             <div class="Job_Position_And_Logo">
                 <figure>
                 <!--Change to company Logo-->  
-                <a href="index.html"><img src="images/Pear_Company_Logo.png" alt="Pear Company Logo" class="Company_Logo"/></a>
+                <a href="index.html"><img src="images/Pear_Company_Logo.png" alt="Pear Company Logo" class="Company_Logo"></a>
                 <!-- Logo Link: https://www.shutterstock.com/image-vector/green-pear-vector-icon-logo-design-2308212369 -->
                 </figure>
                 <h1 class="Company_Name">The Best Big Brain Group </h1>
@@ -196,20 +196,21 @@
                     </div>
                 </fieldset>
 
+                <!--(OPTIONAL) Job Expectations section; no required inputs-->
                 <fieldset id="job_expectations">
                     <legend class="visually_hidden"> Fieldset For Outlining Job Expectations </legend>
                     <h6 class="form_headings"><strong> Job Expectations (Optional)</strong></h6>
-                    <!--Job Expectations -->
-                    <!--Salary (Sliding Scale Range)-->
+
+                    <!--Sliding Scale Range for Salary Expectations-->
                     <label for="salary_scale"> What are your Salary Expectations? (Per Year):</label><br>
-                    <!-- Slider Container -->
-                    <div class="slider-container">
-                        <!-- Money label for the minimum value -->
-                        <span class="money-label" id="min-value">$50,000</span>
-                        <!-- Salary slider -->
-                        <input type="range" id="salary_scale" name="salary_scale" min="1" max="15" step="1" value="1" class="money-slider">
-                        <!-- Money label for the maximum value -->
-                        <span class="money-label" id="max-value">$200,000</span>
+                    <!-- Salary Slider Container -->
+                    <div id="salary_container">
+                        <!-- The minimum salary value label -->
+                        <span class="salary_min_max" id="value_min"><strong>$50,000</strong></span>
+                        <!-- The input for the salary scale -->
+                        <input type="range" id="salary_scale" name="salary_scale" min="1" max="20" step="0.5" value="1" title="slide to provide an approx. salary expectation">
+                        <!-- The maximum salary value label -->
+                        <span class="salary_min_max" id="value_max"><strong>$200,000</strong></span>
                     </div>
 
                     <!--Working Hours-->
