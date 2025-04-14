@@ -831,6 +831,13 @@ right, right next to the employment details, and it allows the data to take up 5
     grid-area: team; /*Template areas assigned to the relevant grid template areas*/
 }
 
+/*Photo styling*/
+.Team_Photo img {
+    border: 10px single solid;
+    margin: 10px;
+}
+
+
 /*Individual profile block styling*/
 .Individual_Profiles h2 {
     padding: 10px; /*Adds space around the profile headings so they dont overflow out of their box*/
