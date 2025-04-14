@@ -833,10 +833,11 @@ right, right next to the employment details, and it allows the data to take up 5
 
 /*Photo styling*/
 .Team_Photo img {
-    border: 10px single solid;
+    display: block;
+    width: 100%; /*Grows the image to fill out the column*/
+    border: 7px black solid; 
     margin: 10px;
 }
-
 
 /*Individual profile block styling*/
 .Individual_Profiles h2 {
@@ -902,16 +903,17 @@ right, right next to the employment details, and it allows the data to take up 5
 }
 
 .Team_Profile {
-    background-color: #b0ffb4;
-    border: none;
-    border-radius: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 10px;
+    background-color: #b0ffb4; /*Creates a background to the Team_Profile div*/
+    border: none; /*Removes the border*/
+    border-radius: 25px; /*Rounds the corners*/
+    padding-right: 25px; /*Adds padding to the right to push content across*/
+    padding-left: 25px; /*Adds padding to the left to keep more centred*/
+    padding-top: 10px; /*Pushes content down*/
 }
 
 .Individual_Profiles table{
-    width: 95%;
+    width: 95%; /*Reduces the stretch to the table so that it doesnt push against the borders*/
+    align-content: center; /*Centres the content in the tables in the individual profiles*/
 }
 
 /*Homepage styling*/
